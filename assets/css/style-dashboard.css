@@ -1,0 +1,36 @@
+:root{
+     --color-back:#141C4D;
+     --color-back-secend:#87724B;
+     --back-ground-color:#EFF2F7;
+     --color-text-bold:#121C47;
+     --color-text-secend:#010103;
+     --color-text-there:#F0F4FF,
+}
+.app-brand-link img{
+width: 80%;
+margin: auto;
+}
+.content-footer{
+     box-shadow: 0 0.25rem 1.125rem rgba(75, 70, 92, 0.1);
+     background-color: #fff;
+     padding: 10px 10px;
+}
+.text-card-title{
+     color: var(--color-text-bold);
+}
+.bg-menu-theme.menu-vertical .menu-sub-tow> .menu-item > .menu-link:before {
+     left: 0.35rem !important;
+    
+ }
+ .table-tow-td tbody tr{
+     display: grid;
+     grid-template-rows: 1fr 1fr 1fr;
+ }
+ .table-tow-td tbody tr td{
+     border-bottom: 1px solid var(--bs-table-border-color);
+ }
+ #template-customizer .template-customizer-open-btn{
+     background: var(--color-back) !important;  
+     color: var(--color-text-there) !important;
+ }
+
