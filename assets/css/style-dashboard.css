@@ -33,4 +33,28 @@ margin: auto;
      background: var(--color-back) !important;  
      color: var(--color-text-there) !important;
  }
-
+ table thead{
+    background-color: var(--color-back);
+    color: var(--back-ground-color);
+ }
+ table tbody tr td{
+    text-align: center;
+ }
+ .table:not(.table-dark) thead:not(.table-dark) th {
+    color: var(--back-ground-color) !important;
+    font-weight: bold;
+    text-align: center;
+}
+table td .dropdown{
+margin: 4px;
+}
+.modal-title{
+    text-transform: capitalize;
+    font-weight: bold;
+    color: var(--color-text-bold);
+    font-size: 24px !important;
+}
+.menu-item.open > .menu-sub{
+    box-shadow: 8px 5px 10px #d5d6d8;
+    border-radius: 15px;
+}
