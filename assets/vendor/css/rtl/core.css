@@ -18180,15 +18180,17 @@ html:not(.layout-menu-fixed) .menu-inner-shadow {
   flex: none;
 }
 .menu-vertical .menu-sub .menu-link {
-  padding-left: 2.875rem;
+  padding-left: 2.775rem;
 }
 [dir=rtl] .menu-vertical .menu-sub .menu-link {
-  padding-right: 2.875rem;
+  padding-right: 2.775rem;
   padding-left: 1rem;
 }
 .menu-vertical .menu-sub .menu-sub .menu-link {
   padding-left: 1.575rem;
-    font-size: 14px;
+    font-size: 13px !important;
+
+    padding-right: 0px;
 }
 [dir=rtl] .menu-vertical .menu-sub .menu-sub .menu-link {
   padding-right: 3.375rem;

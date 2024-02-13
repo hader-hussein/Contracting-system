@@ -68,7 +68,7 @@
       <div class="layout-container">
         <!-- Menu -->
 
-        <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
+        <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme navber-index">
           <div class="app-brand demo">
             <a href="index.html" class="app-brand-link">
                 <img src="./assets/img/img-dashboards/logo.png" alt="logo">
@@ -324,17 +324,23 @@
                   </a>
                 </li>
                 <li class="menu-item">
-                  <a href="add-slte-other.html" class="menu-link">
+                  <a href="add-slte-close.html" class="menu-link">
                     <div data-i18n="close-out documents">close-out documents</div>
                   </a>
                 </li>
-                
+                <!--12-2-2024-->
+                <li class="menu-item">
+                  <a href="add-slte-archive.html" class="menu-link">
+                    <div data-i18n="ARCHIVE">ARCHIVE</div>
+                  </a>
+                </li>
+                    <!--12-2-2024-->
               </ul>
             </li>
             <!-- invoices -->
             <li class="menu-item">
               <a href="javascript:void(0);" class="menu-link menu-toggle">
-                <i class="menu-icon tf-icons ti ti-id"></i>
+                <i class="menu-icon tf-icons ti ti-file-dollar"></i>
                 <div data-i18n="invoices">invoices</div>
               
               </a>
@@ -390,9 +396,46 @@
                     <div data-i18n="subcontRactoRvos">subcontRactoRvos(2)</div>
                   </a>
                 </li>
-              
+               
 
               </ul>
+            </li>
+              <!--STORE-12-2-2024-->
+             <li class="menu-item">
+              <a href="javascript:void(0);" class="menu-link menu-toggle">
+                <i class="menu-icon tf-icons ti ti-forms"></i>
+
+                <div data-i18n="Store"> Store</div>
+              </a>
+              <ul class="menu-sub">
+                <li class="menu-item">
+                  <a href="progress-STORE.html" class="menu-link">
+                    <div data-i18n=" STORE  IN & OUT"> STORE  IN & OUT</div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item">
+              <a href="vendors.html" class="menu-link">
+                <i class="menu-icon tf-icons ti ti-user-check"></i>
+                
+                <div data-i18n="vendors">vendors</div>
+              </a>
+            </li>
+            
+            <li class="menu-item">
+              <a href="materials.html" class="menu-link">
+                <i class="menu-icon tf-icons ti ti-color-swatch"></i>
+                
+                <div data-i18n="materials">materials</div>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="units.html" class="menu-link">
+                <i class="menu-icon tf-icons ti ti-components"></i>
+                
+                <div data-i18n="units">units</div>
+              </a>
             </li>
           </ul>
         </aside>
@@ -935,16 +978,16 @@
                       <thead>
                         <tr>
                           <th scope="col">SR. No.</th>
-                         
+                          <th scope="col">DATE </th>
                          
                           <th scope="col">PROJECT NAME</th>
                           <th scope="col">SUBMITTAL NO.</th>
                       
-                          <th scope="col">NCR NO.</th>
+                          <th scope="col">QCR NO.</th>
                           <th scope="col">DISCIP LINE </th>
-                          <th scope="col"> NCR DISCRIPTION</th>
-                          <th scope="col">NCR ISSUE FROM</th>
-                          <th scope="col">NCR ISSUE TO</th>
+                          <th scope="col"> QCR DISCRIPTION</th>
+                          <th scope="col">QCR ISSUE FROM</th>
+                          <th scope="col">QCR ISSUE TO</th>
 
                           <th scope="col">FINAL STATUS </th>
                           <th scope="col">FINAL CODE</th>
@@ -955,6 +998,7 @@
                       <tbody>
                         <tr>
                           <th scope="row">1</th>
+                          <td>9-1-2023</td>
                           <td>DC MOBILY- RIYADH</td>
                           <td>DCRJ-RIY-SUR-00-230727</td>
                           <td>DCRJ-RIY-SUR-00-230727</td>
@@ -1006,7 +1050,11 @@
                   </div>
                   <div class="modal-body">
                     <form class="form-content  row mx-0">
-                     
+                      <div class="mb-3 col-md-4 col-12">
+                        <label for="example-date" class="form-label">DATE 
+                        </label>
+                        <input type="date" class="form-control" id="example-date">
+                      </div>
                         <div class="mb-3 col-md-4 col-12">
                           <label for="exampleFormControlInput1" class="form-label">PROJECT NAME</label>
                           <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="PROJECT NAME">
@@ -1016,56 +1064,56 @@
                           <input type="text" class="form-control" id="exampleFormControlInputno" placeholder="SUBMITTAL NO. ">
                         </div>
                         <div class="mb-3 col-md-4 col-12">
-                          <label for="exampleFormControlInputnc" class="form-label">NCR NO. </label>
-                          <input type="text" class="form-control" id="exampleFormControlInputnc" placeholder="NCR NO.">
-                        </div>
-                        <div class="mb-3 col-md-4 col-12">
-                          <label for="select2Basic" class="form-label">DISCIP LINE </label>
-                          <select id="select2Basic" class="select2 form-select" data-allow-clear="true">
-                            <option value="ar">arch </option>
-                            <option value="st">stru </option>
-                            <option value="me">mech </option>
-                            <option value="el">ELE </option>
-                            <option value="ot">OTHER</option>
-                          </select>
-                        </div>
-                        
-                        
-                        <div class="mb-3 col-md-4 col-12">
-                          <label for="exampleFormControlInput2" class="form-label">NCR DISCRIPTION </label>
-                          <textarea class="form-control" id="exampleFormControlInput2" placeholder="NCR DISCRIPTION" rows="1"></textarea>
-                        </div>
-                        <div class="mb-3 col-md-4 col-12">
-                          <label for="exampleFormControlInputFR" class="form-label">NCR ISSUE FROM
-                          </label>
-                          <input type="text" class="form-control" id="exampleFormControlInputFR" placeholder="NCR ISSUE FROM">
-                        </div>
-                       
-                        <div class="mb-3 col-md-4 col-12">
-                          <label for="exampleFormControlInputTO" class="form-label">NCR ISSUE TO</label>
-                          <input type="text" class="form-control" id="exampleFormControlInputTO" placeholder="NCR ISSUE TO">
+                          <label for="exampleFormControlInputnoO" class="form-label">QCR NO. </label>
+                          <input type="text" class="form-control" id="exampleFormControlInputnoO" placeholder="QCR NO.">
                         </div>
                      
                         <div class="mb-3 col-md-4 col-12">
+                          <label for="select2Basic" class="form-label">DISCIPL INE </label>
+                          <select id="select2Basic" class="select2 form-select" data-allow-clear="true">
+                            <option value="AK">arch </option>
+                            <option value="AK">stru </option>
+                            <option value="AK">mech </option>
+                            <option value="AK">ELE </option>
+                            <option value="HI">OTHER</option>
+                          </select>
+                        </div>
+                      
+                        
+                        <div class="mb-3 col-md-4 col-12">
+                          <label for="exampleFormControrfi" class="form-label">QCR DISCRIPTION
+                          </label>
+                          <textarea class="form-control" id="exampleFormControrfi" placeholder="QCR DISCRIPTION" rows="1"></textarea>
+                        </div>
+                       
+                        <div class="mb-3 col-md-4 col-12">
+                          <label for="exampleFormControlrif" class="form-label">QCR ISSUE FROM</label>
+                          <input type="text" class="form-control" id="exampleFormControlrif" placeholder="QCR ISSUE FROM">
+                        </div>
+                        <div class="mb-3 col-md-4 col-12">
+                          <label for="exampleFormControlrifO" class="form-label">QCR ISSUE TO</label>
+                          <input type="text" class="form-control" id="exampleFormControlrifO" placeholder="QCR ISSUE TO">
+                        </div>
+                        <div class="mb-3 col-md-4 col-12">
                           <label for="select2Basic3" class="form-label">FINAL STATUS </label>
                           <select id="select2Basic3" class="select2 form-select" data-allow-clear="true">
-                            <option value="AK">open</option>
-                            <option value="AK">under review</option>
-                            <option value="HI">APPROVED </option>
+                            <option value="OP">open</option>
+                            <option value="CL">CLOSED</option>
+                            <option value="UN">UNDER REVIEW</option>
                           </select>
                         </div>
                         <div class="mb-3 col-md-4 col-12">
                           <label for="select2Basic4" class="form-label">FINAL CODE</label>
-                        <select id="select2Basic4" class="select2 form-select" data-allow-clear="true">
-                          <option value="A">A</option>
-                          <option value="B">B</option>
-                          <option value="C">C</option>
-                          <option value="D">D</option>
-                        </select>
+                          <select id="select2Basic4" class="select2 form-select" data-allow-clear="true">
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                            <option value="D">D</option>
+                          </select>
                         </div>
                       
                         <div>
-                          <button type="submit" class="btn btn-primary me-sm-3 px-5 me-1 waves-effect waves-light">update</button>
+                          <button type="submit" class="btn btn-primary me-sm-3 px-5 me-1 waves-effect waves-light">Add</button>
                         </div>
                      </form>
                   </div>

@@ -13,7 +13,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
 
-    <title>view-all-slte-qcrs</title>
+    <title>view-vendors</title>
 
     <meta name="description" content="" />
 
@@ -46,7 +46,6 @@
     <link rel="stylesheet" href="./assets/vendor/libs/swiper/swiper.css" />
     <link rel="stylesheet" href="./assets/vendor/libs/datatables-bs5/datatables.bootstrap5.css" />
     <link rel="stylesheet" href="./assets/vendor/libs/datatables-responsive-bs5/responsive.bootstrap5.css" />
-
     <link rel="stylesheet" href="./assets/vendor/libs/datatables-checkboxes-jquery/datatables.checkboxes.css" />
 
     <!-- Page CSS -->
@@ -59,7 +58,6 @@
     <script src="./assets/vendor/js/template-customizer.js"></script>
     <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
     <script src="./assets/js/config.js"></script>
-
   </head>
 
   <body>
@@ -961,11 +959,11 @@
                   <div class="card-body py-3 px-4 card-widget-separator">
                     <div class="d-flex justify-content-between align-items-center flex-wrap">
                       <div class="text-card">
-                        <h5 class="fs-4 fw-bold text-capitalize">slte</h5>
-                        <h6 class="py-1 text-capitalize"><span class="text-muted fw-light text-capitalize px-2">dashboard /</span>view all Qcrs</h6>
+                        <h5 class="fs-4 fw-bold text-capitalize text-card-title">vendors</h5>
+                        <h6 class="py-1 text-capitalize"><span class="text-muted fw-light text-capitalize px-2">dashboard /</span>view vendors</h6>
                       </div>
                       <div class="button-hadeer">
-                        <a href="add-slte-qcrs.html" class="btn btn-primary waves-effect waves-light text-capitalize px-6">add Qcrs</a>
+                        <a href="vendors.html" class="btn btn-primary waves-effect waves-light text-capitalize px-5">add vendors</a>
                       </div>
                     </div>
                    
@@ -973,140 +971,152 @@
                </div>
                <div class="card mt-3">
                 <div class="card-body py-3 px-4 card-widget-separator">
-                   <div class="table-responsive card-datatable text-nowrap">
-                    <table class="table table-bordered dt-scrollableTable">
-                      <thead>
-                        <tr>
-                          <th scope="col">SR. No.</th>
-                        
-                          <th scope="col">DATE </th>
-                         
-                          <th scope="col">PROJECT NAME</th>
-                          <th scope="col">SUBMITTAL NO.</th>
-                      
-                          <th scope="col">QCR NO.</th>
-                          <th scope="col">DISCIP LINE </th>
-                          <th scope="col"> QCR DISCRIPTION</th>
-                          <th scope="col">QCR ISSUE FROM</th>
-                          <th scope="col">QCR ISSUE TO</th>
-
-                          <th scope="col">FINAL STATUS </th>
-                          <th scope="col">FINAL CODE</th>
-
-                          <th scope="col">REV. NO.</th>
-                          <th scope="col">SUBMISSION DATE</th>
-                      
-                          <th scope="col">ACTION DATE</th>
-                          <th scope="col">Overdue ( Days)</th>
-                          <th scope="col">RESPONSE</th>
-                          <th scope="col">code</th>
-                      
-                          <th scope="col">SUBM. RESPONSABILITY</th>
-                          <th scope="col">BALL IN COURT</th>
-                          <th scope="col"> ATTACHED </th>
-                          <th scope="col">REMARKS </th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <th scope="row">1</th>
-                          <td>9-1-2023</td>
-                          <td>DC MOBILY- RIYADH</td>
-                          <td>DCRJ-RIY-SUR-00-230727</td>
-                          <td>DCRJ-RIY-SUR-00-230727</td>
-                         
-                          <td>MECH</td>
-                          <td>FIRST FLOOR SLAB</td>
-                          <td>EGEC</td>
-                          <td>MMR </td>
-                          <td>APPROVED</td>
-                         
-                          <td>B</td>
-                          <td>
-                            <table class="table table-bordered table-tow-td">
-                              <td>r00</td>
-                              <td>r01</td>
-                              <td>r02</td>
-                              <td>r03</td>
-                            </table>
+                    <div class="table-responsive card-datatable text-nowrap">
+                      <table class="table table-bordered dt-scrollableTable">
+                        <thead>
+                          <tr>
+                            <th scope="col">SR. No.</th>
+                            <th scope="col"> SUPPLIER NAME</th>
+                            <th scope="col">SUPPLIER CATEGORY</th>
+                            <th scope="col">TAX NUMBER</th>
+                            <th scope="col"> E-MAIL</th>
+                            <th scope="col">CELL PHONE</th>
+                            <th scope="col">FAX NUMBER</th>
+                            <th scope="col">COMMERCIAL REGISTER</th>
+                            <th scope="col">INITIAL BALANCE</th>
+                            <th  scope="col">THE ACCOUNT</th>
                             
+                            <th scope="col">action</th>
+                          </tr>
                          
-                          </td>
-                      <td>
-                        <table class="table table-bordered table-tow-td">
-                          <td>16-9-2023</td>
-                          <td>16-9-2023</td>
-                          <td>20-9-2023</td>
-                          <td>10-9-2023</td>
-                        </table>
-                      </td>
-                      <td>
-                        <table class="table table-bordered table-tow-td">
-                          <td>16-9-2023</td>
-                          <td>16-9-2023</td>
-                          <td>20-9-2023</td>
-                          <td>10-9-2023</td>
-                        </table>
-                      </td>
-                      <td>
-                        <table class="table table-bordered table-tow-td">
-                           <td>4</td>
-                          <td>4</td>
-                          <td>7</td>
-                          <td>7</td>
-                      </table>
-                     </td>
-                      <td>
-                        <table class="table table-bordered table-tow-td">
-                          <td>
-                            REJECT
-                          </td>
-                          <td>
-                            REJECT
-                          </td>
-                          <td>
-                            REJECT
-                          </td>
-                          <td>
-                            APPROVED
-                          </td>
-                        </table>
-                      </td>
-                      
-                          <td>
-                            <table class="table table-bordered table-tow-td">
-                              <td>d</td>
-                              <td>c</td>
-                              <td>c</td>
-                              <td>b</td>
-                            </table>
-                          </td>
-                    
-                            <td>
-                              LOAY SAYMA
-
-                            </td>
-                            <td>
-                              <table class="table table-bordered table-tow-td">
-                                <td>MMR</td>
-                                <td>EGEC</td>
-                                <td>MOBILY</td>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>1</td>
+                            <td>2023-09-01</td>
+                            <td>DC MOBILY- RIYADH</td>
                           
-                              </table>
+                            <td>1001002
                             </td>
                             <td></td>
-                          <td></td>
-                        </tr>
-                        
-                        
-                      </tbody>
-                    </table>
-                   </div>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                           
+                            
+                            <td>
+                                <div class="d-flex">
+                                  <button class="bg-primary  btn text-bg-primary p-1 d-flex align-items-center justify-content-center  rounded " title="  تعديل" data-bs-target="#editModal" data-bs-toggle="modal"><i class="ti ti-pencil  fs-4"></i></button>
+                                  <a class="bg-danger text-bg-danger p-1 d-flex align-items-center justify-content-center mx-3 rounded" href="javascript:void(0);" title="حذف  " data-bs-target="#closeRoleModal" data-bs-toggle="modal"><i class="ti ti-trash  fs-4"></i> </a>
+
+                                </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
                 </div>
                </div>
             </div>
             <!-- / Content -->
-          
+            <!-- Modal --edit-->
+            <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">  update vendors</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <form class="form-content  row mx-0">
+
+                      <div class="mb-3 col-md-4 col-12">
+                        <label for="exampleFormControlInput1" class="form-label">Supplier name</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Supplier name">
+                      </div>
+                      <div class="mb-3 col-md-4 col-12">
+                        <label for="select2Basic" class="form-label">Supplier category</label>
+                        <select id="select2Basic" class="select2 form-select" data-allow-clear="true">
+                          <option value="LETTER">Supplier category </option>
+                          <option value="VIDEO">1 </option>
+                          <option value="PHOTO">1 </option>
+                          <option value="SI">1 </option>
+                          <option value="CERTIFICATE">1</option>
+                          <option value="OTHER">1</option>
+                        </select>
+                      </div>
+                      <div class="mb-3 col-md-4 col-12">
+                        <label for="exampleFormControlInputno" class="form-label">Tax Number </label>
+                        <input type="text" class="form-control" id="exampleFormControlInputno" placeholder="Tax Number">
+                      </div>
+                      <div class="mb-3 col-md-4 col-12">
+                        <label for="exampleFormControlInput2" class="form-label">E-mail</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput2" placeholder=" E-mail">
+                      </div>
+                      <div class="mb-3 col-md-4 col-12">
+                        <label for="exampleForm-by" class="form-label"> cell phone </label>
+                        <input type="text" class="form-control" id="exampleForm-by" placeholder="cell phone">
+                      </div>
+                  
+                      <div class="mb-3 col-md-4 col-12">
+                        <label for="exampleForm-to" class="form-label">Fax Number</label>
+                        <input type="text" class="form-control" id="exampleForm-to" placeholder="Fax Number">
+                      </div>
+                      <div class="mb-3 col-md-4 col-12">
+                        <label for="exampleForm-ac" class="form-label"> commercial register
+                        </label>
+                        <input type="text" class="form-control" id="exampleForm-ac" placeholder="commercial register">
+                      </div>
+                      <div class="mb-3 col-md-4 col-12">
+                        <label for="exampleForm-ac" class="form-label">Initial Balance </label>
+                        <input type="text" class="form-control" id="exampleForm-ac" placeholder="Initial Balance ">
+                      </div>
+                      <div class="mb-3 col-md-4 col-12">
+                        <label for="select2Basic-percussion" class="form-label">the account</label>
+                        <select id="select2Basic" class="select2 form-select" data-allow-clear="true">
+                          <option value="1">1 </option>
+                          <option value="1">1 </option>
+                          <option value="1">1 </option>
+                          <option value="1">1 </option>
+                          <option value="1">1</option>
+                          <option value="1">1</option>
+                        </select>
+                      </div>
+
+                            <div>
+                              <button type="submit" class="btn btn-primary me-sm-3 px-5 me-1 waves-effect waves-light">update</button>
+                            </div>
+                    </form>
+                  </div>
+                
+                </div>
+              </div>
+            </div>
+            <!-- delet Modal -->
+            <div class="modal fade" id="closeRoleModal" tabindex="-1" aria-hidden="true">
+              <div class="modal-dialog modal-lg modal-dialog-centered modal-add-new-role">
+                <div class="modal-content p-1 p-md-3">
+                  <button
+                    type="button"
+                    class="btn-close btn-pinned"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"></button>
+                  <div class="modal-body text-center">
+                      <h3 class="role-title mb-2 fs-4"> The private project will be deleted?
+                      </h3>
+                    
+                    <div class="col-11 col-lg-12 mb-3">
+                      <button type="submit" class="btn btn-primary  waves-effect waves-light">delet</button>
+                      <button  type="submit" class="btn btn-label-secondary waves-effect mx-3"> cancell</button>
+                    </div>
+                  
+                
+                  </div>
+                </div>
+              </div>
+            </div>
             <!-- Footer -->
             <footer class="content-footer footer bg-footer-theme">
               <div class="container-xxl">

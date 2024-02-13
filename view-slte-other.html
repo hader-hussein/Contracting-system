@@ -68,7 +68,7 @@
       <div class="layout-container">
         <!-- Menu -->
 
-        <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
+        <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme navber-index">
           <div class="app-brand demo">
             <a href="index.html" class="app-brand-link">
                 <img src="./assets/img/img-dashboards/logo.png" alt="logo">
@@ -324,17 +324,23 @@
                   </a>
                 </li>
                 <li class="menu-item">
-                  <a href="add-slte-other.html" class="menu-link">
+                  <a href="add-slte-close.html" class="menu-link">
                     <div data-i18n="close-out documents">close-out documents</div>
                   </a>
                 </li>
-                
+                <!--12-2-2024-->
+                <li class="menu-item">
+                  <a href="add-slte-archive.html" class="menu-link">
+                    <div data-i18n="ARCHIVE">ARCHIVE</div>
+                  </a>
+                </li>
+                    <!--12-2-2024-->
               </ul>
             </li>
             <!-- invoices -->
             <li class="menu-item">
               <a href="javascript:void(0);" class="menu-link menu-toggle">
-                <i class="menu-icon tf-icons ti ti-id"></i>
+                <i class="menu-icon tf-icons ti ti-file-dollar"></i>
                 <div data-i18n="invoices">invoices</div>
               
               </a>
@@ -390,9 +396,46 @@
                     <div data-i18n="subcontRactoRvos">subcontRactoRvos(2)</div>
                   </a>
                 </li>
-              
+               
 
               </ul>
+            </li>
+              <!--STORE-12-2-2024-->
+             <li class="menu-item">
+              <a href="javascript:void(0);" class="menu-link menu-toggle">
+                <i class="menu-icon tf-icons ti ti-forms"></i>
+
+                <div data-i18n="Store"> Store</div>
+              </a>
+              <ul class="menu-sub">
+                <li class="menu-item">
+                  <a href="progress-STORE.html" class="menu-link">
+                    <div data-i18n=" STORE  IN & OUT"> STORE  IN & OUT</div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item">
+              <a href="vendors.html" class="menu-link">
+                <i class="menu-icon tf-icons ti ti-user-check"></i>
+                
+                <div data-i18n="vendors">vendors</div>
+              </a>
+            </li>
+            
+            <li class="menu-item">
+              <a href="materials.html" class="menu-link">
+                <i class="menu-icon tf-icons ti ti-color-swatch"></i>
+                
+                <div data-i18n="materials">materials</div>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="units.html" class="menu-link">
+                <i class="menu-icon tf-icons ti ti-components"></i>
+                
+                <div data-i18n="units">units</div>
+              </a>
             </li>
           </ul>
         </aside>
@@ -919,10 +962,10 @@
                     <div class="d-flex justify-content-between align-items-center flex-wrap">
                       <div class="text-card">
                         <h5 class="fs-4 fw-bold text-capitalize">slte</h5>
-                        <h6 class="py-1 text-capitalize"><span class="text-muted fw-light text-capitalize px-2">dashboard /</span>view other</h6>
+                        <h6 class="py-1 text-capitalize"><span class="text-muted fw-light text-capitalize px-2">dashboard /</span>view CLOSE-OUT DOCUMENTS</h6>
                       </div>
                       <div class="button-hadeer">
-                        <a href="add-slte-other.html" class="btn btn-primary waves-effect waves-light text-capitalize px-6">add other</a>
+                        <a href="add-slte-close.html" class="btn btn-primary waves-effect waves-light text-capitalize px-6">add CLOSE-OUT</a>
                       </div>
                     </div>
                    
@@ -934,54 +977,66 @@
                     <table class="table table-bordered dt-scrollableTable">
                       <thead>
                         <tr>
-                          <th scope="col">SR. No.</th>
+                          <th scope="col" rowspan="2">SR. No.</th>
+                          <th scope="col" rowspan="2">DATE </th>
                          
-                         
-                          <th scope="col">PROJECT NAME</th>
-                          <th scope="col">SUBMITTAL NO.</th>
+                          <th scope="col" rowspan="2">PROJECT NAME</th>
+                          <th scope="col" rowspan="2">DISCIPLINE</th>
                       
-                          <th scope="col">QUALITY REPORT NO.</th>
-                          <th scope="col">DISCIP LINE </th>
-                          <th scope="col"> REPORT DISCRIPTION</th>
-                          <th scope="col">QUALITY STATUS</th>
-                          <th scope="col">ISSUE TO</th>
+                          <th scope="col" rowspan="2">SUB DISCIPLINE</th>
+                          <th scope="col"rowspan="2"> DISCRIPTION</th>
+                          <th scope="col"rowspan="2"> SUBMISSION PARTY</th>
+                          <th scope="col" colspan="4">T & C			</th>
+                          <th scope="col"rowspan="2">WARRANTIES</th>
 
-                          <th scope="col">FINAL STATUS </th>
-                          <th scope="col">FINAL CODE</th>
-                          <th scope="col">action</th>
+                          <th scope="col"rowspan="2">OPERATION MANUALS </th>
+                          <th scope="col"rowspan="2">MAINTENANCE MANUALS </th>
+                          <th scope="col"rowspan="2">SPARE PART LIST </th>
+                          <th scope="col"rowspan="2">CRITICAL ALARM LIST </th>
+                          <th scope="col"rowspan="2">ACTION BY</th>
+                          <th scope="col"rowspan="2">REMARKS </th>
+                          <th scope="col"rowspan="2"> ATTACHED</th>
+                          <th scope="col"rowspan="2">action</th>
 
+                        </tr>
+                        <tr>
+                            <th>L1  ( FAT )</th>
+                            <th>L2  ( MIR )</th>
+                            <th>L3</th>
+                            <th>L4</th>                      
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
                           <th scope="row">1</th>
+                          <td>9/1/2023</td>
                           <td>DC MOBILY- RIYADH</td>
-                          <td>DCRJ-RIY-SUR-00-230727</td>
-                          <td>DCRJ-RIY-SUR-00-230727</td>
+                          <td>ELE</td>
+                          <td>ELE. EQUIPMENT</td>
                          
-                          <td>MECH</td>
-                          <td>FIRST FLOOR SLAB</td>
-                          <td>RECEIVED</td>
-                          <td>FFI</td>
-                          <td>APPROVED</td>
+                          <td>GENERATORS</td>
+                          <td>MMR</td>
+                          <td>NOT SUBMITTED</td>
+                          <td>AVAILABLE</td>
+                          <td>AVAILABLE</td>
                          
-                          <td>B</td>
+                          <td>AVAILABLE</td>
+                          <td>AVAILABLE</td>
+                          <td>AVAILABLE</td>
+
+                          <td>NOT REQUIRED</td>
+                         
+                          <td>NOT SUBMITTED</td>
+                          <td>AVAILABLE</td>
+                          <td>LOAY SAYMA</td>
+                          <td></td>
+                          <td></td>
                           <td class="">
                             <div class="d-flex">
                               <button class="bg-primary  btn text-bg-primary p-1 d-flex align-items-center justify-content-center  rounded " title="  تعديل" data-bs-target="#editModal" data-bs-toggle="modal"><i class="ti ti-pencil  fs-4"></i></button>
-                              <div class="dropdown">
-                                <button type="button" class="btn  p-1 dropdown-toggle hide-arrow bg-body-tertiary shadow" data-bs-toggle="dropdown" aria-expanded="false" titl="اضافه مستندات جديدة">
-                                  <i class="ti ti-dots-vertical"></i>
-                                </button>
-                                <div class="dropdown-menu">
-                                  <a class="dropdown-item" href="javascript:void(0);" data-bs-target="#newModal" data-bs-toggle="modal"><i class="ti ti-file  me-1"></i> new douments</a>
-                                  <a class="dropdown-item" href="javascript:void(0);" data-bs-target="#veiwModal" data-bs-toggle="modal"><i class="ti-xs me-1 ti ti-eye-check me-1"></i> View-new doument</a>
-                                  <a class="dropdown-item" href="javascript:void(0);" data-bs-target="#edit-new-Modal" data-bs-toggle="modal"><i class="ti ti-pencil me-1"></i> update douments</a>
-                                </div>
-                              </div>
-                              <a class="bg-success text-white p-1 d-flex align-items-center justify-content-center me-3 rounded" href="view-all-slte-other.html" title="مشاهدة المشروع "><i class="ti-xs ti ti-eye-check "></i></a>
+                             
 
-                              <a class="bg-danger text-bg-danger p-1 d-flex align-items-center justify-content-center me-3 rounded" href="javascript:void(0);" title="حذف  " data-bs-target="#closeRoleModal" data-bs-toggle="modal"><i class="ti ti-trash  fs-4"></i> </a>
+                              <a class="bg-danger text-bg-danger p-1 d-flex align-items-center justify-content-center mx-3 rounded" href="javascript:void(0);" title="حذف  " data-bs-target="#closeRoleModal" data-bs-toggle="modal"><i class="ti ti-trash  fs-4"></i> </a>
                             
                             </div>
                           
@@ -1001,81 +1056,157 @@
               <div class="modal-dialog modal-xl">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">  update site other </h1>
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">  update site CLOSE-OUT DOCUMENTS </h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <div class="modal-body">
                     <form class="form-content  row mx-0">
-                  
                       <div class="mb-3 col-md-4 col-12">
-                        <label for="exampleFormControlInput1" class="form-label">PROJECT NAME</label>
-                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="PROJECT NAME">
+                        <label for="exampleFormControldata" class="form-label">DATE</label>
+                        <input type="date" class="form-control" id="exampleFormControldata">
                       </div>
-                      <div class="mb-3 col-md-4 col-12">
-                        <label for="exampleFormControlInputnop" class="form-label">SUBMITTAL NO. </label>
-                         <input type="text" class="form-control" id="exampleFormControlInputnop" placeholder="SUBMITTAL NO.">
-                      </div>
-                      <div class="mb-3 col-md-4 col-12">
-                        <label for="exampleFormControlInputnoO" class="form-label">QUALITY REPORT NO. </label>
-                        <input type="text" class="form-control" id="exampleFormControlInputnoO" placeholder="BUILDING NAME">
-                      </div>
-                    
-                      <div class="mb-3 col-md-4 col-12">
-                        <label for="select2Basic" class="form-label">DISCIPL INE </label>
-                        <select id="select2Basic" class="select2 form-select" data-allow-clear="true">
-                          <option value="ar">arch </option>
-                          <option value="st">stru </option>
-                          <option value="me">mech </option>
-                          <option value="el">ELE </option>
-                          <option value="ot">OTHER</option>
-                        </select>
-                      </div>
-                      <div class="mb-3 col-md-4 col-12">
-                        <label for="exampleFormMitigation" class="form-label"> REPORT DISCRIPTION </label>
-                        <textarea class="form-control" id="exampleFormMitigation" placeholder=" SNAG DESCRIPTION" rows="1"></textarea>
-                      </div>
-                      <div class="mb-3 col-md-4 col-12">
-                        <label for="exampleFormControlrifO" class="form-label">
-                          QUALITY STATUS
-
-                        </label>
-                        <select id="exampleFormControlrifO" class="select2 form-select" data-allow-clear="true">
-                          <option value="li">ISSUE </option>
-                          <option value="l2">RECEIVED </option>
-                  
-                        </select>                   
-                      
-                      </div>
-
-                      <div class="mb-3 col-md-4 col-12">
-                        <label for="exampleFormControlrif" class="form-label">ISSUE TO</label>
-                        <input type="text" class="form-control" id="exampleFormControlrif" placeholder="ISSUE TO">
-                      </div>
-                      
-                    
-                      <div class="mb-3 col-md-4 col-12">
-                        <label for="select2Basic3" class="form-label">FINAL STATUS </label>
-                        <select id="select2Basic3" class="select2 form-select" data-allow-clear="true">
-                          <option value="OP">open</option>
-                          <option value="CL">CLOSED</option>
-                          <option value="UN">UNDER REVIEW</option>
-                        </select>
-                      </div>
-                      <div class="mb-3 col-md-4 col-12">
-                        <label for="select2Basic4" class="form-label">FINAL CODE</label>
-                        <select id="select2Basic4" class="select2 form-select" data-allow-clear="true">
-                          <option value="A">A</option>
-                          <option value="B">B</option>
-                          <option value="C">C</option>
-                          <option value="D">D</option>
-                        </select>
-                      </div>
-                 
-
-                      <div>
-                        <button type="submit" class="btn btn-primary me-sm-3 px-5 me-1 waves-effect waves-light">update</button>
-                      </div>
-                   </form>
+                        <div class="mb-3 col-md-4 col-12">
+                          <label for="exampleFormControlInput1" class="form-label">PROJECT NAME</label>
+                          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="PROJECT NAME">
+                        </div>
+                        <div class="mb-3 col-md-4 col-12">
+                          <label for="select2Basic" class="form-label">DISCIPL INE </label>
+                          <select id="select2Basic" class="select2 form-select" data-allow-clear="true">
+                            <option value="ar">arch </option>
+                            <option value="st">stru </option>
+                            <option value="me">mech </option>
+                            <option value="el">ELE </option>
+                            <option value="ot">OTHER</option>
+                          </select>
+                        </div>
+                        <div class="mb-3 col-md-4 col-12">
+                          <label for="exampleFormControlInputnop" class="form-label">SUB DISCIPLINE</label>
+                           <input type="text" class="form-control" id="exampleFormControlInputnop" placeholder="SUB DISCIPLINE ">
+                        </div>
+                        <div class="mb-3 col-md-4 col-12">
+                          <label for="exampleFormMitigation" class="form-label"> DISCRIPTION </label>
+                          <textarea class="form-control" id="exampleFormMitigation" placeholder=" SNAG DESCRIPTION" rows="1"></textarea>
+                        </div>
+                        <div class="mb-3 col-md-4 col-12">
+                          <label for="exampleFormControlInputnoO" class="form-label">SUBMISSION PARTY
+                          </label>
+                          <input type="text" class="form-control" id="exampleFormControlInputnoO" placeholder="SUBMISSION PARTY">
+                        </div>
+                         <h6 class="fs-4 fw-bold">T & C			</h6>
+                        <div class="mb-3 col-md-3 col-12">
+                          <label for="select2Basic3" class="form-label">L1  ( FAT ) </label>
+                          <select id="select2Basic3" class="select2 form-select" data-allow-clear="true">
+                            <option value="AV">AVAILABLE</option>
+                            <option value="UN">UNDER REVIEW</option>
+                            <option value="NOT">NOT REQUIRED</option>
+                            <option value="NOT-SUBM">NOT SUBMITTED</option>
+                            <option value="..OTHER">........</option>
+                          </select>
+                        </div>
+                        <div class="mb-3 col-md-3 col-12">
+                          <label for="select2Basic4" class="form-label">L2  ( MIR )</label>
+                          <select id="select2Basic4" class="select2 form-select" data-allow-clear="true">
+                            <option value="AV">AVAILABLE</option>
+                            <option value="UN">UNDER REVIEW</option>
+                            <option value="NOT">NOT REQUIRED</option>
+                            <option value="NOT-SUBM">NOT SUBMITTED</option>
+                            <option value="..OTHER">........</option>
+                          </select>
+                        </div>
+                        <div class="mb-3 col-md-3 col-12">
+                          <label for="select-L3" class="form-label">L3</label>
+                          <select id="select-L3" class="select2 form-select" data-allow-clear="true">
+                            <option value="AV">AVAILABLE</option>
+                            <option value="UN">UNDER REVIEW</option>
+                            <option value="NOT">NOT REQUIRED</option>
+                            <option value="NOT-SUBM">NOT SUBMITTED</option>
+                            <option value="..OTHER">........</option>
+                          </select>
+                        </div>
+                        <div class="mb-3 col-md-3 col-12">
+                          <label for="select-L4" class="form-label">L4</label>
+                          <select id="select-L4" class="select2 form-select" data-allow-clear="true">
+                            <option value="AV">AVAILABLE</option>
+                            <option value="UN">UNDER REVIEW</option>
+                            <option value="NOT">NOT REQUIRED</option>
+                            <option value="NOT-SUBM">NOT SUBMITTED</option>
+                            <option value="..OTHER">........</option>
+                          </select>
+                        </div>
+                        <div class="mb-3 col-md-4 col-12">
+                          <label for="select-WA" class="form-label">WARRANTIES
+                          </label>
+                          <select id="select-WA" class="select2 form-select" data-allow-clear="true">
+                            <option value="AV">AVAILABLE</option>
+                            <option value="UN">UNDER REVIEW</option>
+                            <option value="NOT">NOT REQUIRED</option>
+                            <option value="NOT-SUBM">NOT SUBMITTED</option>
+                            <option value="..OTHER">........</option>
+                          </select>
+                        </div>
+                        <div class="mb-3 col-md-4 col-12">
+                          <label for="select-OPM" class="form-label">OPERATION MANUALS
+  
+                          </label>
+                          <select id="select-OPM" class="select2 form-select" data-allow-clear="true">
+                            <option value="AV">AVAILABLE</option>
+                            <option value="UN">UNDER REVIEW</option>
+                            <option value="NOT">NOT REQUIRED</option>
+                            <option value="NOT-SUBM">NOT SUBMITTED</option>
+                            <option value="..OTHER">........</option>
+                          </select>
+                        </div>
+                        <div class="mb-3 col-md-4 col-12">
+                          <label for="select-MAI" class="form-label">MAINTENANCE MANUALS </label>
+                          <select id="select-MAI" class="select2 form-select" data-allow-clear="true">
+                            <option value="AV">AVAILABLE</option>
+                            <option value="UN">UNDER REVIEW</option>
+                            <option value="NOT">NOT REQUIRED</option>
+                            <option value="NOT-SUBM">NOT SUBMITTED</option>
+                            <option value="..OTHER">........</option>
+                          </select>
+                        </div>
+                        <div class="mb-3 col-md-4 col-12">
+                          <label for="select-SPA" class="form-label">SPARE PART LIST 
+                          </label>
+                          <select id="select-SPA" class="select2 form-select" data-allow-clear="true">
+                            <option value="AV">AVAILABLE</option>
+                            <option value="UN">UNDER REVIEW</option>
+                            <option value="NOT">NOT REQUIRED</option>
+                            <option value="NOT-SUBM">NOT SUBMITTED</option>
+                            <option value="..OTHER">........</option>
+                          </select>
+                        </div>
+                        <div class="mb-3 col-md-4 col-12">
+                          <label for="select-CR" class="form-label">CRITICAL ALARM LIST
+  
+                          </label>
+                          <select id="select-CR" class="select2 form-select" data-allow-clear="true">
+                            <option value="AV">AVAILABLE</option>
+                            <option value="UN">UNDER REVIEW</option>
+                            <option value="NOT">NOT REQUIRED</option>
+                            <option value="NOT-SUBM">NOT SUBMITTED</option>
+                            <option value="..OTHER">........</option>
+                          </select>
+                        </div>
+                        <div class="mb-3 col-lg-4 col-md-6">
+                          <label for="exampleFormControlInputac" class="form-label">ACTION BY</label>
+                          <input type="text" class="form-control" id="exampleFormControlInputac" placeholder="ACTION BY">
+                        </div>
+                        <div class="mb-3 col-md-4 col-12">
+                          <label for="exampleFormControlInput2" class="form-label"> ATTACHED
+  
+                          </label>
+                          <input type="file" class="form-control" id="exampleFormControlInput2">
+                        </div>
+                        <div class="mb-3 col-md-8 col-12">
+                          <label for="exampleFormControlInput2" class="form-label">REMARKS </label>
+                          <textarea class="form-control" id="exampleFormControlInput2" placeholder="REMARK" rows="1"></textarea>
+                        </div>
+                        <div>
+                          <button type="submit" class="btn btn-primary me-sm-3 px-5 me-1 waves-effect waves-light">update</button>
+                        </div>
+                     </form>
                   </div>
                 
                 </div>

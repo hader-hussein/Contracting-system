@@ -13,7 +13,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
 
-    <title>view-all-slte-qcrs</title>
+    <title>materials</title>
 
     <meta name="description" content="" />
 
@@ -46,7 +46,6 @@
     <link rel="stylesheet" href="./assets/vendor/libs/swiper/swiper.css" />
     <link rel="stylesheet" href="./assets/vendor/libs/datatables-bs5/datatables.bootstrap5.css" />
     <link rel="stylesheet" href="./assets/vendor/libs/datatables-responsive-bs5/responsive.bootstrap5.css" />
-
     <link rel="stylesheet" href="./assets/vendor/libs/datatables-checkboxes-jquery/datatables.checkboxes.css" />
 
     <!-- Page CSS -->
@@ -59,7 +58,6 @@
     <script src="./assets/vendor/js/template-customizer.js"></script>
     <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
     <script src="./assets/js/config.js"></script>
-
   </head>
 
   <body>
@@ -961,11 +959,11 @@
                   <div class="card-body py-3 px-4 card-widget-separator">
                     <div class="d-flex justify-content-between align-items-center flex-wrap">
                       <div class="text-card">
-                        <h5 class="fs-4 fw-bold text-capitalize">slte</h5>
-                        <h6 class="py-1 text-capitalize"><span class="text-muted fw-light text-capitalize px-2">dashboard /</span>view all Qcrs</h6>
+                        <h5 class="fs-4 fw-bold text-capitalize text-card-title">materials</h5>
+                        <h6 class="py-1 text-capitalize"><span class="text-muted fw-light text-capitalize px-2">dashboard /</span>materials</h6>
                       </div>
                       <div class="button-hadeer">
-                        <a href="add-slte-qcrs.html" class="btn btn-primary waves-effect waves-light text-capitalize px-6">add Qcrs</a>
+                        <a href="materials.html" class="btn btn-primary waves-effect waves-light text-capitalize px-5">add materials</a>
                       </div>
                     </div>
                    
@@ -973,140 +971,274 @@
                </div>
                <div class="card mt-3">
                 <div class="card-body py-3 px-4 card-widget-separator">
-                   <div class="table-responsive card-datatable text-nowrap">
-                    <table class="table table-bordered dt-scrollableTable">
+                  <div class="table-responsive text-nowrap rounded card-datatable pt-4 pb-4">
+
+                    <table class="table table-bordered table-hover rounded tabel-table" id="my-table">
                       <thead>
-                        <tr>
-                          <th scope="col">SR. No.</th>
-                        
-                          <th scope="col">DATE </th>
-                         
-                          <th scope="col">PROJECT NAME</th>
-                          <th scope="col">SUBMITTAL NO.</th>
-                      
-                          <th scope="col">QCR NO.</th>
-                          <th scope="col">DISCIP LINE </th>
-                          <th scope="col"> QCR DISCRIPTION</th>
-                          <th scope="col">QCR ISSUE FROM</th>
-                          <th scope="col">QCR ISSUE TO</th>
-
-                          <th scope="col">FINAL STATUS </th>
-                          <th scope="col">FINAL CODE</th>
-
-                          <th scope="col">REV. NO.</th>
-                          <th scope="col">SUBMISSION DATE</th>
-                      
-                          <th scope="col">ACTION DATE</th>
-                          <th scope="col">Overdue ( Days)</th>
-                          <th scope="col">RESPONSE</th>
-                          <th scope="col">code</th>
-                      
-                          <th scope="col">SUBM. RESPONSABILITY</th>
-                          <th scope="col">BALL IN COURT</th>
-                          <th scope="col"> ATTACHED </th>
-                          <th scope="col">REMARKS </th>
-                        </tr>
+                         <th>SR. NO.</th>
+                         <th>Item No</th>
+                         <th>Barcode</th>
+                         <th>Product Name</th>
+                         <th>The name of the variety in English</th>
+                         <th>Category</th>
+                         <th>Purchasing price</th>
+                         <th>selling price</th>
+                         <th>Type</th>
+                         <th></th>
+                       
                       </thead>
                       <tbody>
-                        <tr>
-                          <th scope="row">1</th>
-                          <td>9-1-2023</td>
-                          <td>DC MOBILY- RIYADH</td>
-                          <td>DCRJ-RIY-SUR-00-230727</td>
-                          <td>DCRJ-RIY-SUR-00-230727</td>
-                         
-                          <td>MECH</td>
-                          <td>FIRST FLOOR SLAB</td>
-                          <td>EGEC</td>
-                          <td>MMR </td>
-                          <td>APPROVED</td>
-                         
-                          <td>B</td>
-                          <td>
-                            <table class="table table-bordered table-tow-td">
-                              <td>r00</td>
-                              <td>r01</td>
-                              <td>r02</td>
-                              <td>r03</td>
-                            </table>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                          <div class="d-flex">
+                            <button class="bg-primary  btn text-bg-primary p-1 d-flex align-items-center justify-content-center  rounded " title="  تعديل" data-bs-target="#editModal" data-bs-toggle="modal"><i class="ti ti-pencil  fs-4"></i></button>
                             
-                         
-                          </td>
-                      <td>
-                        <table class="table table-bordered table-tow-td">
-                          <td>16-9-2023</td>
-                          <td>16-9-2023</td>
-                          <td>20-9-2023</td>
-                          <td>10-9-2023</td>
-                        </table>
-                      </td>
-                      <td>
-                        <table class="table table-bordered table-tow-td">
-                          <td>16-9-2023</td>
-                          <td>16-9-2023</td>
-                          <td>20-9-2023</td>
-                          <td>10-9-2023</td>
-                        </table>
-                      </td>
-                      <td>
-                        <table class="table table-bordered table-tow-td">
-                           <td>4</td>
-                          <td>4</td>
-                          <td>7</td>
-                          <td>7</td>
-                      </table>
-                     </td>
-                      <td>
-                        <table class="table table-bordered table-tow-td">
-                          <td>
-                            REJECT
-                          </td>
-                          <td>
-                            REJECT
-                          </td>
-                          <td>
-                            REJECT
-                          </td>
-                          <td>
-                            APPROVED
-                          </td>
-                        </table>
-                      </td>
-                      
-                          <td>
-                            <table class="table table-bordered table-tow-td">
-                              <td>d</td>
-                              <td>c</td>
-                              <td>c</td>
-                              <td>b</td>
-                            </table>
-                          </td>
-                    
-                            <td>
-                              LOAY SAYMA
 
-                            </td>
-                            <td>
-                              <table class="table table-bordered table-tow-td">
-                                <td>MMR</td>
-                                <td>EGEC</td>
-                                <td>MOBILY</td>
-                          
-                              </table>
-                            </td>
-                            <td></td>
-                          <td></td>
-                        </tr>
-                        
-                        
+                            <a class="bg-danger text-bg-danger p-1 d-flex align-items-center justify-content-center mx-3 rounded" href="javascript:void(0);" title="حذف  " data-bs-target="#closeRoleModal" data-bs-toggle="modal"><i class="ti ti-trash  fs-4"></i> </a>
+                            <a class="bg-label-success text-bg-success p-1 d-flex align-items-center justify-content-center rounded" href="#" title="طباعة  " ><i class="fa-solid fa-print fs-4"></i> </a>
+
+                          </div>
+                        </td>
                       </tbody>
                     </table>
-                   </div>
+                  </div>
                 </div>
                </div>
             </div>
             <!-- / Content -->
-          
+ <!-- Modal --edit-->
+ <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">  update materals </h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="accordion from-cllapse" id="accordionExample">
+          <form class="form-content  row mx-0">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    materials data
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                      <div class="row mx-0">
+                      <label class="form-check-label fs-4 fw-bold mb-3">materials Type</label>
+                    
+                        <div class="mb-3 mx-0 col-md-4 col-12 form-check form-check-inline">
+                          <input name="collapsible-address-type" class="form-check-input" type="radio" value="" id="collapsible-address-type-home" checked="">
+                          <label class="form-check-label" for="collapsible-address-type-home">Normal
+                            Producer</label>
+                        </div>
+                        <div class="mb-3 mx-0 col-md-4 col-12 form-check form-check-inline">
+                          <input name="collapsible-address-type" class="form-check-input" type="radio" value="" id="collapsible-address-type-office">
+                          <label class="form-check-label" for="collapsible-address-type-office">
+                            The dent product
+                          </label>
+                        </div>
+                        <div class="mb-3 mx-0 col-md-4 col-12 form-check form-check-inline">
+                          <input name="collapsible-address-type" class="form-check-input" type="radio" value="" id="collapsible-address-type-office">
+                          <label class="form-check-label" for="collapsible-address-type-office">
+                            Service types
+                          </label>
+                        </div>
+                        <hr>
+                     
+                        <div class="mb-3 col-md-4 col-12">
+                          <label for="exampleFormControlInput1" class="form-label">Name of the variety</label>
+                          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Name of the variety">
+                        </div>
+                        <div class="mb-3 col-md-4 col-12">
+                          <label for="exampleFormControlInputno" class="form-label">The name of the variety in English </label>
+                          <input type="text" class="form-control" id="exampleFormControlInputno" placeholder="The name of the variety in English">
+                        </div>
+                        <div class="mb-3 col-md-4 col-12">
+                          <label for="exampleFormControlInput2" class="form-label">Barcodes</label>
+                          <input type="text" class="form-control" id="exampleFormControlInput2" placeholder=" Barcodes">
+                        </div>
+                        <div class="mb-3 col-md-4 col-12">
+                          <label for="select2Basic" class="form-label">Category The main</label>
+                          <select id="select2Basic" class="select2 form-select" data-allow-clear="true">
+                            <option value="LETTER">LETTER </option>
+                            <option value="VIDEO">VIDEO </option>
+                            <option value="PHOTO">PHOTO </option>
+                            <option value="SI">SI </option>
+                            <option value="CERTIFICATE">CERTIFICATE</option>
+                            <option value="OTHER">OTHER</option>
+                          </select>
+                        </div>
+                        <div class="mb-3 col-md-4 col-12">
+                          <label for="select2Basic-percussion" class="form-label">Category Percussion</label>
+                          <select id="select2Basic" class="select2 form-select" data-allow-clear="true">
+                            <option value="LETTER">LETTER </option>
+                            <option value="VIDEO">VIDEO </option>
+                            <option value="PHOTO">PHOTO </option>
+                            <option value="SI">SI </option>
+                            <option value="CERTIFICATE">CERTIFICATE</option>
+                            <option value="OTHER">OTHER</option>
+                          </select>
+                        </div>
+                        <div class="mb-3 col-md-4 col-12">
+                          <label for="exampleForm-by" class="form-label"> Purchase price </label>
+                          <input type="text" class="form-control" id="exampleForm-by" placeholder="Purchase price ">
+                        </div>
+                    
+                        <div class="mb-3 col-md-4 col-12">
+                          <label for="exampleForm-to" class="form-label">Selling price</label>
+                          <input type="text" class="form-control" id="exampleForm-to" placeholder="Selling price">
+                        </div>
+                        <div class="mb-3 col-md-4 col-12">
+                          <label for="exampleForm-remarks" class="form-label">Class G Class </label>
+                          <textarea class="form-control" id="exampleForm-remarks" placeholder="Class G Class" rows="1"></textarea>
+                        </div>
+                        <div class="mb-3 col-md-4 col-12">
+                          <label for="exampleForm-remarks-tow" class="form-label">Describe the product in English </label>
+                          <textarea class="form-control" id="exampleForm-remarks-tow" placeholder="Describe the product in English" rows="1"></textarea>
+                        </div>
+                      
+                        <div class="mb-3 col-md-4 col-12">
+                          <label for="exampleForm-ac" class="form-label"> Less quantity
+                          </label>
+                          <input type="text" class="form-control" id="exampleForm-ac" placeholder="Less quantity">
+                        </div>
+                        <div class="mb-3 col-md-4 col-12">
+                          <label for="exampleForm-ac" class="form-label"> Value added tax</label>
+                          <input type="text" class="form-control" id="exampleForm-ac" placeholder="Value added tax">
+                        </div>
+                        <div class="mb-3 col-md-4 col-12">
+                          <label for="exampleForm-att" class="form-label"> Product picture
+
+
+                          </label>
+                          <input type="file" class="form-control" id="exampleForm-att">
+                        </div>
+                       
+                      </div>
+                  </div>
+                </div>
+                  
+             </div>
+               <!--item-->
+               <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Sizes
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <div class="table-responsive text-nowrap rounded card-datatable pt-4 pb-4">
+
+                        <table class="table table-bordered table-hover rounded tabel-table" id="my-table">
+                          <thead>
+                            <tr class="fw-bold">
+                              <th class="fw-bold"> SR. NO.</th>
+                              <th class="fw-bold"> Item code</th>
+                            
+                              <th class="fw-bold"> Choose the size</th>
+                              <th class="fw-bold"> Weight</th>
+                              <th class="fw-bold"> Size</th>
+                              <th class="fw-bold"> Quantity</th>
+                              <th class="fw-bold"> Price </th>
+                              <th class="fw-bold"> Purchasing price </th>
+                              <th class="fw-bold"> Unit</th>
+                              <th class="fw-bold"> Lowest selling price</th>
+                              <th class="fw-bold"> Basic size </th>
+                              <th class="fw-bold"> Sub-size </th>
+                              <th>
+
+                              </th>
+                            </tr>
+                          </thead>
+                          <tbody class="table-border-bottom-0">
+                            <tr>
+                          
+                              <td>  1</td>
+                        
+                              <td> 
+                                 
+                              
+                              </td>
+                              <td>  
+                                <select id="select" class="select2 form-select" data-allow-clear="true">
+                                  <option value="AK">   	CHOOSE THE SIZE</option>
+                                  <option value="HI">1</option>
+                                  <option value="CA">1</option>
+                                  <option value="NV">1</option>
+                                  <option value="OR">1</option>
+                              
+                                </select>
+                              </td>
+                              <td>
+                                <input type="number"class="form-control">
+                              </td>
+                              <td>  <input type="text"class="form-control"></td>
+                              <td><input type="number"class="form-control"></td>
+                              <td> <input type="text"class="form-control"> </td>
+                              <td><input type="text"class="form-control"></td>
+                              <td> <input type="text"class="form-control"> </td>
+                              <td><input type="text"class="form-control"></td>
+                              <td>  <input name="collap-type" class="form-check-input" type="radio" value="" id="colla-basic" checked=""></td>
+                              <td><input name="collap-type" class="form-check-input" type="radio" value="" id="sub-size" checked=""></td>
+                             
+                             
+                              <td class="d-flex">
+                                <a class="bg-danger text-bg-danger p-1 d-flex align-items-center justify-content-center me-3 rounded" href="javascript:void(0);" title="حذف"><i class="ti ti-trash  fs-4"></i> </a>
+                              
+                              </td>
+                            </tr>
+                          </tbody>
+                      
+                        </table>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <button type="submit" class="btn btn-primary me-sm-3 px-5 me-1 waves-effect waves-light">update</button>
+                </div>
+         </form>
+         </div>
+      </div>
+    
+    </div>
+  </div>
+</div>
+<!-- delet Modal -->
+<div class="modal fade" id="closeRoleModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered modal-add-new-role">
+    <div class="modal-content p-1 p-md-3">
+      <button
+        type="button"
+        class="btn-close btn-pinned"
+        data-bs-dismiss="modal"
+        aria-label="Close"></button>
+      <div class="modal-body text-center">
+          <h3 class="role-title mb-2 fs-4"> The private project will be deleted?
+          </h3>
+        
+        <div class="col-11 col-lg-12 mb-3">
+          <button type="submit" class="btn btn-primary  waves-effect waves-light">delet</button>
+          <button  type="submit" class="btn btn-label-secondary waves-effect mx-3"> cancell</button>
+        </div>
+      
+    
+      </div>
+    </div>
+  </div>
+</div>
             <!-- Footer -->
             <footer class="content-footer footer bg-footer-theme">
               <div class="container-xxl">
@@ -1168,5 +1300,6 @@
     <!-- Page JS -->
     <script src="./assets/js/dashboards-analytics.js"></script>
     <script src="./assets/js/forms-selects.js"></script>
+    <script src="./assets/vendor/js/accordion.js"></script>
   </body>
 </html>

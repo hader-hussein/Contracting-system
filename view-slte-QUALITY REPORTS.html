@@ -68,7 +68,7 @@
       <div class="layout-container">
         <!-- Menu -->
 
-        <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
+        <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme navber-index">
           <div class="app-brand demo">
             <a href="index.html" class="app-brand-link">
                 <img src="./assets/img/img-dashboards/logo.png" alt="logo">
@@ -324,17 +324,23 @@
                   </a>
                 </li>
                 <li class="menu-item">
-                  <a href="add-slte-other.html" class="menu-link">
+                  <a href="add-slte-close.html" class="menu-link">
                     <div data-i18n="close-out documents">close-out documents</div>
                   </a>
                 </li>
-                
+                <!--12-2-2024-->
+                <li class="menu-item">
+                  <a href="add-slte-archive.html" class="menu-link">
+                    <div data-i18n="ARCHIVE">ARCHIVE</div>
+                  </a>
+                </li>
+                    <!--12-2-2024-->
               </ul>
             </li>
             <!-- invoices -->
             <li class="menu-item">
               <a href="javascript:void(0);" class="menu-link menu-toggle">
-                <i class="menu-icon tf-icons ti ti-id"></i>
+                <i class="menu-icon tf-icons ti ti-file-dollar"></i>
                 <div data-i18n="invoices">invoices</div>
               
               </a>
@@ -390,9 +396,46 @@
                     <div data-i18n="subcontRactoRvos">subcontRactoRvos(2)</div>
                   </a>
                 </li>
-              
+               
 
               </ul>
+            </li>
+              <!--STORE-12-2-2024-->
+             <li class="menu-item">
+              <a href="javascript:void(0);" class="menu-link menu-toggle">
+                <i class="menu-icon tf-icons ti ti-forms"></i>
+
+                <div data-i18n="Store"> Store</div>
+              </a>
+              <ul class="menu-sub">
+                <li class="menu-item">
+                  <a href="progress-STORE.html" class="menu-link">
+                    <div data-i18n=" STORE  IN & OUT"> STORE  IN & OUT</div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item">
+              <a href="vendors.html" class="menu-link">
+                <i class="menu-icon tf-icons ti ti-user-check"></i>
+                
+                <div data-i18n="vendors">vendors</div>
+              </a>
+            </li>
+            
+            <li class="menu-item">
+              <a href="materials.html" class="menu-link">
+                <i class="menu-icon tf-icons ti ti-color-swatch"></i>
+                
+                <div data-i18n="materials">materials</div>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="units.html" class="menu-link">
+                <i class="menu-icon tf-icons ti ti-components"></i>
+                
+                <div data-i18n="units">units</div>
+              </a>
             </li>
           </ul>
         </aside>
@@ -936,7 +979,7 @@
                         <tr>
                           <th scope="col">SR. No.</th>
                          
-                         
+                         <th>DATE</th>
                           <th scope="col">PROJECT NAME</th>
                           <th scope="col">SUBMITTAL NO.</th>
                       
@@ -955,6 +998,7 @@
                       <tbody>
                         <tr>
                           <th scope="row">1</th>
+                          <td>1-9-2023</td>
                           <td>DC MOBILY- RIYADH</td>
                           <td>DCRJ-RIY-SUR-00-230727</td>
                           <td>20345222 </td>
@@ -1006,7 +1050,11 @@
                   </div>
                   <div class="modal-body">
                     <form class="form-content  row mx-0">
-                     
+                      <div class="mb-3 col-md-4 col-12">
+                        <label for="example-date" class="form-label">DATE 
+                        </label>
+                        <input type="date" class="form-control" id="example-date">
+                      </div>
                         <div class="mb-3 col-md-4 col-12">
                           <label for="exampleFormControlInput1" class="form-label">PROJECT NAME</label>
                           <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="PROJECT NAME">

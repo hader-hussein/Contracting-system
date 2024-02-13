@@ -6,6 +6,9 @@
      --color-text-secend:#010103;
      --color-text-there:#F0F4FF,
 }
+body{
+    text-transform: uppercase !important;
+}
 .app-brand-link img{
 width: 80%;
 margin: auto;
@@ -49,7 +52,7 @@ table td .dropdown{
 margin: 4px;
 }
 .modal-title{
-    text-transform: capitalize;
+    text-transform: uppercase;
     font-weight: bold;
     color: var(--color-text-bold);
     font-size: 24px !important;
@@ -57,4 +60,21 @@ margin: 4px;
 .menu-item.open > .menu-sub{
     box-shadow: 8px 5px 10px #d5d6d8;
     border-radius: 15px;
+}
+.menu-vertical .menu-inner > .menu-item .menu-link,.btn{
+    text-transform: uppercase !important;
+}
+.menu-vertical .menu-item .menu-sub .menu-link {
+    font-size: 0.8375rem !important;
+}
+.menu-vertical .menu-item .menu-toggle {
+    font-size: 0.9375rem !important;
+}
+.table-procurem th{
+    vertical-align: middle 
+}
+.accordion-button {
+    background-color:#121C47!important;
+    color: #fff !important;
+    font-size: 18px !important;
 }
