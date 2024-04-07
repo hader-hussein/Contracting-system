@@ -22,3 +22,11 @@ $('.accordion-button').on('keydown',function (e) {
     }
     
 });
+
+$('.accordion-button').on('keydown',function (e) {
+ 
+ 
+    $('.accordion-collapse').collapse("toggle")
+   
+    
+  })
