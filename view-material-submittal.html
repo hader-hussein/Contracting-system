@@ -52,6 +52,10 @@
     <!-- Page CSS -->
     <link rel="stylesheet" href="./assets/vendor/css/pages/cards-advance.css" />
     <link rel="stylesheet" href="./assets/css/style-dashboard.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Toastr -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
     <!-- Helpers -->
     <script src="./assets/vendor/js/helpers.js"></script>
     <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
@@ -59,7 +63,20 @@
     <script src="./assets/vendor/js/template-customizer.js"></script>
     <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
     <script src="./assets/js/config.js"></script>
-
+    <style>
+      .toast-success{
+        background-color: green;
+      }
+      .toast-info{
+        background-color: dodgerblue;
+      }
+      .toast-error{
+        background-color: brown;
+      }
+      .toast-warning{
+        background-color: coral;
+      }
+    </style>
   </head>
 
   <body>
@@ -967,6 +984,14 @@
                       </tbody>
                     </table>
                    </div>
+                   <div>
+                    <h4>Popup Type</h4>
+                    <p>Toastr have 4 popup type and the different is icon and background</p>
+                    <button id="success" >Success</button>
+                    <button id="info" >Info</button>
+                    <button id="error" >Error</button>
+                    <button id="warning">Warning</button>
+                  </div>
                 </div>
                </div>
             </div>
@@ -1551,6 +1576,7 @@
                             
                           </tbody>
                         </table>
+                        
                        </div>
                     </div>
                   
@@ -1625,11 +1651,13 @@
                     
                       </div>
                    </form>
+                  
                   </div>
                 
                 </div>
               </div>
             </div>
+           
             <!-- Footer -->
             <footer class="content-footer footer bg-footer-theme">
               <div class="container-xxl">
@@ -1691,5 +1719,55 @@
     <!-- Page JS -->
     <script src="./assets/js/dashboards-analytics.js"></script>
     <script src="./assets/js/forms-selects.js"></script>
+    <script type="text/javascript">
+      // Default Configuration
+        $(document).ready(function() {
+          toastr.options = {
+            'closeButton': true,
+            'debug': false,
+            'newestOnTop': false,
+            'progressBar': false,
+            'positionClass': 'toast-top-right',
+            'preventDuplicates': false,
+            'showDuration': '1000',
+            'hideDuration': '1000',
+            'timeOut': '5000',
+            'extendedTimeOut': '1000',
+            'showEasing': 'swing',
+            'hideEasing': 'linear',
+            'showMethod': 'fadeIn',
+            'hideMethod': 'fadeOut',
+          }
+        });
+    
+      // Toast Type
+        $('#success').click(function(event) {
+          toastr.success('You clicked Success toast');
+        });
+        $('#info').click(function(event) {
+          toastr.info('You clicked Info toast')
+        });
+        $('#error').click(function(event) {
+          toastr.error('You clicked Error Toast')
+        });
+        $('#warning').click(function(event) {
+          toastr.warning('You clicked Warning Toast')
+        });
+    
+      // Toast Image and Progress Bar
+        $('#image').click(function(event) {
+          toastr.options.progressBar = true,
+          toastr.info('<img src="https://image.flaticon.com/icons/svg/34/34579.svg" style="width:150px;">', 'Toast Image')
+        });
+    
+    
+      // Toast Position
+        $('#position').click(function(event) {
+          var pos = $('input[name=position]:checked', '#positionForm').val();
+          toastr.options.positionClass = "toast-" + pos;
+          toastr.options.preventDuplicates = false;
+          toastr.info('This sample position', 'Toast Position')
+        });
+      </script>
   </body>
 </html>
