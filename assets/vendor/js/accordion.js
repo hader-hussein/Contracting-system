@@ -10,7 +10,7 @@ $('.accordion-button').on('keydown',function (e) {
     if (keyCode !== 9) return;
 
     var $this = $(this),
-        $lastTr = $('tr:last', $('table')),
+        $lastTr = $('tr:last', $('.tabel-table')),
         $lastTd = $('td:last', $lastTr);
 
     
@@ -30,3 +30,17 @@ $('.accordion-button').on('keydown',function (e) {
    
     
   })
+  function addField(n)
+  {
+      var tr = n.parentNode.parentNode.cloneNode(true);
+      document.getElementById('tbl').appendChild(tr);
+      var removeButton = tr.getElementsByTagName("button")[1];
+      removeButton.parentNode.removeChild(removeButton);
+    
+  }
+  $(document).ready(function(){
+    $("#my_table").on('click','.btnDelete',function(){
+        $(this).closest('tr').remove();
+     });
+     
+ });

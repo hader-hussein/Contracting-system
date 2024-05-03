@@ -58,6 +58,23 @@
     <script src="./assets/vendor/js/template-customizer.js"></script>
     <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
     <script src="./assets/js/config.js"></script>
+    <style>
+      .hide {
+  display: none;
+}
+.select2-container--default{
+top:0px !important;
+bottom: 100px !important;
+z-index: 10000;
+}
+.light-style .select2-dropdown {
+   
+    top: 33px;
+}
+.table-size{
+  height: 500px;
+}
+    </style>
   </head>
 
   <body>
@@ -901,13 +918,13 @@
                                 <label class="form-check-label fs-4 fw-bold mb-3">materials Type</label>
                               
                                   <div class="mb-3 mx-0 col-md-4 col-12 form-check form-check-inline">
-                                    <input name="collapsible-address-type" class="form-check-input" type="radio" value="" id="collapsible-address-type-home" checked="">
+                                    <input name="collapsible-address-type" class="form-check-input" type="radio" value="" id="collapsible-address-type-home" checked="" onclick="show1();"/>
                                     <label class="form-check-label" for="collapsible-address-type-home">Normal
                                       Producer</label>
                                   </div>
                                   <div class="mb-3 mx-0 col-md-4 col-12 form-check form-check-inline">
-                                    <input name="collapsible-address-type" class="form-check-input" type="radio" value="" id="collapsible-address-type-office">
-                                    <label class="form-check-label" for="collapsible-address-type-office">
+                                    <input name="collapsible-address-type" class="form-check-input" type="radio" value="" id="collapsible-address-type-office" onclick="show2();"/>
+                                    <label class="form-check-label" for="collapsible-address-type-office" >
                                       The dent product
                                     </label>
                                   </div>
@@ -932,8 +949,8 @@
                                     <input type="text" class="form-control" id="exampleFormControlInput2" placeholder=" Barcodes">
                                   </div>
                                   <div class="mb-3 col-md-4 col-12">
-                                    <label for="select2Basic" class="form-label">Category The main</label>
-                                    <select id="select2Basic" class="select2 form-select" data-allow-clear="true">
+                                    <label for="select2Basic-2" class="form-label">Category The main</label>
+                                    <select id="select2Basic-2" class="select2 form-select" data-allow-clear="true">
                                       <option value="LETTER">LETTER </option>
                                       <option value="VIDEO">VIDEO </option>
                                       <option value="PHOTO">PHOTO </option>
@@ -987,8 +1004,61 @@
                                     </label>
                                     <input type="file" class="form-control" id="exampleForm-att">
                                   </div>
-                                 
+                                  <!--5-2/2024-->
+                                  <div id="div1" class="hide">
+                                    <hr><h4>بيانات المنتج المجمع</h4>
+                                    <div class="table-responsive text-nowrap rounded card-datatable pt-4 pb-4">
+
+                                      <table class="table table-bordered table-hover rounded " id="my_table" >
+                                        <thead>
+                                          <tr class="fw-bold">
+                                            <th class="fw-bold"> SR. NO.</th>
+                                            <th class="fw-bold"> Materials name</th>
+                                          
+                                            <th class="fw-bold"> Size</th>
+                                            <th class="fw-bold"> Quantity</th>
+                                           
+                                            <th></th>
+                                          </tr>
+                                        </thead>
+                                        <tbody class="table-border-bottom-0" id="tbl">
+                                          <tr>
+                                        
+                                            <td>  1</td>
+                                      
+                                            <td>  </td>
+                                            <td> 
+                                             
+                                                <select id="select-2" class="form-select">
+                                                  <option value="AK"> SIZE</option>
+                                                  <option value="HI">1</option>
+                                                  <option value="CA">1</option>
+                                                  <option value="NV">1</option>
+                                                  <option value="OR">1</option>
+                                              
+                                                </select>
+                                             
+                                             
+                                            </td>
+                                            <td>
+                                              <input type="text"class="form-control">
+                                            </td>
+                                           
+                                            <td class="d-flex">
+                                              <button  type="button" class="bg-danger btn btnDelete text-bg-danger remove_row p-1 d-flex align-items-center justify-content-center me-3 rounded"  title="حذف"><i class="ti ti-trash  fs-4"></i> </button>
+                                              <button type="button" class="button btn btn-primary add_another" value="Add another line" onclick="addField(this);"><i class="fa-solid fa-plus"></i>add</button>
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                    
+                                      </table>
+    
+                                    </div>
+                                  </div>
                                 </div>
+                                <!---->
+                               
+                                <!---->
                             </div>
                           </div>
                             
@@ -1002,7 +1072,7 @@
                             </h2>
                             <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                               <div class="accordion-body">
-                                <div class="table-responsive text-nowrap rounded card-datatable pt-4 pb-4">
+                                <div class="table-responsive text-nowrap rounded table-size pt-4 pb-4">
 
                                   <table class="table table-bordered table-hover rounded tabel-table" id="my-table">
                                     <thead>
@@ -1025,7 +1095,7 @@
                                         </th>
                                       </tr>
                                     </thead>
-                                    <tbody class="table-border-bottom-0">
+                                    <tbody class="table-border-bottom-0" >
                                       <tr>
                                     
                                         <td>  1</td>
@@ -1035,8 +1105,44 @@
                                         
                                         </td>
                                         <td>  
-                                          <select id="select" class="select2 form-select" data-allow-clear="true">
-                                            <option value="AK">   	CHOOSE THE SIZE</option>
+                                          <select id="select-4" class="form-select form-control" >
+                                            <option value="AK" selected>   	CHOOSE THE SIZE</option>
+                                            <option value="HI">1</option>
+                                            <option value="CA">1</option>
+                                            <option value="NV">1</option>
+                                            <option value="OR">1</option>
+                                        
+                                          </select>
+                                        </td>
+                                        <td>
+                                          <input type="number"class="form-control">
+                                        </td>
+                                        <td>  <input type="text"class="form-control"></td>
+                                        <td><input type="number"class="form-control"></td>
+                                        <td> <input type="text"class="form-control"> </td>
+                                        <td><input type="text"class="form-control"></td>
+                                        <td> <input type="text"class="form-control"> </td>
+                                        <td><input type="text"class="form-control"></td>
+                                        <td>  <input name="collap-type" class="form-check-input" type="radio" value="" id="colla-basic" checked=""></td>
+                                        <td><input name="collap-type" class="form-check-input" type="radio" value="" id="sub-size" checked=""></td>
+                                       
+                                       
+                                        <td class="d-flex">
+                                          <a class="bg-danger text-bg-danger p-1 d-flex align-items-center justify-content-center me-3 rounded" href="javascript:void(0);" title="حذف"><i class="ti ti-trash  fs-4"></i> </a>
+                                        
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                    
+                                        <td>  1</td>
+                                  
+                                        <td> 
+                                           
+                                        
+                                        </td>
+                                        <td>  
+                                          <select id="select" class="form-select form-control" >
+                                            <option value="AK" selected>   	CHOOSE THE SIZE</option>
                                             <option value="HI">1</option>
                                             <option value="CA">1</option>
                                             <option value="NV">1</option>
@@ -1142,5 +1248,13 @@
     <script src="./assets/js/dashboards-analytics.js"></script>
     <script src="./assets/js/forms-selects.js"></script>
     <script src="./assets/vendor/js/accordion.js"></script>
+    <script>
+      function show1(){
+  document.getElementById('div1').style.display ='none';
+}
+function show2(){
+  document.getElementById('div1').style.display = 'block';
+}
+    </script>
   </body>
 </html>
