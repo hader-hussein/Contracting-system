@@ -950,7 +950,9 @@
                             <td>
                                 <div class="d-flex">
                                   <button class="bg-primary  btn text-bg-primary p-1 d-flex align-items-center justify-content-center  rounded " title="  تعديل" data-bs-target="#editModal" data-bs-toggle="modal"><i class="ti ti-pencil  fs-4"></i></button>
-                                  <a class="bg-danger text-bg-danger p-1 d-flex align-items-center justify-content-center mx-3 rounded" href="javascript:void(0);" title="حذف  " data-bs-target="#closeRoleModal" data-bs-toggle="modal"><i class="ti ti-trash  fs-4"></i> </a>
+                                  <a class="bg-success text-white  p-1 d-flex align-items-center justify-content-center mx-3 rounded" href="javascript:void(0);" title="مشاهدة  "data-bs-target="#veiwModal" data-bs-toggle="modal"><i class="ti-xs me-1 ti ti-eye-check me-1"></i> </a>
+
+                                  <a class="bg-danger text-bg-danger p-1 d-flex align-items-center justify-content-center  rounded" href="javascript:void(0);" title="حذف  " data-bs-target="#closeRoleModal" data-bs-toggle="modal"><i class="ti ti-trash  fs-4"></i> </a>
 
                                 </div>
                             </td>
@@ -1159,6 +1161,106 @@
                   
                 
                   </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal fade" id="veiwModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">  view new  QUOTATIONS</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="table-responsive card-datatable text-nowrap">
+                      <table class="table table-bordered dt-scrollableTable">
+                        <thead>
+                          <tr>
+                            <th scope="col">SR. No.</th>
+                            
+                            <th scope="col">item name</th>
+                            <th scope="col"> unit </th>
+                            <th scope="col">quantity</th>
+                            <th scope="col">unit_price</th>
+                            <th scope="col">total</th>
+                            <th scope="col">reamin quantity</th>
+                            <th scope="col">ACTION-BY</th>
+                            
+                            
+            
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                           
+                            <td>
+                                  <table class="table table-bordered table-tow-td">
+                                    <td>r00</td>
+                                    <td>r01</td>
+                                    <td>r02</td>
+                                    <td>r03</td>
+                                  </table>
+                                  
+                               
+                            </td>
+                            <td>
+                              <table class="table table-bordered table-tow-td">
+                                <td>16-9-2023</td>
+                                <td>16-9-2023</td>
+                                <td>20-9-2023</td>
+                                <td>10-9-2023</td>
+                              </table>
+                            </td>
+                            <td>
+                              <table class="table table-bordered table-tow-td">
+                                <td>16-9-2023</td>
+                                <td>16-9-2023</td>
+                                <td>20-9-2023</td>
+                                <td>10-9-2023</td>
+                              </table>
+                            </td>
+                            <td>
+                              <table class="table table-bordered table-tow-td">
+                              <td>4</td>
+                              <td>4</td>
+                              <td>7</td>
+                              <td>7</td>
+                            </table>
+                           </td>
+                            <td>
+                              <table class="table table-bordered table-tow-td">
+                                <td>REJECT
+                                </td>
+                                <td>REJECT
+                                </td>
+                                <td>REJECT
+                                </td>
+                                <td>APPROVED
+                                </td>
+                              </table>
+                            </td>
+                            
+                            <td>
+                              <table class="table table-bordered table-tow-td">
+                                <td>d</td>
+                                <td>c</td>
+                                <td>c</td>
+                                <td>b</td>
+                              </table>
+                            </td>
+                            <td>AHMED BAKRY
+                            </td>
+                         
+                           
+                          </tr>
+                          
+                          
+                        </tbody>
+                      </table>
+                     </div>
+                  </div>
+                
                 </div>
               </div>
             </div>
