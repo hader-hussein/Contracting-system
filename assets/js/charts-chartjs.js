@@ -125,74 +125,74 @@
   // Horizontal Bar Chart
   // --------------------------------------------------------------------
 
-  const horizontalBarChart = document.getElementById('horizontalBarChart');
-  if (horizontalBarChart) {
-    const horizontalBarChartVar = new Chart(horizontalBarChart, {
-      type: 'bar',
-      data: {
-        labels: ['MON', 'TUE', 'WED ', 'THU', 'FRI', 'SAT', 'SUN'],
-        datasets: [
-          {
-            data: [710, 350, 470, 580, 230, 460, 120],
-            backgroundColor: config.colors.info,
-            borderColor: 'transparent',
-            maxBarThickness: 15
-          }
-        ]
-      },
-      options: {
-        indexAxis: 'y',
-        responsive: true,
-        maintainAspectRatio: false,
-        animation: {
-          duration: 500
-        },
-        elements: {
-          bar: {
-            borderRadius: {
-              topRight: 15,
-              bottomRight: 15
-            }
-          }
-        },
-        plugins: {
-          tooltip: {
-            rtl: isRtl,
-            backgroundColor: cardColor,
-            titleColor: headingColor,
-            bodyColor: legendColor,
-            borderWidth: 1,
-            borderColor: borderColor
-          },
-          legend: {
-            display: false
-          }
-        },
-        scales: {
-          x: {
-            min: 0,
-            grid: {
-              color: borderColor,
-              borderColor: borderColor
-            },
-            ticks: {
-              color: labelColor
-            }
-          },
-          y: {
-            grid: {
-              borderColor: borderColor,
-              display: false,
-              drawBorder: false
-            },
-            ticks: {
-              color: labelColor
-            }
-          }
-        }
-      }
-    });
-  }
+  // const horizontalBarChart = document.getElementById('horizontalBarChart');
+  // if (horizontalBarChart) {
+  //   const horizontalBarChartVar = new Chart(horizontalBarChart, {
+  //     type: 'bar',
+  //     data: {
+  //       labels: ['MON', 'TUE', 'WED ', 'THU', 'FRI', 'SAT', 'SUN'],
+  //       datasets: [
+  //         {
+  //           data: [710, 350, 470, 580, 230, 460, 120],
+  //           backgroundColor: config.colors.info,
+  //           borderColor: 'transparent',
+  //           maxBarThickness: 15
+  //         }
+  //       ]
+  //     },
+  //     options: {
+  //       indexAxis: 'y',
+  //       responsive: true,
+  //       maintainAspectRatio: false,
+  //       animation: {
+  //         duration: 500
+  //       },
+  //       elements: {
+  //         bar: {
+  //           borderRadius: {
+  //             topRight: 15,
+  //             bottomRight: 15
+  //           }
+  //         }
+  //       },
+  //       plugins: {
+  //         tooltip: {
+  //           rtl: isRtl,
+  //           backgroundColor: cardColor,
+  //           titleColor: headingColor,
+  //           bodyColor: legendColor,
+  //           borderWidth: 1,
+  //           borderColor: borderColor
+  //         },
+  //         legend: {
+  //           display: false
+  //         }
+  //       },
+  //       scales: {
+  //         x: {
+  //           min: 0,
+  //           grid: {
+  //             color: borderColor,
+  //             borderColor: borderColor
+  //           },
+  //           ticks: {
+  //             color: labelColor
+  //           }
+  //         },
+  //         y: {
+  //           grid: {
+  //             borderColor: borderColor,
+  //             display: false,
+  //             drawBorder: false
+  //           },
+  //           ticks: {
+  //             color: labelColor
+  //           }
+  //         }
+  //       }
+  //     }
+  //   });
+  // }
 
   // Line Chart
   // --------------------------------------------------------------------
@@ -788,56 +788,7 @@
     });
   }
 
-  // Doughnut Chart
-  // --------------------------------------------------------------------
-
-  const doughnutChart = document.getElementById('doughnutChart');
-  if (doughnutChart) {
-    const doughnutChartVar = new Chart(doughnutChart, {
-      type: 'doughnut',
-      data: {
-        labels: ['Tablet', 'Mobile', 'Desktop'],
-        datasets: [
-          {
-            data: [10, 10, 80],
-            backgroundColor: [cyanColor, orangeLightColor, config.colors.primary],
-            borderWidth: 0,
-            pointStyle: 'rectRounded'
-          }
-        ]
-      },
-      options: {
-        responsive: true,
-        animation: {
-          duration: 500
-        },
-        cutout: '68%',
-        plugins: {
-          legend: {
-            display: false
-          },
-          tooltip: {
-            callbacks: {
-              label: function (context) {
-                const label = context.labels || '',
-                  value = context.parsed;
-                const output = ' ' + label + ' : ' + value + ' %';
-                return output;
-              }
-            },
-            // Updated default tooltip UI
-            rtl: isRtl,
-            backgroundColor: cardColor,
-            titleColor: headingColor,
-            bodyColor: legendColor,
-            borderWidth: 1,
-            borderColor: borderColor
-          }
-        }
-      }
-    });
-  }
-
+  
   // Scatter Chart
   // --------------------------------------------------------------------
 

@@ -837,71 +837,71 @@
 
   // Radial Bar Chart
   // --------------------------------------------------------------------
-  const radialBarChartEl = document.querySelector('#radialBarChart'),
-    radialBarChartConfig = {
-      chart: {
-        height: 380,
-        type: 'radialBar'
-      },
-      colors: [chartColors.donut.series1, chartColors.donut.series2, chartColors.donut.series4],
-      plotOptions: {
-        radialBar: {
-          size: 185,
-          hollow: {
-            size: '40%'
-          },
-          track: {
-            margin: 10,
-            background: config.colors_label.secondary
-          },
-          dataLabels: {
-            name: {
-              fontSize: '2rem',
-              fontFamily: 'Public Sans'
-            },
-            value: {
-              fontSize: '1.2rem',
-              color: legendColor,
-              fontFamily: 'Public Sans'
-            },
-            total: {
-              show: true,
-              fontWeight: 400,
-              fontSize: '1.3rem',
-              color: headingColor,
-              label: 'Comments',
-              formatter: function (w) {
-                return '80%';
-              }
-            }
-          }
-        }
-      },
-      grid: {
-        borderColor: borderColor,
-        padding: {
-          top: -25,
-          bottom: -20
-        }
-      },
-      legend: {
-        show: true,
-        position: 'bottom',
-        labels: {
-          colors: legendColor,
-          useSeriesColors: false
-        }
-      },
-      stroke: {
-        lineCap: 'round'
-      },
-      series: [80, 50, 35],
-      labels: ['Comments', 'Replies', 'Shares']
-    };
-  if (typeof radialBarChartEl !== undefined && radialBarChartEl !== null) {
-    const radialChart = new ApexCharts(radialBarChartEl, radialBarChartConfig);
-    radialChart.render();
-  }
+  // const radialBarChartEl = document.querySelector('#radialBarChart'),
+  //   radialBarChartConfig = {
+  //     chart: {
+  //       height: 380,
+  //       type: 'radialBar'
+  //     },
+  //     colors: [chartColors.donut.series1, chartColors.donut.series2, chartColors.donut.series4],
+  //     plotOptions: {
+  //       radialBar: {
+  //         size: 185,
+  //         hollow: {
+  //           size: '40%'
+  //         },
+  //         track: {
+  //           margin: 10,
+  //           background: config.colors_label.secondary
+  //         },
+  //         dataLabels: {
+  //           name: {
+  //             fontSize: '2rem',
+  //             fontFamily: 'Public Sans'
+  //           },
+  //           value: {
+  //             fontSize: '1.2rem',
+  //             color: legendColor,
+  //             fontFamily: 'Public Sans'
+  //           },
+  //           total: {
+  //             show: true,
+  //             fontWeight: 400,
+  //             fontSize: '1.3rem',
+  //             color: headingColor,
+  //             label: 'Comments',
+  //             formatter: function (w) {
+  //               return '80%';
+  //             }
+  //           }
+  //         }
+  //       }
+  //     },
+  //     grid: {
+  //       borderColor: borderColor,
+  //       padding: {
+  //         top: -25,
+  //         bottom: -20
+  //       }
+  //     },
+  //     legend: {
+  //       show: true,
+  //       position: 'bottom',
+  //       labels: {
+  //         colors: legendColor,
+  //         useSeriesColors: false
+  //       }
+  //     },
+  //     stroke: {
+  //       lineCap: 'round'
+  //     },
+  //     series: [80, 50, 35],
+  //     labels: ['Comments', 'Replies', 'Shares']
+  //   };
+  // if (typeof radialBarChartEl !== undefined && radialBarChartEl !== null) {
+  //   const radialChart = new ApexCharts(radialBarChartEl, radialBarChartConfig);
+  //   radialChart.render();
+  // }
 
   // Radar Chart
   // --------------------------------------------------------------------

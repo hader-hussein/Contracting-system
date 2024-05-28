@@ -82,7 +82,7 @@
 
           <ul class="menu-inner py-4">
             <!-- Dashboards -->
-            <li class="menu-item active">
+            <li class="menu-item ">
               <a href="index.html" class="menu-link">
                 <i class="menu-icon tf-icons ti ti-home"></i>
                 
@@ -90,7 +90,7 @@
               </a>
             </li>
              <!-- REPORTS -->
-             <li class="menu-item">
+             <li class="menu-item active">
               <a href="javascript:void(0);" class="menu-link menu-toggle">
                 <i class="menu-icon tf-icons ti ti-files"></i>
                 <div data-i18n="REPORTS">REPORTS</div>
@@ -925,8 +925,179 @@
           <div class="content-wrapper">
             <!-- Content -->
 
-            <div class="container-xxl flex-grow-1 container-p-y">
-              add
+            <div class="container-xxl flex-grow-1 container-p-y pt-0">
+              <div class="row mx-0 row-cols-md-2 row-cols-lg-2 row-cols-1 g-2">
+                <div class="col">
+                  <div class="card">
+                    <div class="card-header header-elements">
+                      <div class="w-100">
+                        <p class="card-subtitle text-muted mb-1">INSPECTION REQUEST ( IRs ) </p>
+                        <div class="d-flex justify-content-between flex-wrap">
+                          <div class="text-center">
+                            <h5 class="card-title mb-0 fw-bold text-secondary fs-2">400</h5>
+                            <span>Submitted </span>
+                          </div>
+                          <div class="text-center">
+                            <h5 class="card-title mb-0 fw-bold text-danger">40</h5>
+                            <span>Rejected </span>
+                          </div>
+                        </div>
+                        
+                      </div>
+                    </div>
+                    <hr class="py-0 my-0"/>
+                    <div class="card-body">
+                      <canvas id="horizontalBarChart" class="chartjs" data-height="400"></canvas>
+                    </div>
+                    <div class="card card-footers mt-2">
+
+                      <div class="card-header header-elements">
+                        <div class="w-100">
+                          <div class="d-flex justify-content-between flex-wrap">
+                            <div class="text-center">
+                              <h5 class="card-title mb-0 fw-bold fs-4 text-success">320</h5>
+                              <span>Approved </span>
+                            </div>
+                            <div class="text-center">
+                              <h5 class="card-title mb-0 fw-bold text-info ">40</h5>
+                              <span>Under Review </span>
+                            </div>
+                          </div>
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <div class="card-header header-elements">
+                      <div class="w-100">
+                        <p class="card-subtitle text-muted mb-1">MATERIAL INISPECTION REQUEST ( MIRs )</p>
+                        <div class="d-flex justify-content-between flex-wrap">
+                          <div class="text-center">
+                            <h5 class="card-title mb-0 fw-bold text-primary fs-2">400</h5>
+                            <span>Submitted </span>
+                          </div>
+                          <div class="text-center">
+                            <h5 class="card-title mb-0 fw-bold text-danger">40</h5>
+                            <span>Rejected </span>
+                          </div>
+                        </div>
+                        
+                      </div>
+                    </div>
+                    <hr class="py-0 my-0"/>
+                    <div class="card-body">
+                      <canvas id="horizontalBarChart-tow" class="chartjs" data-height="400"></canvas>
+                    </div>
+                    <div class="card card-footers mt-2">
+
+                      <div class="card-header header-elements">
+                        <div class="w-100">
+                          <div class="d-flex justify-content-between flex-wrap">
+                            <div class="text-center">
+                              <h5 class="card-title mb-0 fw-bold fs-4 text-success">320</h5>
+                              <span>Approved </span>
+                            </div>
+                            <div class="text-center">
+                              <h5 class="card-title mb-0 fw-bold text-info ">40</h5>
+                              <span>Under Review </span>
+                            </div>
+                          </div>
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <div class="card-header header-elements">
+                      <div class="w-100">
+                        <p class="card-subtitle text-muted mb-1">REQUEST FOR INFORMATION ( RFIs ) </p>
+                        <div class="d-flex justify-content-between flex-wrap">
+                          <div class="text-center">
+                            <h5 class="card-title mb-0 fw-bold text-warning fs-2">400</h5>
+                            <span>Submitted </span>
+                          </div>
+                          <div class="text-center">
+                            <h5 class="card-title mb-0 fw-bold text-danger">40</h5>
+                            <span>Rejected </span>
+                          </div>
+                        </div>
+                        
+                      </div>
+                    </div>
+                    <hr class="py-0 my-0"/>
+                    <div class="card-body">
+                      <canvas id="horizontalBarChart-three" class="chartjs" data-height="400"></canvas>
+                    </div>
+                    <div class="card card-footers mt-2">
+
+                      <div class="card-header header-elements">
+                        <div class="w-100">
+                          <div class="d-flex justify-content-between flex-wrap">
+                            <div class="text-center">
+                              <h5 class="card-title mb-0 fw-bold fs-4 text-warning">320</h5>
+                              <span>Approved </span>
+                            </div>
+                            <div class="text-center">
+                              <h5 class="card-title mb-0 fw-bold text-info ">40</h5>
+                              <span>Under Review </span>
+                            </div>
+                          </div>
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <div class="card-header header-elements">
+                      <div class="w-100">
+                        <p class="card-subtitle text-muted mb-1">NON COMPLIANCE REQUEST ( NCRs )</p>
+                        <div class="d-flex justify-content-between flex-wrap">
+                          <div class="text-center">
+                            <h5 class="card-title mb-0 fw-bold text-danger fs-2">400</h5>
+                            <span>ISSUED </span>
+                          </div>
+                          <div class="text-center">
+                            <h5 class="card-title mb-0 fw-bold text-danger">80</h5>
+                            <span>OPENNED </span>
+                          </div>
+                        </div>
+                        
+                      </div>
+                    </div>
+                    <hr class="py-0 my-0"/>
+                    <div class="card-body">
+                      <canvas id="horizontalBarChart-four" class="chartjs" data-height="400"></canvas>
+                    </div>
+                    <div class="card card-footers mt-2">
+
+                      <div class="card-header header-elements">
+                        <div class="w-100">
+                          <div class="d-flex justify-content-between flex-wrap">
+                            <div class="text-center">
+                              <h5 class="card-title mb-0 fw-bold fs-4 text-danger">320</h5>
+                              <span>CLOSED </span>
+                            </div>
+                         
+                          </div>
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                 
+                </div>
+              </div>
+              
             </div>
             <!-- / Content -->
 
@@ -981,11 +1152,14 @@
     <script src="./assets/vendor/libs/apex-charts/apexcharts.js"></script>
     <script src="./assets/vendor/libs/swiper/swiper.js"></script>
     <script src="./assets/vendor/libs/datatables-bs5/datatables-bootstrap5.js"></script>
+    <script src="./assets/vendor/libs/chartjs/chartjs.js"></script>
 
     <!-- Main JS -->
     <script src="./assets/js/main.js"></script>
    
     <!-- Page JS -->
     <script src="./assets/js/dashboards-analytics.js"></script>
+    <script src="./assets/js/charts-chartjs.js"></script>
+    <script src="./assets/vendor/js/chart.js"></script>
   </body>
 </html>

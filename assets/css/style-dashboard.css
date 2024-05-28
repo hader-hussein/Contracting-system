@@ -85,3 +85,8 @@ margin: 4px;
     flex-wrap: wrap;
     align-items: stretch;
 }
+.card-PROGRESS span,.text-poper{
+color: #991CFB;
+font-weight: 500;
+font-size: larger;
+}

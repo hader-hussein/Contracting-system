@@ -82,7 +82,7 @@
 
           <ul class="menu-inner py-4">
             <!-- Dashboards -->
-            <li class="menu-item active">
+            <li class="menu-item ">
               <a href="index.html" class="menu-link">
                 <i class="menu-icon tf-icons ti ti-home"></i>
                 
@@ -90,14 +90,14 @@
               </a>
             </li>
              <!-- REPORTS -->
-             <li class="menu-item">
+             <li class="menu-item active">
               <a href="javascript:void(0);" class="menu-link menu-toggle">
                 <i class="menu-icon tf-icons ti ti-files"></i>
                 <div data-i18n="REPORTS">REPORTS</div>
                
               </a>
               <ul class="menu-sub">
-                <li class="menu-item">
+                <li class="menu-item active">
                   <a href="REPORTS-Financial.html" class="menu-link">
                     <div data-i18n="Financial ">Financial </div>
                   </a>
@@ -127,7 +127,7 @@
                     <div data-i18n=" Material Submission"> Material Submission</div>
                   </a>
                 </li>
-                <li class="menu-item">
+                <li class="menu-item ">
                   <a href="REPORTS-Long-Lead-items.html" class="menu-link">
                     <div data-i18n="Long Lead items"> Long Lead items</div>
                   </a>
@@ -925,8 +925,191 @@
           <div class="content-wrapper">
             <!-- Content -->
 
-            <div class="container-xxl flex-grow-1 container-p-y">
-              add
+            <div class="container-xxl flex-grow-1 container-p-y pt-0">
+                  <div class="card">
+                    <div class="card-header">
+                      <h5 class="fs-4 fw-bold">- Total Project Value ( Contract + Variation Orders )</h5>
+                       <p class="fs-3 fw-bold">270.950.000.00</p>
+                    </div>
+                    <hr class="py-0 my-0"/>
+                    
+                    <div class="card-body p-2">
+                      
+                      <div class="row mx-0">
+                        <!---item-->
+                          <div class="col-md-6">
+                            <div class="shadow card-header">
+                              <h6 class="fs-5 fw-medium">- Total Client Invoices Value</h6>
+                              <p>9.746.035.01</p>
+                              <div class="d-flex align-items-center">
+                                <div id="chartfinancial"></div>
+                                <div class="chart-text">
+                                  <h6 class="fs-6 fw-bold">Total Paid</h6>
+                                  <p class="fs-6 fw-bold">8.746.035.01</p>
+                                </div>
+                              </div>
+                              
+                              <hr class="py-0 my-0"/>
+                              <div class="d-flex align-items-center">
+                                <div id="chart-team"></div>
+                                <div class="chart-text">
+                                  <h6 class="fs-6 fw-bold">Total Unpaid</h6>
+                                  <p class="fs-6 fw-bold">10000000000</p>
+                                </div>
+                              </div>
+                           
+                            </div> 
+                            
+                            <div class="card card-footers mt-2">
+                              
+                              <div class="card-header header-elements">
+                                <div class="w-100">
+                                  <div class="d-flex justify-content-between ">
+                                    <div class="text-center">
+                                      <h5 class="card-title mb-0  fs-6">Total invoiced Value/Contract Value
+                                      </h5>
+                                      <span class="fs-1">19% </span>
+                                    </div>
+                                    <div class="text-center">
+                                      <h5 class="card-title mb-0 fw-bold">Remaining
+                                      </h5>
+                                      <span class="fs-1 text-info ">28% </span>
+                                    </div>
+                                  </div>
+                                  
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!--item-->
+                          <div class="col-md-6">
+                            <div class="shadow card-header">
+                              <h6 class="fs-5 fw-medium">- Total Sub. Variation Order Value ( V.Os )</h6>
+                              <p>9.746.035.01</p>
+                              <div class="d-flex align-items-center">
+                                <div id="chartfinancial-1"></div>
+                                <div class="chart-text">
+                                  <h6 class="fs-6 fw-bold">Total Paid</h6>
+                                  <p class="fs-6 fw-bold">8.746.035.01</p>
+                                </div>
+                              </div>
+                              
+                              <hr class="py-0 my-0"/>
+                              <div class="d-flex align-items-center">
+                                <div id="chart-team-2"></div>
+                                <div class="chart-text">
+                                  <h6 class="fs-6 fw-bold">Total Unpaid</h6>
+                                  <p class="fs-6 fw-bold">10000000000</p>
+                                </div>
+                              </div>
+                             
+
+                            </div>
+                            <div class="card card-footers mt-2">
+
+                              <div class="card-header header-elements">
+                                <div class="w-100">
+                                    <div class="text-center">
+                                      <h5 class="card-title mb-0  fs-4 text-dung">- Cost Performance Index  ( CPI )</h5>
+                                   
+                                    </div>
+                                  
+                                 
+                                  
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <!----->
+                  <div class="card mt-5">
+                    <div class="card-header">
+                      <h5 class="fs-4 fw-bold">-Total Purchase Orders issued ( P.Os )
+                      </h5>
+                      <p class="fs-3 fw-bold">270.950.000.00</p>
+
+                    </div>
+                    <hr class="py-0 my-0"/>
+                    
+                    <div class="card-body p-2">
+                      
+                      <div class="row mx-0">
+                          <div class="col-md-6">
+                            <div class="shadow card-header">
+                              <h6 class="fs-5 fw-medium">- Total Sub-contractors Invoices Value</h6>
+                              <p>9.746.035.01</p>
+                              <div class="d-flex align-items-center">
+                                <div id="chartfinancial-o"></div>
+                                <div class="chart-text">
+                                  <h6 class="fs-6 fw-bold">Total Paid</h6>
+                                  <p class="fs-6 fw-bold">8.746.035.01</p>
+                                </div>
+                              </div>
+                              <hr class="py-0 my-0"/>
+                              <div id="chart-team-o"></div>
+                            </div> 
+                            
+                            <div class="card card-footers mt-2">
+                              
+                              <div class="card-header">
+                                <div class="w-100">
+                                  <div class="d-flex justify-content-between ">
+                                    <div class="text-center">
+                                      <h5 class="card-title mb-0  fs-6">Total invoiced Value/Purchase Orders Value
+
+                                      </h5>
+                                      <span class="fs-1">19% </span>
+                                    </div>
+                                    <div class="text-center">
+                                      <h5 class="card-title mb-0 fw-bold">Remaining
+                                      </h5>
+                                      <span class="fs-1 text-info ">28% </span>
+                                    </div>
+                                  </div>
+                                  
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="shadow card-header">
+                              <h6 class="fs-5 fw-medium">- Total Client Variation Order Value ( V.Os )</h6>
+                              <p>9.746.035.01</p>
+                              <div class="d-flex align-items-center">
+                                <div id="chartfinancial-o2"></div>
+                                <div class="chart-text">
+                                  <h6 class="fs-6 fw-bold">Total Paid</h6>
+                                  <p class="fs-6 fw-bold">8.746.035.01</p>
+                                </div>
+                              </div>
+                              <hr class="py-0 my-0"/>
+                              <div id="chart-team-o2"></div>
+                            </div>
+                            <div class="card card-footers mt-2">
+
+                              <div class="card-header header-elements">
+                                <div class="w-100">
+                                    <div class="text-center">
+                                      <h5 class="card-title mb-0  fs-6 text-dung">- Total Variation Orders Value /Purchase Orders Value
+                                      </h5>
+                                      <span class="fs-1">19% </span>
+                                    </div>
+                                  
+                                 
+                                  
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+             
+              
             </div>
             <!-- / Content -->
 
@@ -981,11 +1164,14 @@
     <script src="./assets/vendor/libs/apex-charts/apexcharts.js"></script>
     <script src="./assets/vendor/libs/swiper/swiper.js"></script>
     <script src="./assets/vendor/libs/datatables-bs5/datatables-bootstrap5.js"></script>
+    <script src="./assets/vendor/libs/chartjs/chartjs.js"></script>
 
     <!-- Main JS -->
     <script src="./assets/js/main.js"></script>
    
     <!-- Page JS -->
     <script src="./assets/js/dashboards-analytics.js"></script>
+    <script src="./assets/js/charts-chartjs.js"></script>
+    <script src="./assets/vendor/js/chart.js"></script>
   </body>
 </html>

@@ -82,7 +82,7 @@
 
           <ul class="menu-inner py-4">
             <!-- Dashboards -->
-            <li class="menu-item active">
+            <li class="menu-item ">
               <a href="index.html" class="menu-link">
                 <i class="menu-icon tf-icons ti ti-home"></i>
                 
@@ -90,7 +90,7 @@
               </a>
             </li>
              <!-- REPORTS -->
-             <li class="menu-item">
+             <li class="menu-item active">
               <a href="javascript:void(0);" class="menu-link menu-toggle">
                 <i class="menu-icon tf-icons ti ti-files"></i>
                 <div data-i18n="REPORTS">REPORTS</div>
@@ -132,7 +132,7 @@
                     <div data-i18n="Long Lead items"> Long Lead items</div>
                   </a>
                 </li>
-                <li class="menu-item">
+                <li class="menu-item active">
                   <a href="REPORTS-Progress.html" class="menu-link">
                     <div data-i18n="Progress">Progress </div>
                   </a>
@@ -925,8 +925,103 @@
           <div class="content-wrapper">
             <!-- Content -->
 
-            <div class="container-xxl flex-grow-1 container-p-y">
-              add
+            <div class="container-xxl flex-grow-1 container-p-y pt-0">
+              <div class="row mx-0   g-2">
+                <div class="col-lg-6 h-100">
+                <!-- Radial bar Chart -->
+               
+                  <div class="card h-100">
+                    <div class="card-header">
+                      <h5 class="card-title mb-0 Fw-bold">Technical Progress Ave. Approval
+                      </h5>
+                    
+                    </div>
+                    <div class="card-body">
+                      <div id="radialBarChart"></div>
+                    </div>
+                    <div class="card shadow p-3">
+                        <div class="row row-cols-lg-2 row-cols-md-2 row-cols-1 g-2">
+                           <div class="col">
+                              <h6>Design Drawings</h6>
+                              <p class="Fw-bold text-poper">39%</p>
+                           </div>
+                           <div class="col">
+                            <h6>Material Status
+                           </h6>
+                            <p class="Fw-bold text-poper">46%</p>
+                           </div>
+                          
+                           <div class="col">
+                            <h6>Shop Drawings 
+
+                           </h6>
+                            <p class="Fw-bold text-poper">46%</p>
+                           </div>
+                           <div class="col">
+                            <h6>Long Lead  Status
+
+                           </h6>
+                            <p class="Fw-bold text-poper">72%</p>
+                           </div>
+                           <div class="col">
+                            <h6>As-Built Drawings</h6>
+                            <p class="Fw-bold text-poper">39%</p>
+                           </div>
+                        </div>
+                        
+                    </div>
+                  </div>
+             
+                <!-- /Radial bar Chart -->
+
+                </div>
+                <div class="col-lg-6">
+                  <div class="card">
+                    <h5 class="card-header Fw-bold">Execution Progress Status</h5>
+                    <div class="card-body">
+                      <div id="chart"> </div>
+                      <div class="row row-cols-md-1 row-cols-1 mx-0 g-2">
+                          <div class="col">
+                            <div class="card card-PROGRESS shadow">
+                              <div  class="card-body">
+                                <h5 class="Fw-bold fs-5">( SPI )SCHEDULE PERFORMANCE INDEX:
+                                </h5>
+                                <div class="d-flex justify-content-between">
+                                  <span>SPI</span>
+                                  <span>=</span>
+                                  <span>0.98</span>
+                                </div>
+                              </div>
+                              
+                            </div>
+                         
+                          </div>
+                          <div class="col">
+                            <div class="card card-PROGRESS shadow">
+                              <div  class="card-body">
+                                <h5 class="Fw-bold fs-5">PROJECT PROGRESS </h5>
+                                <div class="d-flex justify-content-between">
+                                  <span>PLANNED  PROGRESS </span>
+                                  <span>=</span>
+                                  <span>50%</span>
+                                </div>
+                                <div class="d-flex justify-content-between pt-2">
+                                  <span>ACTUAL  PROGRESS
+                                  </span>
+                                  <span>=</span>
+                                  <span>50%</span>
+                                </div>
+                              </div>
+                              
+                            </div>
+                         
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
             </div>
             <!-- / Content -->
 
@@ -981,11 +1076,16 @@
     <script src="./assets/vendor/libs/apex-charts/apexcharts.js"></script>
     <script src="./assets/vendor/libs/swiper/swiper.js"></script>
     <script src="./assets/vendor/libs/datatables-bs5/datatables-bootstrap5.js"></script>
+    <script src="./assets/vendor/libs/chartjs/chartjs.js"></script>
+  
 
     <!-- Main JS -->
     <script src="./assets/js/main.js"></script>
    
     <!-- Page JS -->
     <script src="./assets/js/dashboards-analytics.js"></script>
+    <script src="./assets/js/charts-chartjs.js"></script>
+    <script src="./assets/js/charts-apex.js"></script>
+    <script src="./assets/vendor/js/chart.js"></script>
   </body>
 </html>
