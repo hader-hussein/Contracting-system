@@ -40,9 +40,9 @@ margin: auto;
     background-color: var(--color-back);
     color: var(--back-ground-color);
  }
- table tbody tr td{
+ /* table tbody tr td{
     text-align: center;
- }
+ } */
  .table:not(.table-dark) thead:not(.table-dark) th {
     color: var(--back-ground-color) !important;
     font-weight: bold;
@@ -89,4 +89,12 @@ margin: 4px;
 color: #991CFB;
 font-weight: 500;
 font-size: larger;
+}
+
+.card-dashboard .card-header,.card-dashboard .card-header h2{
+    background-color: chocolate;
+    color: #000 !important;
+    font-weight: 800;
+    font-size: 20px;
+    --bs-text-opacity:0 !important;
 }

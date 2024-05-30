@@ -1989,9 +1989,14 @@ var options = {
   colors : ['#e7ebeb','#f5728e'],
   series: [50,20],
   chart: {
-  width: 280,
-  height: 280,
+  width: 150,
+  height: 150,
   type: 'pie',
+},
+
+legend: {
+  show:false,
+  
 },
 labels: ['Total Unpaid',],
 responsive: [{
@@ -2014,9 +2019,13 @@ var options = {
   colors : ['#e7ebeb','#f5728e'],
   series: [50,20],
   chart: {
-  width: 280,
-  height: 280,
+  width: 150,
+  height: 150,
   type: 'pie',
+},
+legend: {
+  show:false,
+  
 },
 labels: ['Total Unpaid',],
 responsive: [{
@@ -2069,19 +2078,33 @@ var options = {
   colors : ['#e7ebeb','#fcbe00'],
   series: [50,20],
   chart: {
-  width: 280,
-  height: 280,
+  width: 150,
+  height: 150,
   type: 'pie',
+  toolbar: {
+    show: false
+  }
 },
-labels: ['Total Unpaid',],
+legend: {
+  show:false,
+  
+},
+labels: ['Total Unpaid'],
 responsive: [{
-  breakpoint: 480,
+  breakpoint: 200,
   options: {
     chart: {
       width: 200
     },
     legend: {
-      position: 'bottom'
+      position: 'bottom',
+      show:false,
+    },
+    total: {
+      show: false
+    },
+    sparkline: {
+      enabled: false
     }
   }
 }]
@@ -2094,25 +2117,317 @@ var options = {
   colors : ['#e7ebeb','#fcbe00'],
   series: [50,20],
   chart: {
-  width: 280,
-  height: 280,
+  width: 150,
+  height: 150,
   type: 'pie',
+},legend: {
+  show:false,
+  
 },
 labels: ['Total Unpaid',],
 responsive: [{
-  breakpoint: 480,
+  breakpoint:200,
   options: {
     chart: {
       width: 200
     },
     legend: {
-      position: 'bottom'
+      position: 'bottom',
+      show:false
     }
   }
 }]
 };
 
 var chart = new ApexCharts(document.querySelector("#chart-team-o2"), options);
+chart.render();
+///30-5-2024---------------------------
+var options = {
+  colors : ['#991CFB'],
+  chart: {
+      height: 400,
+ 
+      type: 'radialBar',
+  
+  },
+  plotOptions: {
+    radialBar: {
+      dataLabels: {
+      hollow: {
+        size: '60%',
+      }
+      
+    } 
+    },
+  },
+  legend: {
+    show: false
+  },
+  series: [60],
+  labels: ['ACTUALPROGRESS'],
+ 
+}
+
+var chart = new ApexCharts(document.querySelector("#chart-chart"), options);
+
+chart.render();
+//////////////////
+var options = {
+  colors : ['#6f309f'],
+  chart: {
+      height: 200,
+      whidth:200,
+      type: 'radialBar',
+  },
+  series: [40],
+  labels: ['SUBMITTED'],
+ 
+}
+
+var chart = new ApexCharts(document.querySelector("#chart-sub"), options);
+
+chart.render();
+//////////////////
+var options = {
+  colors : ['#6f309f'],
+  chart: {
+      height: 200,
+      type: 'radialBar',
+  },
+  series: [50],
+  labels: ['APPROVED'],
+ 
+}
+
+var chart = new ApexCharts(document.querySelector("#chart-sub2"), options);
+
+chart.render();
+/////////////////
+var options = {
+  colors : ['#6f309f'],
+  chart: {
+      height: 200,
+      whidth:200,
+      type: 'radialBar',
+  },
+  series: [40],
+  labels: ['SUBMITTED'],
+ 
+}
+
+var chart = new ApexCharts(document.querySelector("#chart-sub3"), options);
+
+chart.render();
+//////////////////
+var options = {
+  colors : ['#6f309f'],
+  chart: {
+      height: 200,
+      type: 'radialBar',
+  },
+  series: [50],
+  labels: ['APPROVED'],
+ 
+}
+
+var chart = new ApexCharts(document.querySelector("#chart-sub4"), options);
+
+chart.render();
+/////////////////
+var options = {
+  colors : ['#6f309f'],
+  chart: {
+      height: 200,
+      whidth:200,
+      type: 'radialBar',
+  },
+  series: [40],
+  labels: ['SUBMITTED'],
+ 
+}
+
+var chart = new ApexCharts(document.querySelector("#chart-sub5"), options);
+
+chart.render();
+//////////////////
+var options = {
+  colors : ['#6f309f'],
+  chart: {
+      height: 200,
+      type: 'radialBar',
+  },
+  series: [50],
+  labels: ['APPROVED'],
+ 
+}
+
+var chart = new ApexCharts(document.querySelector("#chart-sub6"), options);
+
+chart.render();
+//////////////////////----------------------------
+var options = {
+  colors : ['#e7ebeb','#fcbe00'],
+  series: [50,20],
+  chart: {
+  width: 150,
+  height: 150,
+  type: 'pie',
+  toolbar: {
+    show: false
+  }
+},
+legend: {
+  show:false,
+  
+},
+labels: ['Total Unpaid'],
+responsive: [{
+  breakpoint: 200,
+  options: {
+    chart: {
+      width: 200
+    },
+    legend: {
+      position: 'bottom',
+      show:false,
+    },
+    total: {
+      show: false
+    },
+    sparkline: {
+      enabled: false
+    }
+  }
+}]
+};
+
+var chart = new ApexCharts(document.querySelector("#chartteam1"), options);
+chart.render();
+//////////////////////----------------------------
+var options = {
+  colors : ['#e7ebeb','#fcbe00'],
+  series: [50,20],
+  chart: {
+  width: 150,
+  height: 150,
+  type: 'pie',
+},legend: {
+  show:false,
+  
+},
+labels: ['Total Unpaid',],
+responsive: [{
+  breakpoint:200,
+  options: {
+    chart: {
+      width: 200
+    },
+    legend: {
+      position: 'bottom',
+      show:false
+    }
+  }
+}]
+};
+
+var chart = new ApexCharts(document.querySelector("#chartteam2"), options);
+chart.render();
+//////////////////////----------------------------
+var options = {
+  colors : ['#e7ebeb','#fcbe00'],
+  series: [50,20],
+  chart: {
+  width: 150,
+  height: 150,
+  type: 'pie',
+  toolbar: {
+    show: false
+  }
+},
+legend: {
+  show:false,
+  
+},
+labels: ['Total Unpaid'],
+responsive: [{
+  breakpoint: 200,
+  options: {
+    chart: {
+      width: 200
+    },
+    legend: {
+      position: 'bottom',
+      show:false,
+    },
+    total: {
+      show: false
+    },
+    sparkline: {
+      enabled: false
+    }
+  }
+}]
+};
+
+var chart = new ApexCharts(document.querySelector("#chartteam3"), options);
+chart.render();
+//////////////////////----------------------------
+var options = {
+  colors : ['#e7ebeb','#fcbe00'],
+  series: [50,20],
+  chart: {
+  width: 150,
+  height: 150,
+  type: 'pie',
+},legend: {
+  show:false,
+  
+},
+labels: ['Total Unpaid',],
+responsive: [{
+  breakpoint:200,
+  options: {
+    chart: {
+      width: 200
+    },
+    legend: {
+      position: 'bottom',
+      show:false
+    }
+  }
+}]
+};
+
+var chart = new ApexCharts(document.querySelector("#chartteam4"), options);
+chart.render();
+//////////////////////----------------------------
+var options = {
+  colors : ['#e7ebeb','#fcbe00'],
+  series: [50,20],
+  chart: {
+  width: 150,
+  height: 150,
+  type: 'pie',
+},legend: {
+  show:false,
+  
+},
+labels: ['Total Unpaid',],
+responsive: [{
+  breakpoint:200,
+  options: {
+    chart: {
+      width: 200
+    },
+    legend: {
+      position: 'bottom',
+      show:false
+    }
+  }
+}]
+};
+
+var chart = new ApexCharts(document.querySelector("#chartteam1-pos"), options);
 chart.render();
 })();
 
