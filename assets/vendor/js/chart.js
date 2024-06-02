@@ -2174,12 +2174,18 @@ chart.render();
 //////////////////
 var options = {
   colors : ['#6f309f'],
+  series: [50],
   chart: {
-      height: 200,
-      whidth:200,
+      height: 180,
       type: 'radialBar',
   },
-  series: [40],
+  plotOptions: {
+    radialBar: {
+      hollow: {
+        size: '70%',
+      }
+    },
+  },
   labels: ['SUBMITTED'],
  
 }
@@ -2190,11 +2196,18 @@ chart.render();
 //////////////////
 var options = {
   colors : ['#6f309f'],
+  series: [50],
   chart: {
-      height: 200,
+      height: 180,
       type: 'radialBar',
   },
-  series: [50],
+  plotOptions: {
+    radialBar: {
+      hollow: {
+        size: '70%',
+      }
+    },
+  },
   labels: ['APPROVED'],
  
 }
@@ -2205,12 +2218,18 @@ chart.render();
 /////////////////
 var options = {
   colors : ['#6f309f'],
+  series: [50],
   chart: {
-      height: 200,
-      whidth:200,
+      height: 180,
       type: 'radialBar',
   },
-  series: [40],
+  plotOptions: {
+    radialBar: {
+      hollow: {
+        size: '70%',
+      }
+    },
+  },
   labels: ['SUBMITTED'],
  
 }
@@ -2221,11 +2240,18 @@ chart.render();
 //////////////////
 var options = {
   colors : ['#6f309f'],
+  series: [50],
   chart: {
-      height: 200,
+      height: 180,
       type: 'radialBar',
   },
-  series: [50],
+  plotOptions: {
+    radialBar: {
+      hollow: {
+        size: '70%',
+      }
+    },
+  },
   labels: ['APPROVED'],
  
 }
@@ -2236,12 +2262,18 @@ chart.render();
 /////////////////
 var options = {
   colors : ['#6f309f'],
+  series: [50],
   chart: {
-      height: 200,
-      whidth:200,
+      height: 180,
       type: 'radialBar',
   },
-  series: [40],
+  plotOptions: {
+    radialBar: {
+      hollow: {
+        size: '70%',
+      }
+    },
+  },
   labels: ['SUBMITTED'],
  
 }
@@ -2252,11 +2284,18 @@ chart.render();
 //////////////////
 var options = {
   colors : ['#6f309f'],
+  series: [50],
   chart: {
-      height: 200,
+      height: 180,
       type: 'radialBar',
   },
-  series: [50],
+  plotOptions: {
+    radialBar: {
+      hollow: {
+        size: '70%',
+      }
+    },
+  },
   labels: ['APPROVED'],
  
 }
@@ -2270,7 +2309,7 @@ var options = {
   series: [50,20],
   chart: {
   width: 150,
-  height: 150,
+  height: 180,
   type: 'pie',
   toolbar: {
     show: false
@@ -2309,7 +2348,7 @@ var options = {
   series: [50,20],
   chart: {
   width: 150,
-  height: 150,
+  height: 180,
   type: 'pie',
 },legend: {
   show:false,
@@ -2338,7 +2377,7 @@ var options = {
   series: [50,20],
   chart: {
   width: 150,
-  height: 150,
+  height: 180,
   type: 'pie',
   toolbar: {
     show: false
@@ -2377,7 +2416,7 @@ var options = {
   series: [50,20],
   chart: {
   width: 150,
-  height: 150,
+  height: 180,
   type: 'pie',
 },legend: {
   show:false,
@@ -2406,7 +2445,7 @@ var options = {
   series: [50,20],
   chart: {
   width: 150,
-  height: 150,
+  height: 180,
   type: 'pie',
 },legend: {
   show:false,
