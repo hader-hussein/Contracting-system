@@ -98,7 +98,7 @@ font-weight: 500;
     font-size: 15px;
     --bs-text-opacity:0 !important;
 }
-.bg-label-warning .fs-6,.chart-text .fs-6 {
+.bg-label-warning .fs-6,.chart-text .fs-6,.d-grid .text-poper{
     font-size: 0.8375rem !important;
 }
 .table-dashboard span{
