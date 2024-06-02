@@ -74,6 +74,7 @@
             }
           }
         },
+        
         plugins: {
           tooltip: {
             rtl: isRtl,
@@ -85,6 +86,23 @@
           },
           legend: {
             display: false
+          },
+          tooltip: {
+            callbacks: {
+              label: function (context) {
+                const label = context.labels || '',
+                  value = context.parsed;
+                const output = ' ' + label + ' : ' + value + ' %';
+                return output;
+              }
+            },
+            // Updated default tooltip UI
+            rtl: isRtl,
+            backgroundColor: cardColor,
+            titleColor: headingColor,
+            bodyColor: legendColor,
+            borderWidth: 1,
+            borderColor: borderColor
           }
         },
         scales: {
@@ -1814,7 +1832,7 @@
         height: 600,
         type: 'radialBar'
       },
-      colors: [blueColor,purpColor ,blueLightColor, dangerLIGHTColor],
+      colors: [blueColor,purpColor ,blueLightColor, dangerLIGHTColor,cyanColor],
       plotOptions: {
         radialBar: {
           size: 185,
@@ -1866,8 +1884,8 @@
       stroke: {
         lineCap: 'round'
       },
-      series: [39, 39, 39,64],
-      labels: ['Design Drawings', 'Shop Drawings', 'As-Built Drawings','Material Status']
+      series: [39, 39, 39,64,72],
+      labels: ['Design Drawings', 'Shop Drawings', 'As-Built Drawings','Material Status','LONG LEAD STATUS']
     };
   if (typeof radialBarChartEl !== undefined && radialBarChartEl !== null) {
     const radialChart = new ApexCharts(radialBarChartEl, radialBarChartConfig);
