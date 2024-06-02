@@ -95,9 +95,12 @@ font-weight: 500;
     background-color: chocolate;
     color: #000000!important;
     font-weight: 800;
-    font-size: 16px;
+    font-size: 15px;
     --bs-text-opacity:0 !important;
 }
 .bg-label-warning .fs-6,.chart-text .fs-6 {
     font-size: 0.8375rem !important;
+}
+.table-dashboard span{
+    font-size: 14px;
 }
