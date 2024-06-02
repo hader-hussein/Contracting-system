@@ -88,13 +88,16 @@ margin: 4px;
 .card-PROGRESS span,.text-poper{
 color: #991CFB;
 font-weight: 500;
-font-size: larger;
+
 }
 
-.card-dashboard .card-header,.card-dashboard .card-header h2{
+.card-dashboard .card-header,.card-dashboard .card-header h6{
     background-color: chocolate;
-    color: #000 !important;
+    color: #000000!important;
     font-weight: 800;
-    font-size: 20px;
+    font-size: 16px;
     --bs-text-opacity:0 !important;
+}
+.bg-label-warning .fs-6,.chart-text .fs-6 {
+    font-size: 0.8375rem !important;
 }
