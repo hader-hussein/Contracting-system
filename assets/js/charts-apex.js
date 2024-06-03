@@ -504,7 +504,7 @@
       },
       colors: config.colors.info,
       dataLabels: {
-        enabled: false
+        enabled: true
       },
       series: [
         {

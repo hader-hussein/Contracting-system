@@ -41,1710 +41,8 @@
     chartListItem.height = chartListItem.dataset.height;
   });
 
-  // --------------------------------------------------------------------
-
-
-  const horizontalBarChart = document.getElementById('horizontalBarChart');
-  if (horizontalBarChart) {
-    const horizontalBarChartVar = new Chart(horizontalBarChart, {
-      type: 'bar',
-      data: {
-        labels: ['SUBMITTED', 'APPROVED', 'REJECTED ', 'UNDER REVEW'],
-        datasets: [
-          {
-            data: [400, 320, 40, 40],
-            backgroundColor: config.colors.info,
-            borderColor: 'transparent',
-            maxBarThickness: 15
-          }
-        ]
-      },
-      options: {
-        indexAxis: 'y',
-        responsive: true,
-        maintainAspectRatio: false,
-        animation: {
-          duration: 500
-        },
-        elements: {
-          bar: {
-            borderRadius: {
-              topRight: 15,
-              bottomRight: 15
-            }
-          }
-        },
-        
-        plugins: {
-          tooltip: {
-            rtl: isRtl,
-            backgroundColor: cardColor,
-            titleColor: headingColor,
-            bodyColor: legendColor,
-            borderWidth: 1,
-            borderColor: borderColor
-          },
-          legend: {
-            display: false
-          },
-          tooltip: {
-            callbacks: {
-              label: function (context) {
-                const label = context.labels || '',
-                  value = context.parsed;
-                const output = ' ' + label + ' : ' + value + ' %';
-                return output;
-              }
-            },
-            // Updated default tooltip UI
-            rtl: isRtl,
-            backgroundColor: cardColor,
-            titleColor: headingColor,
-            bodyColor: legendColor,
-            borderWidth: 1,
-            borderColor: borderColor
-          }
-        },
-        scales: {
-          x: {
-            min: 0,
-            grid: {
-              color: borderColor,
-              borderColor: borderColor
-            },
-            ticks: {
-              color: labelColor
-            }
-          },
-          y: {
-            grid: {
-              borderColor: borderColor,
-              display: false,
-              drawBorder: false
-            },
-            ticks: {
-              color: labelColor
-            }
-          }
-        }
-      }
-    });
-  }
-
-  const horizontalBarCharttow = document.getElementById('horizontalBarChart-tow');
-  if (horizontalBarCharttow) {
-    const horizontalBarChartVar = new Chart(horizontalBarCharttow, {
-      type: 'bar',
-      data: {
-        labels: ['SUBMITTED', 'APPROVED', 'REJECTED ', 'UNDER REVEW'],
-        datasets: [
-          {
-            data: [400, 320, 40, 40],
-            backgroundColor: purpColor,
-            borderColor: 'transparent',
-            maxBarThickness: 15
-          }
-        ]
-      },
-      options: {
-        indexAxis: 'y',
-        responsive: true,
-        maintainAspectRatio: false,
-        animation: {
-          duration: 500
-        },
-        elements: {
-          bar: {
-            borderRadius: {
-              topRight: 15,
-              bottomRight: 15
-            }
-          }
-        },
-        plugins: {
-          tooltip: {
-            rtl: isRtl,
-            backgroundColor: cardColor,
-            titleColor: headingColor,
-            bodyColor: legendColor,
-            borderWidth: 1,
-            borderColor: borderColor
-          },
-          legend: {
-            display: false
-          }
-        },
-        scales: {
-          x: {
-            min: 0,
-            grid: {
-              color: borderColor,
-              borderColor: borderColor
-            },
-            ticks: {
-              color: labelColor
-            }
-          },
-          y: {
-            grid: {
-              borderColor: borderColor,
-              display: false,
-              drawBorder: false
-            },
-            ticks: {
-              color: labelColor
-            }
-          }
-        }
-      }
-    });
-  }
   
-  const horizontalBarChartthree = document.getElementById('horizontalBarChart-three');
-  if (horizontalBarChartthree) {
-    const horizontalBarChartVar = new Chart(horizontalBarChartthree, {
-      type: 'bar',
-      data: {
-        labels: ['SUBMITTED', 'APPROVED', 'REJECTED ', 'UNDER REVEW'],
-        datasets: [
-          {
-            data: [400, 320, 40, 40],
-            backgroundColor: blueCOLORT,
-            borderColor: 'transparent',
-            maxBarThickness: 15
-          }
-        ]
-      },
-      options: {
-        indexAxis: 'y',
-        responsive: true,
-        maintainAspectRatio: false,
-        animation: {
-          duration: 500
-        },
-        elements: {
-          bar: {
-            borderRadius: {
-              topRight: 15,
-              bottomRight: 15
-            }
-          }
-        },
-        plugins: {
-          tooltip: {
-            rtl: isRtl,
-            backgroundColor: cardColor,
-            titleColor: headingColor,
-            bodyColor: legendColor,
-            borderWidth: 1,
-            borderColor: borderColor
-          },
-          legend: {
-            display: false
-          }
-        },
-        scales: {
-          x: {
-            min: 0,
-            grid: {
-              color: borderColor,
-              borderColor: borderColor
-            },
-            ticks: {
-              color: labelColor
-            }
-          },
-          y: {
-            grid: {
-              borderColor: borderColor,
-              display: false,
-              drawBorder: false
-            },
-            ticks: {
-              color: labelColor
-            }
-          }
-        }
-      }
-    });
-  }
-
-  const horizontalBarChartfour = document.getElementById('horizontalBarChart-four');
-  if (horizontalBarChartfour) {
-    const horizontalBarChartVar = new Chart(horizontalBarChartfour, {
-      type: 'bar',
-      data: {
-        labels: ['ISSUED', 'CLOSED', 'OPENNED '],
-        datasets: [
-          {
-            
-            data: [400, 320, 80],
-            backgroundColor: dangerColor,
-            borderColor: 'transparent',
-            maxBarThickness: 15
-          }
-        ]
-      },
-      options: {
-        indexAxis: 'y',
-        responsive: true,
-        maintainAspectRatio: false,
-        animation: {
-          duration: 500
-        },
-        elements: {
-          bar: {
-            borderRadius: {
-              topRight: 15,
-              bottomRight: 15
-            }
-          }
-        },
-        plugins: {
-          
-          tooltip: {
-            rtl: isRtl,
-            backgroundColor: cardColor,
-            titleColor: headingColor,
-            bodyColor: legendColor,
-            borderWidth: 1,
-            borderColor: borderColor
-          },
-          legend: {
-            display: false
-          }
-        },
-        scales: {
-          
-          x: {
-            min: 0,
-           
-            grid: {
-              color: borderColor,
-              borderColor: borderColor
-            },
-            ticks: {
-              color: labelColor,
-              
-            }
-          },
-          y: {
-            grid: {
-              borderColor: borderColor,
-              display: false,
-              drawBorder: false
-            
-            },
-            ticks: {
-              color: labelColor,
-             
-            }
-          }
-        }
-      }
-    });
-  }
-  //----------------------------------------------------
-  const longChart = document.getElementById('long-Chart');
-  if (longChart) {
-    const horizontalBarChartVar = new Chart(longChart, {
-      type: 'bar',
-      data: {
-        labels: ['TOTALMTERIAL', 'SUBMITTED', 'APPROVED ','REMAINING','PEJECTED' ,'UNDER REVEW','DELIVERED'],
-        datasets: [
-          {
-            data: [5, 5, 5, 0,0,0,5],
-            backgroundColor: config.colors.info,
-            borderColor: 'transparent',
-            maxBarThickness: 15
-          }
-        ]
-      },
-      options: {
-        indexAxis: 'y',
-        responsive: true,
-        maintainAspectRatio: false,
-        animation: {
-          duration: 500
-        },
-        elements: {
-          bar: {
-            borderRadius: {
-              topRight: 15,
-              bottomRight: 15
-            }
-          }
-        },
-        plugins: {
-          tooltip: {
-            rtl: isRtl,
-            backgroundColor: cardColor,
-            titleColor: headingColor,
-            bodyColor: legendColor,
-            borderWidth: 1,
-            borderColor: borderColor
-          },
-          legend: {
-            display: false
-          }
-        },
-        scales: {
-          x: {
-            min: 0,
-            grid: {
-              color: borderColor,
-              borderColor: borderColor
-            },
-            ticks: {
-              color: labelColor
-            }
-          },
-          y: {
-            grid: {
-              borderColor: borderColor,
-              display: false,
-              drawBorder: false
-            },
-            ticks: {
-              color: labelColor
-            }
-          }
-        }
-      }
-    });
-  }
-  const longCharttow = document.getElementById('longCharttow-tow');
-  if (longCharttow) {
-    const horizontalBarChartVar = new Chart(longCharttow, {
-      type: 'bar',
-      data: {
-        labels: ['TOTALMTERIAL', 'SUBMITTED', 'APPROVED ','REMAINING','PEJECTED' ,'UNDER REVEW','DELIVERED'],
-        datasets: [
-          {
-            data: [2, 2, 2, 0,0,0,2],
-            backgroundColor: purpColor,
-            borderColor: 'transparent',
-            maxBarThickness: 15
-          }
-        ]
-      },
-      options: {
-        indexAxis: 'y',
-        responsive: true,
-        maintainAspectRatio: false,
-        animation: {
-          duration: 500
-        },
-        elements: {
-          bar: {
-            borderRadius: {
-              topRight: 15,
-              bottomRight: 15
-            }
-          }
-        },
-        plugins: {
-          tooltip: {
-            rtl: isRtl,
-            backgroundColor: cardColor,
-            titleColor: headingColor,
-            bodyColor: legendColor,
-            borderWidth: 1,
-            borderColor: borderColor
-          },
-          legend: {
-            display: false
-          }
-        },
-        scales: {
-          x: {
-            min: 0,
-            grid: {
-              color: borderColor,
-              borderColor: borderColor
-            },
-            ticks: {
-              color: labelColor
-            }
-          },
-          y: {
-            grid: {
-              borderColor: borderColor,
-              display: false,
-              drawBorder: false
-            },
-            ticks: {
-              color: labelColor
-            }
-          }
-        }
-      }
-    });
-  }
-  const longChartthree = document.getElementById('longChart-three');
-  if (longChartthree) {
-    const horizontalBarChartVar = new Chart(longChartthree, {
-      type: 'bar',
-      data: {
-        labels: ['TOTALMTERIAL', 'SUBMITTED', 'APPROVED ','REMAINING','PEJECTED' ,'UNDER REVEW','DELIVERED'],
-        datasets: [
-          {
-            data: [15, 13, 10, 2,3,0,5],
-            backgroundColor: blueCOLORT,
-            borderColor: 'transparent',
-            maxBarThickness: 15
-          }
-        ]
-      },
-      options: {
-        indexAxis: 'y',
-        responsive: true,
-        maintainAspectRatio: false,
-        animation: {
-          duration: 500
-        },
-        elements: {
-          bar: {
-            borderRadius: {
-              topRight: 15,
-              bottomRight: 15
-            }
-          }
-        },
-        plugins: {
-          tooltip: {
-            rtl: isRtl,
-            backgroundColor: cardColor,
-            titleColor: headingColor,
-            bodyColor: legendColor,
-            borderWidth: 1,
-            borderColor: borderColor
-          },
-          legend: {
-            display: false
-          }
-        },
-        scales: {
-          x: {
-            min: 0,
-            grid: {
-              color: borderColor,
-              borderColor: borderColor
-            },
-            ticks: {
-              color: labelColor
-            }
-          },
-          y: {
-            grid: {
-              borderColor: borderColor,
-              display: false,
-              drawBorder: false
-            },
-            ticks: {
-              color: labelColor
-            }
-          }
-        }
-      }
-    });
-  }
-  const longChartfour = document.getElementById('longChart-four');
-  if (longChartfour) {
-    const horizontalBarChartVar = new Chart(longChartfour, {
-      type: 'bar',
-      data: {
-        labels: ['TOTALMTERIAL', 'SUBMITTED', 'APPROVED ','REMAINING','PEJECTED' ,'UNDER REVEW','DELIVERED'],
-        datasets: [
-          {
-            
-            data: [10, 8, 6,2,1,1,5],
-            backgroundColor: orangeColor,
-            borderColor: 'transparent',
-            maxBarThickness: 15
-          }
-        ]
-      },
-      options: {
-        indexAxis: 'y',
-        responsive: true,
-        maintainAspectRatio: false,
-        animation: {
-          duration: 500
-        },
-        elements: {
-          bar: {
-            borderRadius: {
-              topRight: 15,
-              bottomRight: 15
-            }
-          }
-        },
-        plugins: {
-          
-          tooltip: {
-            rtl: isRtl,
-            backgroundColor: cardColor,
-            titleColor: headingColor,
-            bodyColor: legendColor,
-            borderWidth: 1,
-            borderColor: borderColor
-          },
-          legend: {
-            display: false
-          }
-        },
-        scales: {
-          
-          x: {
-            min: 0,
-           
-            grid: {
-              color: borderColor,
-              borderColor: borderColor
-            },
-            ticks: {
-              color: labelColor,
-              
-            }
-          },
-          y: {
-            grid: {
-              borderColor: borderColor,
-              display: false,
-              drawBorder: false
-            
-            },
-            ticks: {
-              color: labelColor,
-             
-            }
-          }
-        }
-      }
-    });
-  }
-  //----------------------------------------------------
-  const MaterialChart = document.getElementById('Material-Chart');
-  if (MaterialChart) {
-    const horizontalBarChartVar = new Chart(MaterialChart, {
-      type: 'bar',
-      data: {
-        labels: ['TOTALMTERIAL', 'SUBMITTED', 'APPROVED ','REJECTED' ,'UNDER REVEW','REMAINING'],
-        datasets: [
-          {
-            data: [60, 55,45, 5,5,5],
-            backgroundColor: yellowColor,
-            borderColor: 'transparent',
-            maxBarThickness: 15
-          }
-        ]
-      },
-      options: {
-        indexAxis: 'y',
-        responsive: true,
-        maintainAspectRatio: false,
-        animation: {
-          duration: 500
-        },
-        elements: {
-          bar: {
-            borderRadius: {
-              topRight: 15,
-              bottomRight: 15
-            }
-          }
-        },
-        plugins: {
-          tooltip: {
-            rtl: isRtl,
-            backgroundColor: cardColor,
-            titleColor: headingColor,
-            bodyColor: legendColor,
-            borderWidth: 1,
-            borderColor: borderColor
-          },
-          legend: {
-            display: false
-          }
-        },
-        scales: {
-          x: {
-            min: 0,
-            grid: {
-              color: borderColor,
-              borderColor: borderColor
-            },
-            ticks: {
-              color: labelColor
-            }
-          },
-          y: {
-            grid: {
-              borderColor: borderColor,
-              display: false,
-              drawBorder: false
-            },
-            ticks: {
-              color: labelColor
-            }
-          }
-        }
-      }
-    });
-  }
-  const Materialtow = document.getElementById('Material-tow');
-  if (Materialtow) {
-    const horizontalBarChartVar = new Chart(Materialtow, {
-      type: 'bar',
-      data: {
-        labels: ['TOTALMTERIAL', 'SUBMITTED', 'APPROVED ','REJECTED' ,'UNDER REVEW','REMAINING'],
-        datasets: [
-          {
-            data: [45, 45, 45, 0,0,0],
-            backgroundColor: brownCOLOR,
-            borderColor: 'transparent',
-            maxBarThickness: 15
-          }
-        ]
-      },
-      options: {
-        indexAxis: 'y',
-        responsive: true,
-        maintainAspectRatio: false,
-        animation: {
-          duration: 500
-        },
-        elements: {
-          bar: {
-            borderRadius: {
-              topRight: 15,
-              bottomRight: 15
-            }
-          }
-        },
-        plugins: {
-          tooltip: {
-            rtl: isRtl,
-            backgroundColor: cardColor,
-            titleColor: headingColor,
-            bodyColor: legendColor,
-            borderWidth: 1,
-            borderColor: borderColor
-          },
-          legend: {
-            display: false
-          }
-        },
-        scales: {
-          x: {
-            min: 0,
-            grid: {
-              color: borderColor,
-              borderColor: borderColor
-            },
-            ticks: {
-              color: labelColor
-            }
-          },
-          y: {
-            grid: {
-              borderColor: borderColor,
-              display: false,
-              drawBorder: false
-            },
-            ticks: {
-              color: labelColor
-            }
-          }
-        }
-      }
-    });
-  }
-  const Materialthree = document.getElementById('Material-three');
-  if (Materialthree) {
-    const horizontalBarChartVar = new Chart(Materialthree, {
-      type: 'bar',
-      data: {
-        labels: ['TOTALMTERIAL', 'SUBMITTED', 'APPROVED ','REJECTED' ,'UNDER REVEW','REMAINING'],
-        datasets: [
-          {
-            data: [67, 47, 33, 11,3,20],
-            backgroundColor: blueColor,
-            borderColor: 'transparent',
-            maxBarThickness: 15
-          }
-        ]
-      },
-      options: {
-        indexAxis: 'y',
-        responsive: true,
-        maintainAspectRatio: false,
-        animation: {
-          duration: 500
-        },
-        elements: {
-          bar: {
-            borderRadius: {
-              topRight: 15,
-              bottomRight: 15
-            }
-          }
-        },
-        plugins: {
-          tooltip: {
-            rtl: isRtl,
-            backgroundColor: cardColor,
-            titleColor: headingColor,
-            bodyColor: legendColor,
-            borderWidth: 1,
-            borderColor: borderColor
-          },
-          legend: {
-            display: false
-          }
-        },
-        scales: {
-          x: {
-            min: 0,
-            grid: {
-              color: borderColor,
-              borderColor: borderColor
-            },
-            ticks: {
-              color: labelColor
-            }
-          },
-          y: {
-            grid: {
-              borderColor: borderColor,
-              display: false,
-              drawBorder: false
-            },
-            ticks: {
-              color: labelColor
-            }
-          }
-        }
-      }
-    });
-  }
-  const Materialfour = document.getElementById('Material-four');
-  if (Materialfour ) {
-    const horizontalBarChartVar = new Chart(Materialfour , {
-      type: 'bar',
-      data: {
-        labels: ['TOTALMTERIAL', 'SUBMITTED', 'APPROVED ','REJECTED' ,'UNDER REVEW','REMAINING'],
-        datasets: [
-          {
-            
-            data: [111, 101, 57,17,27,10],
-            backgroundColor: grunCOLOR,
-            borderColor: 'transparent',
-            maxBarThickness: 15
-          }
-        ]
-      },
-      options: {
-        indexAxis: 'y',
-        responsive: true,
-        maintainAspectRatio: false,
-        animation: {
-          duration: 500
-        },
-        elements: {
-          bar: {
-            borderRadius: {
-              topRight: 15,
-              bottomRight: 15
-            }
-          }
-        },
-        plugins: {
-          
-          tooltip: {
-            rtl: isRtl,
-            backgroundColor: cardColor,
-            titleColor: headingColor,
-            bodyColor: legendColor,
-            borderWidth: 1,
-            borderColor: borderColor
-          },
-          legend: {
-            display: false
-          }
-        },
-        scales: {
-          
-          x: {
-            min: 0,
-           
-            grid: {
-              color: borderColor,
-              borderColor: borderColor
-            },
-            ticks: {
-              color: labelColor,
-              
-            }
-          },
-          y: {
-            grid: {
-              borderColor: borderColor,
-              display: false,
-              drawBorder: false
-            
-            },
-            ticks: {
-              color: labelColor,
-             
-            }
-          }
-        }
-      }
-    });
-  }
-  //----------------------------------------------------
-  const BuiltChart = document.getElementById('Built-Chart');
-  if (BuiltChart) {
-    const horizontalBarChartVar = new Chart(BuiltChart, {
-      type: 'bar',
-      data: {
-        labels: ['TOTALMTERIAL', 'SUBMITTED', 'APPROVED ','REJECTED' ,'UNDER REVEW','REMAINING'],
-        datasets: [
-          {
-            data: [120, 95,23, 40,32,25],
-            backgroundColor: grunCOLOR,
-            borderColor: 'transparent',
-            maxBarThickness: 15
-          }
-        ]
-      },
-      options: {
-        indexAxis: 'y',
-        responsive: true,
-        maintainAspectRatio: false,
-        animation: {
-          duration: 500
-        },
-        elements: {
-          bar: {
-            borderRadius: {
-              topRight: 15,
-              bottomRight: 15
-            }
-          }
-        },
-        plugins: {
-          tooltip: {
-            rtl: isRtl,
-            backgroundColor: cardColor,
-            titleColor: headingColor,
-            bodyColor: legendColor,
-            borderWidth: 1,
-            borderColor: borderColor
-          },
-          legend: {
-            display: false
-          }
-        },
-        scales: {
-          x: {
-            min: 0,
-            grid: {
-              color: borderColor,
-              borderColor: borderColor
-            },
-            ticks: {
-              color: labelColor
-            }
-          },
-          y: {
-            grid: {
-              borderColor: borderColor,
-              display: false,
-              drawBorder: false
-            },
-            ticks: {
-              color: labelColor
-            }
-          }
-        }
-      }
-    });
-  }
-  const Builttow = document.getElementById('Built-tow');
-  if (Builttow) {
-    const horizontalBarChartVar = new Chart(Builttow, {
-      type: 'bar',
-      data: {
-        labels: ['TOTALMTERIAL', 'SUBMITTED', 'APPROVED ','REJECTED' ,'UNDER REVEW','REMAINING'],
-        datasets: [
-          {
-            data: [332, 320, 300, 0,20,10],
-            backgroundColor: blueColor,
-            borderColor: 'transparent',
-            maxBarThickness: 15
-          }
-        ]
-      },
-      options: {
-        indexAxis: 'y',
-        responsive: true,
-        maintainAspectRatio: false,
-        animation: {
-          duration: 500
-        },
-        elements: {
-          bar: {
-            borderRadius: {
-              topRight: 15,
-              bottomRight: 15
-            }
-          }
-        },
-        plugins: {
-          tooltip: {
-            rtl: isRtl,
-            backgroundColor: cardColor,
-            titleColor: headingColor,
-            bodyColor: legendColor,
-            borderWidth: 1,
-            borderColor: borderColor
-          },
-          legend: {
-            display: false
-          }
-        },
-        scales: {
-          x: {
-            min: 0,
-            grid: {
-              color: borderColor,
-              borderColor: borderColor
-            },
-            ticks: {
-              color: labelColor
-            }
-          },
-          y: {
-            grid: {
-              borderColor: borderColor,
-              display: false,
-              drawBorder: false
-            },
-            ticks: {
-              color: labelColor
-            }
-          }
-        }
-      }
-    });
-  }
-  const Builtthree = document.getElementById('Built-three');
-  if (Builtthree) {
-    const horizontalBarChartVar = new Chart(Builtthree, {
-      type: 'bar',
-      data: {
-        labels: ['TOTALMTERIAL', 'SUBMITTED', 'APPROVED ','REJECTED' ,'UNDER REVEW','REMAINING'],
-        datasets: [
-          {
-            data: [389, 170, 26, 72,72,219],
-            backgroundColor: greyColor,
-            borderColor: 'transparent',
-            maxBarThickness: 15
-          }
-        ]
-      },
-      options: {
-        indexAxis: 'y',
-        responsive: true,
-        maintainAspectRatio: false,
-        animation: {
-          duration: 500
-        },
-        elements: {
-          bar: {
-            borderRadius: {
-              topRight: 15,
-              bottomRight: 15
-            }
-          }
-        },
-        plugins: {
-          tooltip: {
-            rtl: isRtl,
-            backgroundColor: cardColor,
-            titleColor: headingColor,
-            bodyColor: legendColor,
-            borderWidth: 1,
-            borderColor: borderColor
-          },
-          legend: {
-            display: false
-          }
-        },
-        scales: {
-          x: {
-            min: 0,
-            grid: {
-              color: borderColor,
-              borderColor: borderColor
-            },
-            ticks: {
-              color: labelColor
-            }
-          },
-          y: {
-            grid: {
-              borderColor: borderColor,
-              display: false,
-              drawBorder: false
-            },
-            ticks: {
-              color: labelColor
-            }
-          }
-        }
-      }
-    });
-  }
-  const Builtfour = document.getElementById('Built-four');
-  if (Builtfour ) {
-    const horizontalBarChartVar = new Chart(Builtfour , {
-      type: 'bar',
-      data: {
-        labels: ['TOTALMTERIAL', 'SUBMITTED', 'APPROVED ','REJECTED' ,'UNDER REVEW','REMAINING'],
-        datasets: [
-          {
-            
-            data: [202, 164, 58,42,64,38],
-            backgroundColor: blueLightColor,
-            borderColor: 'transparent',
-            maxBarThickness: 15
-          }
-        ]
-      },
-      options: {
-        indexAxis: 'y',
-        responsive: true,
-        maintainAspectRatio: false,
-        animation: {
-          duration: 500
-        },
-        elements: {
-          bar: {
-            borderRadius: {
-              topRight: 15,
-              bottomRight: 15
-            }
-          }
-        },
-        plugins: {
-          
-          tooltip: {
-            rtl: isRtl,
-            backgroundColor: cardColor,
-            titleColor: headingColor,
-            bodyColor: legendColor,
-            borderWidth: 1,
-            borderColor: borderColor
-          },
-          legend: {
-            display: false
-          }
-        },
-        scales: {
-          
-          x: {
-            min: 0,
-           
-            grid: {
-              color: borderColor,
-              borderColor: borderColor
-            },
-            ticks: {
-              color: labelColor,
-              
-            }
-          },
-          y: {
-            grid: {
-              borderColor: borderColor,
-              display: false,
-              drawBorder: false
-            
-            },
-            ticks: {
-              color: labelColor,
-             
-            }
-          }
-        }
-      }
-    });
-  }
-  //----------------------------------------------------
-  const ShopChart = document.getElementById('Shop-Chart');
-  if (ShopChart) {
-    const horizontalBarChartVar = new Chart(ShopChart, {
-      type: 'bar',
-      data: {
-        labels: ['TOTALMTERIAL', 'SUBMITTED', 'APPROVED ','REJECTED' ,'UNDER REVEW','REMAINING'],
-        datasets: [
-          {
-            data: [122, 97,23, 40,34,25],
-            backgroundColor: yellowColor,
-            borderColor: 'transparent',
-            maxBarThickness: 15
-          }
-        ]
-      },
-      options: {
-        indexAxis: 'y',
-        responsive: true,
-        maintainAspectRatio: false,
-        animation: {
-          duration: 500
-        },
-        elements: {
-          bar: {
-            borderRadius: {
-              topRight: 15,
-              bottomRight: 15
-            }
-          }
-        },
-        plugins: {
-          tooltip: {
-            rtl: isRtl,
-            backgroundColor: cardColor,
-            titleColor: headingColor,
-            bodyColor: legendColor,
-            borderWidth: 1,
-            borderColor: borderColor
-          },
-          legend: {
-            display: false
-          }
-        },
-        scales: {
-          x: {
-            min: 0,
-            grid: {
-              color: borderColor,
-              borderColor: borderColor
-            },
-            ticks: {
-              color: labelColor
-            }
-          },
-          y: {
-            grid: {
-              borderColor: borderColor,
-              display: false,
-              drawBorder: false
-            },
-            ticks: {
-              color: labelColor
-            }
-          }
-        }
-      }
-    });
-  }
-  const Shoptow = document.getElementById('Shop-tow');
-  if (Shoptow) {
-    const horizontalBarChartVar = new Chart(Shoptow, {
-      type: 'bar',
-      data: {
-        labels: ['TOTALMTERIAL', 'SUBMITTED', 'APPROVED ','REJECTED' ,'UNDER REVEW','REMAINING'],
-        datasets: [
-          {
-            data: [332, 320, 300, 0,20,12],
-            backgroundColor: dangerLIGHTColor,
-            borderColor: 'transparent',
-            maxBarThickness: 15
-          }
-        ]
-      },
-      options: {
-        indexAxis: 'y',
-        responsive: true,
-        maintainAspectRatio: false,
-        animation: {
-          duration: 500
-        },
-        elements: {
-          bar: {
-            borderRadius: {
-              topRight: 15,
-              bottomRight: 15
-            }
-          }
-        },
-        plugins: {
-          tooltip: {
-            rtl: isRtl,
-            backgroundColor: cardColor,
-            titleColor: headingColor,
-            bodyColor: legendColor,
-            borderWidth: 1,
-            borderColor: borderColor
-          },
-          legend: {
-            display: false
-          }
-        },
-        scales: {
-          x: {
-            min: 0,
-            grid: {
-              color: borderColor,
-              borderColor: borderColor
-            },
-            ticks: {
-              color: labelColor
-            }
-          },
-          y: {
-            grid: {
-              borderColor: borderColor,
-              display: false,
-              drawBorder: false
-            },
-            ticks: {
-              color: labelColor
-            }
-          }
-        }
-      }
-    });
-  }
-  const Shopthree = document.getElementById('Shop-three');
-  if (Shopthree) {
-    const horizontalBarChartVar = new Chart(Shopthree, {
-      type: 'bar',
-      data: {
-        labels: ['TOTALMTERIAL', 'SUBMITTED', 'APPROVED ','REJECTED' ,'UNDER REVEW','REMAINING'],
-        datasets: [
-          {
-            data: [389, 170, 26, 72,72,219],
-            backgroundColor: grunCOLOR,
-            borderColor: 'transparent',
-            maxBarThickness: 15
-          }
-        ]
-      },
-      options: {
-        indexAxis: 'y',
-        responsive: true,
-        maintainAspectRatio: false,
-        animation: {
-          duration: 500
-        },
-        elements: {
-          bar: {
-            borderRadius: {
-              topRight: 15,
-              bottomRight: 15
-            }
-          }
-        },
-        plugins: {
-          tooltip: {
-            rtl: isRtl,
-            backgroundColor: cardColor,
-            titleColor: headingColor,
-            bodyColor: legendColor,
-            borderWidth: 1,
-            borderColor: borderColor
-          },
-          legend: {
-            display: false
-          }
-        },
-        scales: {
-          x: {
-            min: 0,
-            grid: {
-              color: borderColor,
-              borderColor: borderColor
-            },
-            ticks: {
-              color: labelColor
-            }
-          },
-          y: {
-            grid: {
-              borderColor: borderColor,
-              display: false,
-              drawBorder: false
-            },
-            ticks: {
-              color: labelColor
-            }
-          }
-        }
-      }
-    });
-  }
-  const Shopfour = document.getElementById('Shop-four');
-  if (Shopfour ) {
-    const horizontalBarChartVar = new Chart(Shopfour , {
-      type: 'bar',
-      data: {
-        labels: ['TOTALMTERIAL', 'SUBMITTED', 'APPROVED ','REJECTED' ,'UNDER REVEW','REMAINING'],
-        datasets: [
-          {
-            
-            data: [202, 164, 58,42,64,38],
-            backgroundColor: blueColor,
-            borderColor: 'transparent',
-            maxBarThickness: 15
-          }
-        ]
-      },
-      options: {
-        indexAxis: 'y',
-        responsive: true,
-        maintainAspectRatio: false,
-        animation: {
-          duration: 500
-        },
-        elements: {
-          bar: {
-            borderRadius: {
-              topRight: 15,
-              bottomRight: 15
-            }
-          }
-        },
-        plugins: {
-          
-          tooltip: {
-            rtl: isRtl,
-            backgroundColor: cardColor,
-            titleColor: headingColor,
-            bodyColor: legendColor,
-            borderWidth: 1,
-            borderColor: borderColor
-          },
-          legend: {
-            display: false
-          }
-        },
-        scales: {
-          
-          x: {
-            min: 0,
-           
-            grid: {
-              color: borderColor,
-              borderColor: borderColor
-            },
-            ticks: {
-              color: labelColor,
-              
-            }
-          },
-          y: {
-            grid: {
-              borderColor: borderColor,
-              display: false,
-              drawBorder: false
-            
-            },
-            ticks: {
-              color: labelColor,
-             
-            }
-          }
-        }
-      }
-    });
-  }
-  //----------------------------------------------------
-  const DrawingsChart = document.getElementById('Drawings-Chart');
-  if (DrawingsChart) {
-    const horizontalBarChartVar = new Chart(DrawingsChart, {
-      type: 'bar',
-      data: {
-        labels: ['TOTALMTERIAL', 'SUBMITTED', 'APPROVED ','REJECTED' ,'UNDER REVEW','REMAINING'],
-        datasets: [
-          {
-            data: [122, 97,23, 40,34,25],
-            backgroundColor: blueLightColor,
-            borderColor: 'transparent',
-            maxBarThickness: 15
-          }
-        ]
-      },
-      options: {
-        indexAxis: 'y',
-        responsive: true,
-        maintainAspectRatio: false,
-        animation: {
-          duration: 500
-        },
-        elements: {
-          bar: {
-            borderRadius: {
-              topRight: 15,
-              bottomRight: 15
-            }
-          }
-        },
-        plugins: {
-          tooltip: {
-            rtl: isRtl,
-            backgroundColor: cardColor,
-            titleColor: headingColor,
-            bodyColor: legendColor,
-            borderWidth: 1,
-            borderColor: borderColor
-          },
-          legend: {
-            display: false
-          }
-        },
-        scales: {
-          x: {
-            min: 0,
-            grid: {
-              color: borderColor,
-              borderColor: borderColor
-            },
-            ticks: {
-              color: labelColor
-            }
-          },
-          y: {
-            grid: {
-              borderColor: borderColor,
-              display: false,
-              drawBorder: false
-            },
-            ticks: {
-              color: labelColor
-            }
-          }
-        }
-      }
-    });
-  }
-  const Drawingstow = document.getElementById('Drawings-tow');
-  if (Drawingstow) {
-    const horizontalBarChartVar = new Chart(Drawingstow, {
-      type: 'bar',
-      data: {
-        labels: ['TOTALMTERIAL', 'SUBMITTED', 'APPROVED ','REJECTED' ,'UNDER REVEW','REMAINING'],
-        datasets: [
-          {
-            data: [332, 320, 300, 0,20,12],
-            backgroundColor: dangerLIGHTColor,
-            borderColor: 'transparent',
-            maxBarThickness: 15
-          }
-        ]
-      },
-      options: {
-        indexAxis: 'y',
-        responsive: true,
-        maintainAspectRatio: false,
-        animation: {
-          duration: 500
-        },
-        elements: {
-          bar: {
-            borderRadius: {
-              topRight: 15,
-              bottomRight: 15
-            }
-          }
-        },
-        plugins: {
-          tooltip: {
-            rtl: isRtl,
-            backgroundColor: cardColor,
-            titleColor: headingColor,
-            bodyColor: legendColor,
-            borderWidth: 1,
-            borderColor: borderColor
-          },
-          legend: {
-            display: false
-          }
-        },
-        scales: {
-          x: {
-            min: 0,
-            grid: {
-              color: borderColor,
-              borderColor: borderColor
-            },
-            ticks: {
-              color: labelColor
-            }
-          },
-          y: {
-            grid: {
-              borderColor: borderColor,
-              display: false,
-              drawBorder: false
-            },
-            ticks: {
-              color: labelColor
-            }
-          }
-        }
-      }
-    });
-  }
-  const Drawingsthree = document.getElementById('Drawings-three');
-  if (Drawingsthree) {
-    const horizontalBarChartVar = new Chart(Drawingsthree, {
-      type: 'bar',
-      data: {
-        labels: ['TOTALMTERIAL', 'SUBMITTED', 'APPROVED ','REJECTED' ,'UNDER REVEW','REMAINING'],
-        datasets: [
-          {
-            data: [389, 170, 26, 72,72,219],
-            backgroundColor: blueColor,
-            borderColor: 'transparent',
-            maxBarThickness: 15
-          }
-        ]
-      },
-      options: {
-        indexAxis: 'y',
-        responsive: true,
-        maintainAspectRatio: false,
-        animation: {
-          duration: 500
-        },
-        elements: {
-          bar: {
-            borderRadius: {
-              topRight: 15,
-              bottomRight: 15
-            }
-          }
-        },
-        plugins: {
-          tooltip: {
-            rtl: isRtl,
-            backgroundColor: cardColor,
-            titleColor: headingColor,
-            bodyColor: legendColor,
-            borderWidth: 1,
-            borderColor: borderColor
-          },
-          legend: {
-            display: false
-          }
-        },
-        scales: {
-          x: {
-            min: 0,
-            grid: {
-              color: borderColor,
-              borderColor: borderColor
-            },
-            ticks: {
-              color: labelColor
-            }
-          },
-          y: {
-            grid: {
-              borderColor: borderColor,
-              display: false,
-              drawBorder: false
-            },
-            ticks: {
-              color: labelColor
-            }
-          }
-        }
-      }
-    });
-  }
-  const Drawingsfour = document.getElementById('Drawings-four');
-  if (Drawingsfour ) {
-    const horizontalBarChartVar = new Chart(Drawingsfour , {
-      type: 'bar',
-      data: {
-        labels: ['TOTALMTERIAL', 'SUBMITTED', 'APPROVED ','REJECTED' ,'UNDER REVEW','REMAINING'],
-        datasets: [
-          {
-            
-            data: [202, 164, 58,42,64,38],
-            backgroundColor: purpColor,
-            borderColor: 'transparent',
-            maxBarThickness: 15
-          }
-        ]
-      },
-      options: {
-        indexAxis: 'y',
-        responsive: true,
-        maintainAspectRatio: false,
-        animation: {
-          duration: 500
-        },
-        elements: {
-          bar: {
-            borderRadius: {
-              topRight: 15,
-              bottomRight: 15
-            }
-          }
-        },
-        plugins: {
-          
-          tooltip: {
-            rtl: isRtl,
-            backgroundColor: cardColor,
-            titleColor: headingColor,
-            bodyColor: legendColor,
-            borderWidth: 1,
-            borderColor: borderColor
-          },
-          legend: {
-            display: false
-          }
-        },
-        scales: {
-          
-          x: {
-            min: 0,
-           
-            grid: {
-              color: borderColor,
-              borderColor: borderColor
-            },
-            ticks: {
-              color: labelColor,
-              
-            }
-          },
-          y: {
-            grid: {
-              borderColor: borderColor,
-              display: false,
-              drawBorder: false
-            
-            },
-            ticks: {
-              color: labelColor,
-             
-            }
-          }
-        }
-      }
-    });
-  }
-  //-------------------
+  
   // Doughnut Chart
   // --------------------------------------------------------------------
 
@@ -2486,6 +784,1885 @@ responsive: [{
 
 var chart = new ApexCharts(document.querySelector("#chartteam1-pos"), options);
 chart.render();
+// Horizontal Bar Chart
+  // --------------------------------------------------------------------
+  const horizontalBarChartEl = document.querySelector('#horizontalBarChart-ch'),
+    horizontalBarChartConfig = {
+      chart: {
+       
+        height: 400,
+        type: 'bar',
+        toolbar: {
+          show: false
+        }
+      },
+      plotOptions: {
+        bar: {
+          horizontal: true,
+          barHeight: '30%',
+          startingShape: 'rounded',
+          borderRadius: 8
+        }
+      },
+      grid: {
+        borderColor: borderColor,
+        xaxis: {
+          lines: {
+            show: false
+          }
+        },
+        padding: {
+          top: -20,
+          bottom: -12
+        }
+      },
+      colors: config.colors.info,
+      dataLabels: {
+        enabled: true,
+
+              style: {
+                fontSize: '12px',
+                colors: ["#304758"]
+              }
+      },
+      series: [
+        {
+          data: [400, 320, 40, 40]
+        }
+      ],
+      colors: [
+        "#991CFB",
+      ],
+      xaxis: {
+        categories: ['SUBMITTED', 'APPROVED', 'REJECTED ', 'UNDER REVEW'],
+        axisBorder: {
+          show: true
+        },
+        axisTicks: {
+          show: false
+        },
+        labels: {
+          style: {
+            colors: labelColor,
+            fontSize: '13px'
+          }
+        }
+      },
+      yaxis: {
+        yaxisBorder: {
+          show: true
+        },
+        labels: {
+          style: {
+            colors: labelColor,
+            fontSize: '12px'
+          }
+        }
+      }
+    };
+  if (typeof horizontalBarChartEl !== undefined && horizontalBarChartEl !== null) {
+    const horizontalBarChart = new ApexCharts(horizontalBarChartEl, horizontalBarChartConfig);
+    horizontalBarChart.render();
+  }
+  // Horizontal Bar Chart
+  // --------------------------------------------------------------------
+  const horizontalBarChartEl1 = document.querySelector('#horizontalBarChart-ch1'),
+    horizontalBarChartConfig1 = {
+      chart: {
+       
+        height: 400,
+        type: 'bar',
+        toolbar: {
+          show: false
+        }
+      },
+      plotOptions: {
+        bar: {
+          horizontal: true,
+          barHeight: '30%',
+          startingShape: 'rounded',
+          borderRadius: 8
+        }
+      },
+      grid: {
+        borderColor: borderColor,
+        xaxis: {
+          lines: {
+            show: false
+          }
+        },
+        padding: {
+          top: -20,
+          bottom: -12
+        }
+      },
+      colors: config.colors.info,
+      dataLabels: {
+        enabled: true,
+       
+              style: {
+                fontSize: '14px',
+                colors: ["#304758"]
+              }
+      },
+      series: [
+        {
+          data: [400, 320, 40, 40]
+        }
+      ],
+      colors: config.colors.info,
+      xaxis: {
+        categories: ['SUBMITTED', 'APPROVED', 'REJECTED ', 'UNDER REVEW'],
+        axisBorder: {
+          show: true
+        },
+        axisTicks: {
+          show: false
+        },
+        labels: {
+          style: {
+            colors: labelColor,
+            fontSize: '13px'
+          }
+        }
+      },
+      yaxis: {
+        yaxisBorder: {
+          show: true
+        },
+        labels: {
+          style: {
+            colors: labelColor,
+            fontSize: '12px'
+          }
+        }
+      }
+    };
+  if (typeof horizontalBarChartEl1 !== undefined && horizontalBarChartEl1 !== null) {
+    const horizontalBarChart = new ApexCharts(horizontalBarChartEl1, horizontalBarChartConfig1);
+    horizontalBarChart.render();
+  }
+  // Horizontal Bar Chart
+  // --------------------------------------------------------------------
+  const horizontalBarChartE2 = document.querySelector('#horizontalBarChart-ch2'),
+    horizontalBarChartConfig2 = {
+      chart: {
+       
+        height: 400,
+        type: 'bar',
+        toolbar: {
+          show: false
+        }
+      },
+      plotOptions: {
+        bar: {
+          horizontal: true,
+          barHeight: '30%',
+          startingShape: 'rounded',
+          borderRadius: 8
+        }
+      },
+      grid: {
+        borderColor: borderColor,
+        xaxis: {
+          lines: {
+            show: false
+          }
+        },
+        padding: {
+          top: -20,
+          bottom: -12
+        }
+      },
+      colors: config.colors.info,
+      dataLabels: {
+        enabled: true,
+       
+              style: {
+                fontSize: '14px',
+                colors: ["#fff"]
+              }
+      },
+      series: [
+        {
+          data: [400, 320, 40, 40]
+        }
+      ],
+      colors: [
+        "#141C4D",
+      ],
+      xaxis: {
+        categories: ['SUBMITTED', 'APPROVED', 'REJECTED ', 'UNDER REVEW'],
+        axisBorder: {
+          show: true
+        },
+        axisTicks: {
+          show: false
+        },
+        labels: {
+          style: {
+            colors: labelColor,
+            fontSize: '13px'
+          }
+        }
+      },
+      yaxis: {
+        yaxisBorder: {
+          show: true
+        },
+        labels: {
+          style: {
+            colors: labelColor,
+            fontSize: '12px'
+          }
+        }
+      }
+    };
+  if (typeof horizontalBarChartE2 !== undefined && horizontalBarChartE2 !== null) {
+    const horizontalBarChart = new ApexCharts(horizontalBarChartE2, horizontalBarChartConfig2);
+    horizontalBarChart.render();
+  }
+  // Horizontal Bar Chart
+  // Horizontal Bar Chart
+  // --------------------------------------------------------------------
+  const horizontalBarChartE3 = document.querySelector('#horizontalBarChart-ch3'),
+    horizontalBarChartConfig3 = {
+      chart: {
+       
+        height: 400,
+        type: 'bar',
+        toolbar: {
+          show: false
+        }
+      },
+      plotOptions: {
+        bar: {
+          horizontal: true,
+          barHeight: '30%',
+          startingShape: 'rounded',
+          borderRadius: 8
+        }
+      },
+      grid: {
+        borderColor: borderColor,
+        xaxis: {
+          lines: {
+            show: false
+          }
+        },
+        padding: {
+          top: -20,
+          bottom: -12
+        }
+      },
+      colors: config.colors.info,
+      dataLabels: {
+        enabled: true,
+       
+              style: {
+                fontSize: '14px',
+                colors: ["#fff"]
+              }
+      },
+      series: [
+        {
+          data: [400, 320, 80]
+        }
+      ],
+      colors: [
+        "#ff0000",
+      ],
+      xaxis: {
+        categories: ['ISSUED', 'CLOSED', 'OPENNED '],
+        axisBorder: {
+          show: true
+        },
+        axisTicks: {
+          show: false
+        },
+        labels: {
+          style: {
+            colors: labelColor,
+            fontSize: '13px'
+          }
+        }
+      },
+      yaxis: {
+        yaxisBorder: {
+          show: true
+        },
+        labels: {
+          style: {
+            colors: labelColor,
+            fontSize: '12px'
+          }
+        }
+      }
+    };
+  if (typeof horizontalBarChartE3 !== undefined && horizontalBarChartE3 !== null) {
+    const horizontalBarChart = new ApexCharts(horizontalBarChartE3, horizontalBarChartConfig3);
+    horizontalBarChart.render();
+  }
+  // Horizontal Bar Chart
+  const horizontalBarChartE4 = document.querySelector('#long-Chart'),
+    horizontalBarChartConfig4 = {
+      chart: {
+       
+        height: 400,
+        type: 'bar',
+        toolbar: {
+          show: false
+        }
+      },
+      plotOptions: {
+        bar: {
+          horizontal: true,
+          barHeight: '30%',
+          startingShape: 'rounded',
+          borderRadius: 8
+        }
+      },
+      grid: {
+        borderColor: borderColor,
+        xaxis: {
+          lines: {
+            show: false
+          }
+        },
+        padding: {
+          top: -20,
+          bottom: -12
+        }
+      },
+      colors: config.colors.info,
+      dataLabels: {
+        enabled: true,
+       
+              style: {
+                fontSize: '14px',
+                colors: ["#fff"]
+              }
+      },
+      series: [
+        {
+          data: [5, 5, 5, 0,0,0,5]
+        }
+      ],
+      colors: config.colors.info,
+      xaxis: {
+        categories: ['TOTALMTERIAL', 'SUBMITTED', 'APPROVED ','REMAINING','PEJECTED' ,'UNDER REVEW','DELIVERED'],
+        axisBorder: {
+          show: true
+        },
+        axisTicks: {
+          show: false
+        },
+        labels: {
+          style: {
+            colors: labelColor,
+            fontSize: '13px'
+          }
+        }
+      },
+      yaxis: {
+        yaxisBorder: {
+          show: true
+        },
+        labels: {
+          style: {
+            colors: labelColor,
+            fontSize: '12px'
+          }
+        }
+      }
+    };
+  if (typeof horizontalBarChartE4 !== undefined && horizontalBarChartE4 !== null) {
+    const horizontalBarChart = new ApexCharts(horizontalBarChartE4, horizontalBarChartConfig4);
+    horizontalBarChart.render();
+  }
+  // Horizontal Bar Chart
+  const horizontalBarChartE5 = document.querySelector('#longCharttow-tow'),
+    horizontalBarChartConfig5 = {
+      chart: {
+       
+        height: 400,
+        type: 'bar',
+        toolbar: {
+          show: false
+        }
+      },
+      plotOptions: {
+        bar: {
+          horizontal: true,
+          barHeight: '30%',
+          startingShape: 'rounded',
+          borderRadius: 8
+        }
+      },
+      grid: {
+        borderColor: borderColor,
+        xaxis: {
+          lines: {
+            show: false
+          }
+        },
+        padding: {
+          top: -20,
+          bottom: -12
+        }
+      },
+      colors: config.colors.info,
+      dataLabels: {
+        enabled: true,
+       
+              style: {
+                fontSize: '14px',
+                colors: ["#fff"]
+              }
+      },
+      series: [
+        {
+          data: [2, 2, 2, 0,0,0,2]
+        }
+      ],
+      colors: [
+        "#991CFB",
+      ],
+      xaxis: {
+        categories: ['TOTALMTERIAL', 'SUBMITTED', 'APPROVED ','REMAINING','PEJECTED' ,'UNDER REVEW','DELIVERED'],
+        axisBorder: {
+          show: true
+        },
+        axisTicks: {
+          show: false
+        },
+        labels: {
+          style: {
+            colors: labelColor,
+            fontSize: '13px'
+          }
+        }
+      },
+      yaxis: {
+        yaxisBorder: {
+          show: true
+        },
+        labels: {
+          style: {
+            colors: labelColor,
+            fontSize: '12px'
+          }
+        }
+      }
+    };
+  if (typeof horizontalBarChartE5 !== undefined && horizontalBarChartE5 !== null) {
+    const horizontalBarChart = new ApexCharts(horizontalBarChartE5, horizontalBarChartConfig5);
+    horizontalBarChart.render();
+  }
+  // Horizontal Bar Chart
+  const horizontalBarChartE6 = document.querySelector('#longChart-three'),
+    horizontalBarChartConfig6 = {
+      chart: {
+       
+        height: 400,
+        type: 'bar',
+        toolbar: {
+          show: false
+        }
+      },
+      plotOptions: {
+        bar: {
+          horizontal: true,
+          barHeight: '30%',
+          startingShape: 'rounded',
+          borderRadius: 8
+        }
+      },
+      grid: {
+        borderColor: borderColor,
+        xaxis: {
+          lines: {
+            show: false
+          }
+        },
+        padding: {
+          top: -20,
+          bottom: -12
+        }
+      },
+      colors: config.colors.info,
+      dataLabels: {
+        enabled: true,
+       
+              style: {
+                fontSize: '14px',
+                colors: ["#fff"]
+              }
+      },
+      series: [
+        {
+          data: [15, 13, 10, 2,3,0,5]
+        }
+      ],
+      colors: [
+        "#141C4D",
+      ],
+      xaxis: {
+        categories: ['TOTALMTERIAL', 'SUBMITTED', 'APPROVED ','REMAINING','PEJECTED' ,'UNDER REVEW','DELIVERED'],
+        axisBorder: {
+          show: true
+        },
+        axisTicks: {
+          show: false
+        },
+        labels: {
+          style: {
+            colors: labelColor,
+            fontSize: '13px'
+          }
+        }
+      },
+      yaxis: {
+        yaxisBorder: {
+          show: true
+        },
+        labels: {
+          style: {
+            colors: labelColor,
+            fontSize: '12px'
+          }
+        }
+      }
+    };
+  if (typeof horizontalBarChartE6 !== undefined && horizontalBarChartE6 !== null) {
+    const horizontalBarChart = new ApexCharts(horizontalBarChartE6, horizontalBarChartConfig6);
+    horizontalBarChart.render();
+  }
+  // Horizontal Bar Chart
+  const horizontalBarChartE7 = document.querySelector('#longChart-four'),
+    horizontalBarChartConfig7 = {
+      chart: {
+       
+        height: 400,
+        type: 'bar',
+        toolbar: {
+          show: false
+        }
+      },
+      plotOptions: {
+        bar: {
+          horizontal: true,
+          barHeight: '30%',
+          startingShape: 'rounded',
+          borderRadius: 8
+        }
+      },
+      grid: {
+        borderColor: borderColor,
+        xaxis: {
+          lines: {
+            show: false
+          }
+        },
+        padding: {
+          top: -20,
+          bottom: -12
+        }
+      },
+      colors: config.colors.info,
+      dataLabels: {
+        enabled: true,
+       
+              style: {
+                fontSize: '14px',
+                colors: ["#fff"]
+              }
+      },
+      series: [
+        {
+          data: [10, 8, 6,2,1,1,5]
+        }
+      ],
+      colors: [
+        "#FF8132",
+      ],
+      xaxis: {
+        categories: ['TOTALMTERIAL', 'SUBMITTED', 'APPROVED ','REMAINING','PEJECTED' ,'UNDER REVEW','DELIVERED'],
+        axisBorder: {
+          show: true
+        },
+        axisTicks: {
+          show: false
+        },
+        labels: {
+          style: {
+            colors: labelColor,
+            fontSize: '13px'
+          }
+        }
+      },
+      yaxis: {
+        yaxisBorder: {
+          show: true
+        },
+        labels: {
+          style: {
+            colors: labelColor,
+            fontSize: '12px'
+          }
+        }
+      }
+    };
+  if (typeof horizontalBarChartE7 !== undefined && horizontalBarChartE7 !== null) {
+    const horizontalBarChart = new ApexCharts(horizontalBarChartE7, horizontalBarChartConfig7);
+    horizontalBarChart.render();
+  }
+  // Horizontal Bar Chart
+  const horizontalBarChartE8 = document.querySelector('#Material-Chart'),
+    horizontalBarChartConfig8 = {
+      chart: {
+       
+        height: 400,
+        type: 'bar',
+        toolbar: {
+          show: false
+        }
+      },
+      plotOptions: {
+        bar: {
+          horizontal: true,
+          barHeight: '30%',
+          startingShape: 'rounded',
+          borderRadius: 8
+        }
+      },
+      grid: {
+        borderColor: borderColor,
+        xaxis: {
+          lines: {
+            show: false
+          }
+        },
+        padding: {
+          top: -20,
+          bottom: -12
+        }
+      },
+      colors: config.colors.info,
+      dataLabels: {
+        enabled: true,
+       
+              style: {
+                fontSize: '14px',
+                colors: ["#000"]
+              }
+      },
+      series: [
+        {
+          data: [60, 55,45, 5,5,5]
+        }
+      ],
+      colors: [
+        "#ffe800",
+      ],
+      xaxis: {
+        categories: ['TOTALMTERIAL', 'SUBMITTED', 'APPROVED ','REJECTED' ,'UNDER REVEW','REMAINING'],
+        axisBorder: {
+          show: true
+        },
+        axisTicks: {
+          show: false
+        },
+        labels: {
+          style: {
+            colors: labelColor,
+            fontSize: '13px'
+          }
+        }
+      },
+      yaxis: {
+        yaxisBorder: {
+          show: true
+        },
+        labels: {
+          style: {
+            colors: labelColor,
+            fontSize: '12px'
+          }
+        }
+      }
+    };
+  if (typeof horizontalBarChartE8 !== undefined && horizontalBarChartE8 !== null) {
+    const horizontalBarChart = new ApexCharts(horizontalBarChartE8, horizontalBarChartConfig8);
+    horizontalBarChart.render();
+  }
+  // Horizontal Bar Chart
+  const horizontalBarChartE9= document.querySelector('#Material-tow'),
+    horizontalBarChartConfig9 = {
+      chart: {
+       
+        height: 400,
+        type: 'bar',
+        toolbar: {
+          show: false
+        }
+      },
+      plotOptions: {
+        bar: {
+          horizontal: true,
+          barHeight: '30%',
+          startingShape: 'rounded',
+          borderRadius: 8
+        }
+      },
+      grid: {
+        borderColor: borderColor,
+        xaxis: {
+          lines: {
+            show: false
+          }
+        },
+        padding: {
+          top: -20,
+          bottom: -12
+        }
+      },
+      colors: config.colors.info,
+      dataLabels: {
+        enabled: true,
+       
+              style: {
+                fontSize: '14px',
+                colors: ["#000"]
+              }
+      },
+      series: [
+        {
+          data: [45, 45, 45, 0,0,0]
+        }
+      ],
+      colors: [
+        "#795548",
+      ],
+      xaxis: {
+        categories: ['TOTALMTERIAL', 'SUBMITTED', 'APPROVED ','REJECTED' ,'UNDER REVEW','REMAINING'],
+        axisBorder: {
+          show: true
+        },
+        axisTicks: {
+          show: false
+        },
+        labels: {
+          style: {
+            colors: labelColor,
+            fontSize: '13px'
+          }
+        }
+      },
+      yaxis: {
+        yaxisBorder: {
+          show: true
+        },
+        labels: {
+          style: {
+            colors: labelColor,
+            fontSize: '12px'
+          }
+        }
+      }
+    };
+  if (typeof horizontalBarChartE9 !== undefined && horizontalBarChartE9 !== null) {
+    const horizontalBarChart = new ApexCharts(horizontalBarChartE9, horizontalBarChartConfig9);
+    horizontalBarChart.render();
+  }
+   // Horizontal Bar Chart
+   const horizontalBarChartEm= document.querySelector('#Material-three'),
+   horizontalBarChartConfigm = {
+     chart: {
+      
+       height: 400,
+       type: 'bar',
+       toolbar: {
+         show: false
+       }
+     },
+     plotOptions: {
+       bar: {
+         horizontal: true,
+         barHeight: '30%',
+         startingShape: 'rounded',
+         borderRadius: 8
+       }
+     },
+     grid: {
+       borderColor: borderColor,
+       xaxis: {
+         lines: {
+           show: false
+         }
+       },
+       padding: {
+         top: -20,
+         bottom: -12
+       }
+     },
+     colors: config.colors.info,
+     dataLabels: {
+       enabled: true,
+      
+             style: {
+               fontSize: '14px',
+               colors: ["#000"]
+             }
+     },
+     series: [
+       {
+         data: [67, 47, 33, 11,3,20]
+       }
+     ],
+     colors: [
+       "#2B9AFF",
+     ],
+     xaxis: {
+       categories: ['TOTALMTERIAL', 'SUBMITTED', 'APPROVED ','REJECTED' ,'UNDER REVEW','REMAINING'],
+       axisBorder: {
+         show: true
+       },
+       axisTicks: {
+         show: false
+       },
+       labels: {
+         style: {
+           colors: labelColor,
+           fontSize: '13px'
+         }
+       }
+     },
+     yaxis: {
+       yaxisBorder: {
+         show: true
+       },
+       labels: {
+         style: {
+           colors: labelColor,
+           fontSize: '12px'
+         }
+       }
+     }
+   };
+ if (typeof horizontalBarChartEm !== undefined && horizontalBarChartEm !== null) {
+   const horizontalBarChart = new ApexCharts(horizontalBarChartEm, horizontalBarChartConfigm);
+   horizontalBarChart.render();
+ }
+   // Horizontal Bar Chart
+   const horizontalBarChartEm4 = document.querySelector('#Material-four'),
+   horizontalBarChartConfigm4 = {
+     chart: {
+      
+       height: 400,
+       type: 'bar',
+       toolbar: {
+         show: false
+       }
+     },
+     plotOptions: {
+       bar: {
+         horizontal: true,
+         barHeight: '30%',
+         startingShape: 'rounded',
+         borderRadius: 8
+       }
+     },
+     grid: {
+       borderColor: borderColor,
+       xaxis: {
+         lines: {
+           show: false
+         }
+       },
+       padding: {
+         top: -20,
+         bottom: -12
+       }
+     },
+     colors: config.colors.info,
+     dataLabels: {
+       enabled: true,
+      
+             style: {
+               fontSize: '14px',
+               colors: ["#000"]
+             }
+     },
+     series: [
+       {
+         data: [111, 101, 57,17,27,10]
+       }
+     ],
+     colors: [
+       "#4CAF50",
+     ],
+     xaxis: {
+       categories: ['TOTALMTERIAL', 'SUBMITTED', 'APPROVED ','REJECTED' ,'UNDER REVEW','REMAINING'],
+       axisBorder: {
+         show: true
+       },
+       axisTicks: {
+         show: false
+       },
+       labels: {
+         style: {
+           colors: labelColor,
+           fontSize: '13px'
+         }
+       }
+     },
+     yaxis: {
+       yaxisBorder: {
+         show: true
+       },
+       labels: {
+         style: {
+           colors: labelColor,
+           fontSize: '12px'
+         }
+       }
+     }
+   };
+ if (typeof horizontalBarChartEm4 !== undefined && horizontalBarChartEm4 !== null) {
+   const horizontalBarChart = new ApexCharts(horizontalBarChartEm4, horizontalBarChartConfigm4);
+   horizontalBarChart.render();
+ }
+   // Horizontal Bar Chart
+   const horizontalBarChartEb1 = document.querySelector('#Built-Chart'),
+   horizontalBarChartConfigb1 = {
+     chart: {
+      
+       height: 400,
+       type: 'bar',
+       toolbar: {
+         show: false
+       }
+     },
+     plotOptions: {
+       bar: {
+         horizontal: true,
+         barHeight: '30%',
+         startingShape: 'rounded',
+         borderRadius: 8
+       }
+     },
+     grid: {
+       borderColor: borderColor,
+       xaxis: {
+         lines: {
+           show: false
+         }
+       },
+       padding: {
+         top: -20,
+         bottom: -12
+       }
+     },
+     colors: config.colors.info,
+     dataLabels: {
+       enabled: true,
+      
+             style: {
+               fontSize: '14px',
+               colors: ["#000"]
+             }
+     },
+     series: [
+       {
+         data: [120, 95,23, 40,32,25]
+       }
+     ],
+     colors: [
+       "#4CAF50",
+     ],
+     xaxis: {
+       categories: ['TOTALMTERIAL', 'SUBMITTED', 'APPROVED ','REJECTED' ,'UNDER REVEW','REMAINING'],
+       axisBorder: {
+         show: true
+       },
+       axisTicks: {
+         show: false
+       },
+       labels: {
+         style: {
+           colors: labelColor,
+           fontSize: '13px'
+         }
+       }
+     },
+     yaxis: {
+       yaxisBorder: {
+         show: true
+       },
+       labels: {
+         style: {
+           colors: labelColor,
+           fontSize: '12px'
+         }
+       }
+     }
+   };
+ if (typeof horizontalBarChartEb1 !== undefined && horizontalBarChartEb1 !== null) {
+   const horizontalBarChart = new ApexCharts(horizontalBarChartEb1, horizontalBarChartConfigb1);
+   horizontalBarChart.render();
+ }
+ // Horizontal Bar Chart
+ const horizontalBarChartEb2 = document.querySelector('#Built-tow'),
+ horizontalBarChartConfigb2 = {
+   chart: {
+    
+     height: 400,
+     type: 'bar',
+     toolbar: {
+       show: false
+     }
+   },
+   plotOptions: {
+     bar: {
+       horizontal: true,
+       barHeight: '30%',
+       startingShape: 'rounded',
+       borderRadius: 8
+     }
+   },
+   grid: {
+     borderColor: borderColor,
+     xaxis: {
+       lines: {
+         show: false
+       }
+     },
+     padding: {
+       top: -20,
+       bottom: -12
+     }
+   },
+   colors: config.colors.info,
+   dataLabels: {
+     enabled: true,
+    
+           style: {
+             fontSize: '14px',
+             colors: ["#000"]
+           }
+   },
+   series: [
+     {
+       data: [332, 320, 300, 0,20,10]
+     }
+   ],
+   colors: [
+     "#2B9AFF",
+   ],
+   xaxis: {
+     categories: ['TOTALMTERIAL', 'SUBMITTED', 'APPROVED ','REJECTED' ,'UNDER REVEW','REMAINING'],
+     axisBorder: {
+       show: true
+     },
+     axisTicks: {
+       show: false
+     },
+     labels: {
+       style: {
+         colors: labelColor,
+         fontSize: '12px'
+       }
+     }
+   },
+   yaxis: {
+     yaxisBorder: {
+       show: true
+     },
+     labels: {
+       style: {
+         colors: labelColor,
+         fontSize: '10px'
+       }
+     }
+   }
+ };
+if (typeof horizontalBarChartEb2 !== undefined && horizontalBarChartEb2 !== null) {
+ const horizontalBarChart = new ApexCharts(horizontalBarChartEb2, horizontalBarChartConfigb2);
+ horizontalBarChart.render();
+}
+ // Horizontal Bar Chart
+ const horizontalBarChartEb3 = document.querySelector('#Built-three'),
+ horizontalBarChartConfigb3 = {
+   chart: {
+    
+     height: 400,
+     type: 'bar',
+     toolbar: {
+       show: false
+     }
+   },
+   plotOptions: {
+     bar: {
+       horizontal: true,
+       barHeight: '30%',
+       startingShape: 'rounded',
+       borderRadius: 8
+     }
+   },
+   grid: {
+     borderColor: borderColor,
+     xaxis: {
+       lines: {
+         show: false
+       }
+     },
+     padding: {
+       top: -20,
+       bottom: -12
+     }
+   },
+   colors: config.colors.info,
+   dataLabels: {
+     enabled: true,
+    
+           style: {
+             fontSize: '14px',
+             colors: ["#000"]
+           }
+   },
+   series: [
+     {
+       data: [389, 170, 26, 72,72,219]
+     }
+   ],
+   colors: [
+     "#4F5D70",
+   ],
+   xaxis: {
+     categories: ['TOTALMTERIAL', 'SUBMITTED', 'APPROVED ','REJECTED' ,'UNDER REVEW','REMAINING'],
+     axisBorder: {
+       show: true
+     },
+     axisTicks: {
+       show: false
+     },
+     labels: {
+       style: {
+         colors: labelColor,
+         fontSize: '12px'
+       }
+     }
+   },
+   yaxis: {
+     yaxisBorder: {
+       show: true
+     },
+     labels: {
+       style: {
+         colors: labelColor,
+         fontSize: '10px'
+       }
+     }
+   }
+ };
+if (typeof horizontalBarChartEb3 !== undefined && horizontalBarChartEb3 !== null) {
+ const horizontalBarChart = new ApexCharts(horizontalBarChartEb3, horizontalBarChartConfigb3);
+ horizontalBarChart.render();
+}
+ // Horizontal Bar Chart
+ const horizontalBarChartEb4 = document.querySelector('#Built-four'),
+ horizontalBarChartConfigb4 = {
+   chart: {
+    
+     height: 400,
+     type: 'bar',
+     toolbar: {
+       show: false
+     }
+   },
+   plotOptions: {
+     bar: {
+       horizontal: true,
+       barHeight: '30%',
+       startingShape: 'rounded',
+       borderRadius: 8
+     }
+   },
+   grid: {
+     borderColor: borderColor,
+     xaxis: {
+       lines: {
+         show: false
+       }
+     },
+     padding: {
+       top: -20,
+       bottom: -12
+     }
+   },
+   colors: config.colors.info,
+   dataLabels: {
+     enabled: true,
+    
+           style: {
+             fontSize: '14px',
+             colors: ["#000"]
+           }
+   },
+   series: [
+     {
+       data: [202, 164, 58,42,64,38]
+     }
+   ],
+   colors: [
+     "#84D0FF",
+   ],
+   xaxis: {
+     categories: ['TOTALMTERIAL', 'SUBMITTED', 'APPROVED ','REJECTED' ,'UNDER REVEW','REMAINING'],
+     axisBorder: {
+       show: true
+     },
+     axisTicks: {
+       show: false
+     },
+     labels: {
+       style: {
+         colors: labelColor,
+         fontSize: '13px'
+       }
+     }
+   },
+   yaxis: {
+    
+     labels: {
+       style: {
+         colors: labelColor,
+         fontSize: '10px'
+       }
+     }
+   }
+ };
+if (typeof horizontalBarChartEb4 !== undefined && horizontalBarChartEb4 !== null) {
+ const horizontalBarChart = new ApexCharts(horizontalBarChartEb4, horizontalBarChartConfigb4);
+ horizontalBarChart.render();
+}
+// Horizontal Bar Chart
+const horizontalBarChartEs1 = document.querySelector('#Shop-Chart'),
+horizontalBarChartConfigs1 = {
+  chart: {
+   
+    height: 400,
+    type: 'bar',
+    toolbar: {
+      show: false
+    }
+  },
+  plotOptions: {
+    bar: {
+      horizontal: true,
+      barHeight: '30%',
+      startingShape: 'rounded',
+      borderRadius: 8
+    }
+  },
+  grid: {
+    borderColor: borderColor,
+    xaxis: {
+      lines: {
+        show: false
+      }
+    },
+    padding: {
+      top: -20,
+      bottom: -12
+    }
+  },
+  colors: config.colors.info,
+  dataLabels: {
+    enabled: true,
+   
+          style: {
+            fontSize: '14px',
+            colors: ["#000"]
+          }
+  },
+  series: [
+    {
+      data: [122, 97,23, 40,34,25]
+    }
+  ],
+  colors: [
+    "#ffe800",
+  ],
+  xaxis: {
+    categories: ['TOTALMTERIAL', 'SUBMITTED', 'APPROVED ','REJECTED' ,'UNDER REVEW','REMAINING'],
+    axisBorder: {
+      show: true
+    },
+    axisTicks: {
+      show: false
+    },
+    labels: {
+      style: {
+        colors: labelColor,
+        fontSize: '13px'
+      }
+    }
+  },
+  yaxis: {
+   
+    labels: {
+      style: {
+        colors: labelColor,
+        fontSize: '10px'
+      }
+    }
+  }
+};
+if (typeof horizontalBarChartEs1 !== undefined && horizontalBarChartEs1 !== null) {
+const horizontalBarChart = new ApexCharts(horizontalBarChartEs1, horizontalBarChartConfigs1);
+horizontalBarChart.render();
+}
+// Horizontal Bar Chart
+const horizontalBarChartEs2 = document.querySelector('#Shop-tow'),
+horizontalBarChartConfigs2 = {
+  chart: {
+   
+    height: 400,
+    type: 'bar',
+    toolbar: {
+      show: false
+    }
+  },
+  plotOptions: {
+    bar: {
+      horizontal: true,
+      barHeight: '30%',
+      startingShape: 'rounded',
+      borderRadius: 8
+    }
+  },
+  grid: {
+    borderColor: borderColor,
+    xaxis: {
+      lines: {
+        show: false
+      }
+    },
+    padding: {
+      top: -20,
+      bottom: -12
+    }
+  },
+  colors: config.colors.info,
+  dataLabels: {
+    enabled: true,
+   
+          style: {
+            fontSize: '14px',
+            colors: ["#000"]
+          }
+  },
+  series: [
+    {
+      data: [332, 320, 300, 0,20,12]
+    }
+  ],
+  colors: [
+    "#f973a0",
+  ],
+  xaxis: {
+    categories: ['TOTALMTERIAL', 'SUBMITTED', 'APPROVED ','REJECTED' ,'UNDER REVEW','REMAINING'],
+    axisBorder: {
+      show: true
+    },
+    axisTicks: {
+      show: false
+    },
+    labels: {
+      style: {
+        colors: labelColor,
+        fontSize: '13px'
+      }
+    }
+  },
+  yaxis: {
+   
+    labels: {
+      style: {
+        colors: labelColor,
+        fontSize: '10px'
+      }
+    }
+  }
+};
+if (typeof horizontalBarChartEs2 !== undefined && horizontalBarChartEs2 !== null) {
+const horizontalBarChart = new ApexCharts(horizontalBarChartEs2, horizontalBarChartConfigs2);
+horizontalBarChart.render();
+}
+// Horizontal Bar Chart
+const horizontalBarChartEs3 = document.querySelector('#Shop-three'),
+horizontalBarChartConfigs3 = {
+  chart: {
+   
+    height: 400,
+    type: 'bar',
+    toolbar: {
+      show: false
+    }
+  },
+  plotOptions: {
+    bar: {
+      horizontal: true,
+      barHeight: '30%',
+      startingShape: 'rounded',
+      borderRadius: 8
+    }
+  },
+  grid: {
+    borderColor: borderColor,
+    xaxis: {
+      lines: {
+        show: false
+      }
+    },
+    padding: {
+      top: -20,
+      bottom: -12
+    }
+  },
+  colors: config.colors.info,
+  dataLabels: {
+    enabled: true,
+   
+          style: {
+            fontSize: '14px',
+            colors: ["#000"]
+          }
+  },
+  series: [
+    {
+      data: [389, 170, 26, 72,72,219]
+    }
+  ],
+  colors: [
+    "#4CAF50",
+  ],
+  xaxis: {
+    categories: ['TOTALMTERIAL', 'SUBMITTED', 'APPROVED ','REJECTED' ,'UNDER REVEW','REMAINING'],
+    axisBorder: {
+      show: true
+    },
+    axisTicks: {
+      show: false
+    },
+    labels: {
+      style: {
+        colors: labelColor,
+        fontSize: '13px'
+      }
+    }
+  },
+  yaxis: {
+   
+    labels: {
+      style: {
+        colors: labelColor,
+        fontSize: '10px'
+      }
+    }
+  }
+};
+if (typeof horizontalBarChartEs3 !== undefined && horizontalBarChartEs3 !== null) {
+const horizontalBarChart = new ApexCharts(horizontalBarChartEs3, horizontalBarChartConfigs3);
+horizontalBarChart.render();
+}
+// Horizontal Bar Chart
+const horizontalBarChartEs4 = document.querySelector('#Shop-four'),
+horizontalBarChartConfigs4 = {
+  chart: {
+   
+    height: 400,
+    type: 'bar',
+    toolbar: {
+      show: false
+    }
+  },
+  plotOptions: {
+    bar: {
+      horizontal: true,
+      barHeight: '30%',
+      startingShape: 'rounded',
+      borderRadius: 8
+    }
+  },
+  grid: {
+    borderColor: borderColor,
+    xaxis: {
+      lines: {
+        show: false
+      }
+    },
+    padding: {
+      top: -20,
+      bottom: -12
+    }
+  },
+  colors: config.colors.info,
+  dataLabels: {
+    enabled: true,
+   
+          style: {
+            fontSize: '14px',
+            colors: ["#000"]
+          }
+  },
+  series: [
+    {
+      data: [202, 164, 58,42,64,38]
+    }
+  ],
+  colors: [
+    "#2B9AFF",
+  ],
+  xaxis: {
+    categories: ['TOTALMTERIAL', 'SUBMITTED', 'APPROVED ','REJECTED' ,'UNDER REVEW','REMAINING'],
+    axisBorder: {
+      show: true
+    },
+    axisTicks: {
+      show: false
+    },
+    labels: {
+      style: {
+        colors: labelColor,
+        fontSize: '13px'
+      }
+    }
+  },
+  yaxis: {
+   
+    labels: {
+      style: {
+        colors: labelColor,
+        fontSize: '10px'
+      }
+    }
+  }
+};
+if (typeof horizontalBarChartEs4 !== undefined && horizontalBarChartEs4 !== null) {
+const horizontalBarChart = new ApexCharts(horizontalBarChartEs4, horizontalBarChartConfigs4);
+horizontalBarChart.render();
+}
+// Horizontal Bar Chart
+const horizontalBarChartEd1 = document.querySelector('#Drawings-Chart'),
+horizontalBarChartConfigd1 = {
+  chart: {
+   
+    height: 400,
+    type: 'bar',
+    toolbar: {
+      show: false
+    }
+  },
+  plotOptions: {
+    bar: {
+      horizontal: true,
+      barHeight: '30%',
+      startingShape: 'rounded',
+      borderRadius: 8
+    }
+  },
+  grid: {
+    borderColor: borderColor,
+    xaxis: {
+      lines: {
+        show: false
+      }
+    },
+    padding: {
+      top: -20,
+      bottom: -12
+    }
+  },
+  colors: config.colors.info,
+  dataLabels: {
+    enabled: true,
+   
+          style: {
+            fontSize: '14px',
+            colors: ["#000"]
+          }
+  },
+  series: [
+    {
+      data: [122, 97,23, 40,34,25]
+    }
+  ],
+  colors: [
+    "#84D0FF",
+  ],
+  xaxis: {
+    categories: ['TOTALMTERIAL', 'SUBMITTED', 'APPROVED ','REJECTED' ,'UNDER REVEW','REMAINING'],
+    axisBorder: {
+      show: true
+    },
+    axisTicks: {
+      show: false
+    },
+    labels: {
+      style: {
+        colors: labelColor,
+        fontSize: '13px'
+      }
+    }
+  },
+  yaxis: {
+   
+    labels: {
+      style: {
+        colors: labelColor,
+        fontSize: '10px'
+      }
+    }
+  }
+};
+if (typeof horizontalBarChartEd1 !== undefined && horizontalBarChartEd1 !== null) {
+const horizontalBarChart = new ApexCharts(horizontalBarChartEd1, horizontalBarChartConfigd1);
+horizontalBarChart.render();
+}
+// Horizontal Bar Chart
+const horizontalBarChartEd2 = document.querySelector('#Drawings-tow'),
+horizontalBarChartConfigd2 = {
+  chart: {
+   
+    height: 400,
+    type: 'bar',
+    toolbar: {
+      show: false
+    }
+  },
+  plotOptions: {
+    bar: {
+      horizontal: true,
+      barHeight: '30%',
+      startingShape: 'rounded',
+      borderRadius: 8
+    }
+  },
+  grid: {
+    borderColor: borderColor,
+    xaxis: {
+      lines: {
+        show: false
+      }
+    },
+    padding: {
+      top: -20,
+      bottom: -12
+    }
+  },
+  colors: config.colors.info,
+  dataLabels: {
+    enabled: true,
+   
+          style: {
+            fontSize: '14px',
+            colors: ["#000"]
+          }
+  },
+  series: [
+    {
+      data: [332, 320, 300, 0,20,12]
+    }
+  ],
+  colors: [
+    "#f973a0",
+  ],
+  xaxis: {
+    categories: ['TOTALMTERIAL', 'SUBMITTED', 'APPROVED ','REJECTED' ,'UNDER REVEW','REMAINING'],
+    axisBorder: {
+      show: true
+    },
+    axisTicks: {
+      show: false
+    },
+    labels: {
+      style: {
+        colors: labelColor,
+        fontSize: '13px'
+      }
+    }
+  },
+  yaxis: {
+   
+    labels: {
+      style: {
+        colors: labelColor,
+        fontSize: '10px'
+      }
+    }
+  }
+};
+if (typeof horizontalBarChartEd2 !== undefined && horizontalBarChartEd2 !== null) {
+const horizontalBarChart = new ApexCharts(horizontalBarChartEd2, horizontalBarChartConfigd2);
+horizontalBarChart.render();
+}
+// Horizontal Bar Chart
+const horizontalBarChartEd3 = document.querySelector('#Drawings-three'),
+horizontalBarChartConfigd3 = {
+  chart: {
+   
+    height: 400,
+    type: 'bar',
+    toolbar: {
+      show: false
+    }
+  },
+  plotOptions: {
+    bar: {
+      horizontal: true,
+      barHeight: '30%',
+      startingShape: 'rounded',
+      borderRadius: 8
+    }
+  },
+  grid: {
+    borderColor: borderColor,
+    xaxis: {
+      lines: {
+        show: false
+      }
+    },
+    padding: {
+      top: -20,
+      bottom: -12
+    }
+  },
+  colors: config.colors.info,
+  dataLabels: {
+    enabled: true,
+   
+          style: {
+            fontSize: '14px',
+            colors: ["#000"]
+          }
+  },
+  series: [
+    {
+      data: [389, 170, 26, 72,72,219]
+    }
+  ],
+  colors: [
+    "#2B9AFF",
+  ],
+  xaxis: {
+    categories: ['TOTALMTERIAL', 'SUBMITTED', 'APPROVED ','REJECTED' ,'UNDER REVEW','REMAINING' ,'UNDER REVEW','REMAINING'],
+    axisBorder: {
+      show: true
+    },
+    axisTicks: {
+      show: false
+    },
+    labels: {
+      style: {
+        colors: labelColor,
+        fontSize: '13px'
+      }
+    }
+  },
+  yaxis: {
+   
+    labels: {
+      style: {
+        colors: labelColor,
+        fontSize: '10px'
+      }
+    }
+  }
+};
+if (typeof horizontalBarChartEd3 !== undefined && horizontalBarChartEd3 !== null) {
+const horizontalBarChart = new ApexCharts(horizontalBarChartEd3, horizontalBarChartConfigd3);
+horizontalBarChart.render();
+}
+// Horizontal Bar Chart
+const horizontalBarChartEd4 = document.querySelector('#Drawings-four'),
+horizontalBarChartConfigd4 = {
+  chart: {
+   
+    height: 400,
+    type: 'bar',
+    toolbar: {
+      show: false
+    }
+  },
+  plotOptions: {
+    bar: {
+      horizontal: true,
+      barHeight: '30%',
+      startingShape: 'rounded',
+      borderRadius: 8
+    }
+  },
+  grid: {
+    borderColor: borderColor,
+    xaxis: {
+      lines: {
+        show: false
+      }
+    },
+    padding: {
+      top: -20,
+      bottom: -12
+    }
+  },
+  colors: config.colors.info,
+  dataLabels: {
+    enabled: true,
+   
+          style: {
+            fontSize: '14px',
+            colors: ["#000"]
+          }
+  },
+  series: [
+    {
+      data: [202, 164, 58,42,64,38]
+    }
+  ],
+  colors: [
+    "#991CFB",
+  ],
+  xaxis: {
+    categories: ['TOTALMTERIAL', 'SUBMITTED', 'APPROVED ','REJECTED' ,'UNDER REVEW','REMAINING'],
+    axisBorder: {
+      show: true
+    },
+    axisTicks: {
+      show: false
+    },
+    labels: {
+      style: {
+        colors: labelColor,
+        fontSize: '13px'
+      }
+    }
+  },
+  yaxis: {
+   
+    labels: {
+      style: {
+        colors: labelColor,
+        fontSize: '10px'
+      }
+    }
+  }
+};
+if (typeof horizontalBarChartEd4 !== undefined && horizontalBarChartEd4 !== null) {
+const horizontalBarChart = new ApexCharts(horizontalBarChartEd4, horizontalBarChartConfigd4);
+horizontalBarChart.render();
+}
 })();
 
 
