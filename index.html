@@ -928,7 +928,7 @@
             <div class="container-xxl flex-grow-1 container-p-y pt-0">
                 <div class="row row-cols-lg-3 row-cols-md-2 row-cols-1 mx-0   g-1">
                    <div class="col">
-                    <div class="card card-dashboard h-100">
+                    <div class="card card-dashboard">
                       <div class="card-header d-flex justify-content-between p-3 mb-0">
                         <h6 class="fw-bold opacity-100  mb-0">PROJECT INFORMATIONS :</h6>
                         <span>NO.    0163468</span> 
@@ -936,7 +936,7 @@
                       <div class="card  mt-1">
                         <div class="card-body p-2">
                           <div class="table-responsive text-nowrap">
-                            <table class="table table-bordered table-dashboard">
+                            <table class="table table-bordered table-dashboard table-one">
                               <tbody>
                                 <tr>
                                   <td>
@@ -959,7 +959,7 @@
                                     <span class="fw-bold">ADDITIONAL TIME,(DAYS)
                                     </span>
                                   </td>
-                                  <td>175</td>
+                                  <td class="fw-bold fs-4" style="color: #00edec;">175</td>
                                 </tr>
                                 <tr>
                                   <td>
@@ -988,7 +988,7 @@
                                     <span class="fw-bold">EXPIRED PERIOD,(DAYS)
                                     </span>
                                   </td>
-                                  <td>486
+                                  <td class="fs-4">486
                                   </td>
                                 </tr>
                                 <tr>
@@ -1006,53 +1006,211 @@
                         </div>
                       </div>
                     </div>
-                   </div>
-                   <div class="col">
-                    <div class="card card-dashboard">
-                      <h2 class="card-header Fw-bold p-3 mb-0"> Progress Status</h2>
-                      
-                        <div class="card card-PROGRESS shadow">
-                          <div  class="card-body p-2">
-                            <h6 class="Fw-bold">( SPI )SCHEDULE PERFORMANCE INDEX:
-                            </h6>
-                            <div class="d-flex justify-content-between">
-                              <span class="fs-4 fw-bold">SPI</span>
-                              <span>=</span>
-                              <span>0.98</span>
+                    <div class="card card-dashboard mt-2">
+                      <div class="card-header  p-3 mb-0">
+                        <h6 class="fw-bold opacity-100  mb-0"> DRAWINGS SUBMISSION STATUS :
+                        </h6>
+                      </div>
+                      <div class="shadow card rounded-4">
+                        <div class="d-flex justify-content-between bg-label-in p-1">
+                          <h6 class="fw-bold opacity-100 fs-6 text-dark mb-0">DESIGN DRAWINGS SUBMISSION STATUS :</h6>
+                          <span class="text-popere fs-3 fw-bold">1043</span> 
+                        </div>
+                        <div class="row mx-0">
+                          <div class="col-md-6 px-0">
+                            <div class="d-flex align-items-center flex-wrap text-center justify-content-center">
+                              <div id="chart-sub"></div>
+                              <div class="chart-text text-center">
+                                <h6 class="fs-6 fw-bold">SUBMITTED</h6>
+                                <p class="fs-4 fw-bold text-poper">7490</p>
+                              </div>
                             </div>
                           </div>
-                          
-                        </div>
-                     
-                     
-                      <div class="card-body p-2 m-0">
-                          <div id="chart-chart"></div>
-                          
-                          <div class="card card-PROGRESS shadow w-100">
-                            <div  class="card-body p-2">
-                              <div class="d-flex justify-content-between">
-                                <span>PLANNED  PROGRESS </span>
-                                <span>=</span>
-                                <span>50%</span>
-                              </div>
-                              <div class="d-flex justify-content-between pt-2">
-                                <span>ACTUAL  PROGRESS
-                                </span>
-                                <span>=</span>
-                                <span>50%</span>
+                          <div class="col-md-6 px-0">
+                            <div class="d-flex align-items-center flex-wrap justify-content-center">
+                              <div id="chart-sub2"></div>
+                              <div class="chart-text text-center">
+                                <h6 class="fs-6 fw-bold">APPROVED</h6>
+                                <p class="fs-4 fw-bold text-poper">407</p>
                               </div>
                             </div>
-                            
-                          </div> 
-                       
+                          </div>
+                        </div>
                         
-                           
-                           
+                      </div>
+                     
+                      <div class="shadow card rounded-4 p-0 mt-2">
+                        <div class="d-flex justify-content-between bg-label-in p-2">
+                          <h6 class="fw-bold opacity-100 fs-6 text-dark mb-0">SHOP DRAWINGS SUBMISSION STATUS :
+                           </h6>
+                          <span class="text-popere fs-3 fw-bold">1045</span> 
+                        </div>
+                        <div class="row mx-0">
+                          <div class="col-md-6">
+                            <div class="d-flex align-items-center  text-center justify-content-center">
+                              <div id="chart-sub3"></div>
+                              <div class="chart-text text-center">
+                                <h6 class="fs-6 fw-bold">SUBMITTED</h6>
+                                <p class="fs-4 fw-bold text-poper">751</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="d-flex align-items-center  justify-content-center">
+                              <div id="chart-sub4"></div>
+                              <div class="chart-text text-center">
+                                <h6 class="fs-6 fw-bold">APPROVED</h6>
+                                <p class="fs-4 fw-bold text-poper">407</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        
+                      </div>
+                     
+                       <div class="shadow card rounded-4  mt-2">
+                        <div class="d-flex justify-content-between bg-label-in p-2">
+                          <h6 class="fw-bold opacity-100 fs-6 text-dark mb-0">AS-BUILT DRAWINGS SUBMISSION STATUS :      
+
+                           </h6>
+                          <span class="text-popere fs-3 fw-bold">1043</span> 
+                        </div>
+                        <div class="row mx-0">
+                          <div class="col-md-6 px-0">
+                            <div class="d-flex align-items-center text-center justify-content-center">
+                              <div id="chart-sub5"></div>
+                              <div class="chart-text text-center">
+                                <h6 class="fs-6 fw-bold">SUBMITTED</h6>
+                                <p class="fs-4 fw-bold text-poper">749</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6 px-0">
+                            <div class="d-flex align-items-center justify-content-center">
+                              <div id="chart-sub6"></div>
+                              <div class="chart-text text-center">
+                                <h6 class="fs-6 fw-bold">APPROVED</h6>
+                                <p class="fs-4 fw-bold text-poper">407</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        
                       </div>
                     </div>
                    </div>
                    <div class="col">
-                    <div class="card card-dashboard h-100">
+                      <div class="card card-dashboard">
+                        <h2 class="card-header Fw-bold p-3 mb-0"> Progress Status</h2>
+                        
+                          <div class="card card-PROGRESS shadow">
+                            <div  class="card-body p-2">
+                              <h6 class="Fw-bold">( SPI )SCHEDULE PERFORMANCE INDEX:
+                              </h6>
+                              <div class="d-flex justify-content-between">
+                                <span class="fs-4 fw-bold">SPI</span>
+                                <span>=</span>
+                                <span class="fs-3 fw-bold">0.98</span>
+                              </div>
+                            </div>
+                            
+                          </div>
+                      
+                      
+                        <div class="card-body p-2 m-0">
+                            <div id="chart-chart"></div>
+                            
+                            <div class="card card-PROGRESS shadow w-100">
+                              <div  class="card-body p-2">
+                                <div class="d-flex fw-bold justify-content-between">
+                                  <span class="fw-bold">PLANNED  PROGRESS </span>
+                                  <span>=</span>
+                                  <span class="fw-bold">50%</span>
+                                </div>
+                                <div class="d-flex fw-bold justify-content-between pt-2">
+                                  <span class="fw-bold">ACTUAL  PROGRESS
+                                  </span>
+                                  <span>=</span>
+                                  <span class="fw-bold">50%</span>
+                                </div>
+                              </div>
+                              
+                            </div> 
+                        
+                          
+                            
+                            
+                        </div>
+                      </div>
+                      <div class="card card-dashboard mt-2">
+                        <div class="card-header  p-3 mb-0">
+                          <h6 class="fw-bold  mb-0">  MATERIALS SUBMISSION STATUS :
+
+                          </h6>
+                        </div>
+                        <div class="shadow card rounded-4 p-0">
+                          <div class="d-flex justify-content-between bg-label-in  p-2">
+                            <h6 class="fw-bold opacity-100 fs-6 text-dark mb-0">MATERIALS SUBMISSION STATUS : </h6>
+                            <span class="text-popere fs-3 fw-bold">283</span> 
+                          </div>
+                          <div class="row mx-0 py-3">
+                            <div class="col-md-6 px-0 ">
+                              <div class="d-flex align-items-center text-center justify-content-center">
+                                <div id="chartteam1"></div>
+                                <div class="chart-text text-center">
+                                  <h6 class="fs-6 fw-bold">SUBMITTED</h6>
+                                  <p class="fs-4 fw-bold text-poper">248</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-6 px-0">
+                              <div class="d-flex align-items-center  justify-content-center">
+                                <div id="chartteam2"></div>
+                                <div class="chart-text text-center">
+                                  <h6 class="fs-6 fw-bold">APPROVED</h6>
+                                  <p class="fs-4 fw-bold text-poper">407</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          
+                        </div>
+                    
+                        <div class="shadow card rounded-4  mt-2">
+                          <div class="d-flex justify-content-between bg-label-in p-2">
+                            <h6 class="fw-bold opacity-100 fs-6 text-dark mb-0">LONG LEAD SUBMISSION STATUS :      
+
+                            </h6>
+                            <span class="text-popere fs-3 fw-bold">32</span> 
+                          </div>
+                          <div class="row mx-0 py-3">
+                            <div class="col-md-6">
+                              <div class="d-flex align-items-center  text-center justify-content-center">
+                                <div id="chartteam3"></div>
+                                <div class="chart-text text-center">
+                                  <h6 class="fs-6 fw-bold">SUBMITTED</h6>
+                                  <p class="fs-4 fw-bold text-poper">248</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="d-flex align-items-center  justify-content-center">
+                                <div id="chartteam4"></div>
+                                <div class="chart-text text-center">
+                                  <h6 class="fs-6 fw-bold">APPROVED</h6>
+                                  <p class="fs-4 fw-bold text-poper">180</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          
+                        </div>
+                    
+                        
+                      </div> 
+                   </div>
+                   <div class="col">
+                    <div class="card card-dashboard">
                       <h2 class="card-header Fw-bold p-3 mb-0"> CLIENT FINANCIAL STATUS : </h2>
                       
                         <div class="card card-PROGRESS shadow">
@@ -1061,7 +1219,7 @@
                             <div class="d-flex justify-content-between">
                               <span class="fs-4 fw-bold">CPI</span>
                               <span>=</span>
-                              <span>0.93</span>
+                              <span class="fs-3 fw-bold">0.93</span>
                             </div>
                           </div>
                           
@@ -1070,7 +1228,7 @@
                      
                       <div class="card-body p-2">
                         <div class="table-responsive text-nowrap">
-                          <table class="table table-bordered table-dashboard">
+                          <table class="table table-bordered table-dashboard table-left">
                             <tbody>
                               <tr>
                                 <td>
@@ -1103,11 +1261,11 @@
                             </tbody>
                           </table>
                         </div>
-                        <div class="bg-label-warning p-3">
+                        <div class="bg-label-in text-b py-4 px-3">
                           CASH FLOW STATUS 
                         </div>
-                        <div class="table-responsive text-nowrap">
-                          <table class="table table-bordered table-dashboard">
+                        <div class="table-responsive text-nowrap py-1">
+                          <table class="table table-bordered table-dashboard table-one">
                             <tbody>
                               <tr>
                                 <td>
@@ -1139,184 +1297,20 @@
                         </div>
                       </div>
                     </div>
-                   </div>
-                   <div class="col">
-                    <div class="card card-dashboard mt-2">
-                      <div class="card-header  p-3 mb-0">
-                        <h6 class="fw-bold opacity-100  mb-0"> DRAWINGS SUBMISSION STATUS :
-                        </h6>
-                      </div>
-                      <div class="shadow card rounded-4 p-2">
-                        <div class="d-flex justify-content-between bg-label-warning p-3">
-                          <h6 class="fw-bold opacity-100 fs-6 text-dark mb-0">DESIGN DRAWINGS SUBMISSION STATUS :</h6>
-                          <span class="text-dark fs-5">1043</span> 
-                        </div>
-                        <div class="row mx-0">
-                          <div class="col-md-6">
-                            <div class="d-flex align-items-center flex-wrap text-center justify-content-center">
-                              <div id="chart-sub"></div>
-                              <div class="chart-text text-center">
-                                <h6 class="fs-6 fw-bold">SUBMITTED</h6>
-                                <p class="fs-6 fw-bold">749</p>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-md-6">
-                            <div class="d-flex align-items-center flex-wrap justify-content-center">
-                              <div id="chart-sub2"></div>
-                              <div class="chart-text text-center">
-                                <h6 class="fs-6 fw-bold">APPROVED</h6>
-                                <p class="fs-6 fw-bold">407</p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        
-                      </div>
-                     
-                      <div class="shadow card rounded-4 p-2 mt-2">
-                        <div class="d-flex justify-content-between bg-label-warning p-3">
-                          <h6 class="fw-bold opacity-100 fs-6 text-dark mb-0">SHOP DRAWINGS SUBMISSION STATUS :
-                           </h6>
-                          <span class="text-dark fs-5">1045</span> 
-                        </div>
-                        <div class="row mx-0">
-                          <div class="col-md-6">
-                            <div class="d-flex align-items-center flex-wrap text-center justify-content-center">
-                              <div id="chart-sub3"></div>
-                              <div class="chart-text text-center">
-                                <h6 class="fs-6 fw-bold">SUBMITTED</h6>
-                                <p class="fs-6 fw-bold">751</p>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-md-6">
-                            <div class="d-flex align-items-center flex-wrap justify-content-center">
-                              <div id="chart-sub4"></div>
-                              <div class="chart-text text-center">
-                                <h6 class="fs-6 fw-bold">APPROVED</h6>
-                                <p class="fs-6 fw-bold">407</p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        
-                      </div>
-                     
-                       <div class="shadow card rounded-4 p-2 mt-2">
-                        <div class="d-flex justify-content-between bg-label-warning p-3">
-                          <h6 class="fw-bold opacity-100 fs-6 text-dark mb-0">AS-BUILT DRAWINGS SUBMISSION STATUS :      
-
-                           </h6>
-                          <span class="text-dark fs-5">1043</span> 
-                        </div>
-                        <div class="row mx-0">
-                          <div class="col-md-6">
-                            <div class="d-flex align-items-center flex-wrap text-center justify-content-center">
-                              <div id="chart-sub5"></div>
-                              <div class="chart-text text-center">
-                                <h6 class="fs-6 fw-bold">SUBMITTED</h6>
-                                <p class="fs-6 fw-bold">749</p>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-md-6">
-                            <div class="d-flex align-items-center flex-wrap justify-content-center">
-                              <div id="chart-sub6"></div>
-                              <div class="chart-text text-center">
-                                <h6 class="fs-6 fw-bold">APPROVED</h6>
-                                <p class="fs-6 fw-bold">407</p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        
-                      </div>
-                    </div>
-                   </div>
-                   <div class="col">
-                    <div class="card card-dashboard mt-2">
-                      <div class="card-header  p-3 mb-0">
-                        <h6 class="fw-bold  mb-0">  MATERIALS SUBMISSION STATUS :
-
-                        </h6>
-                      </div>
-                      <div class="shadow card rounded-4 p-2">
-                        <div class="d-flex justify-content-between bg-label-warning p-3">
-                          <h6 class="fw-bold opacity-100 fs-6 text-dark mb-0">MATERIALS SUBMISSION STATUS : </h6>
-                          <span class="text-dark fs-5">283</span> 
-                        </div>
-                        <div class="row mx-0">
-                          <div class="col-md-6">
-                            <div class="d-flex align-items-center flex-wrap text-center justify-content-center">
-                              <div id="chartteam1"></div>
-                              <div class="chart-text text-center">
-                                <h6 class="fs-6 fw-bold">SUBMITTED</h6>
-                                <p class="fs-6 fw-bold">248</p>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-md-6">
-                            <div class="d-flex align-items-center flex-wrap justify-content-center">
-                              <div id="chartteam2"></div>
-                              <div class="chart-text text-center">
-                                <h6 class="fs-6 fw-bold">APPROVED</h6>
-                                <p class="fs-6 fw-bold">407</p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        
-                      </div>
-                   
-                      <div class="shadow card rounded-4 p-2 mt-2">
-                        <div class="d-flex justify-content-between bg-label-warning p-3">
-                          <h6 class="fw-bold opacity-100 fs-6 text-dark mb-0">LONG LEAD SUBMISSION STATUS :      
-
-                           </h6>
-                          <span class="text-dark fs-5">32</span> 
-                        </div>
-                        <div class="row mx-0">
-                          <div class="col-md-6">
-                            <div class="d-flex align-items-center flex-wrap text-center justify-content-center">
-                              <div id="chartteam3"></div>
-                              <div class="chart-text text-center">
-                                <h6 class="fs-6 fw-bold">SUBMITTED</h6>
-                                <p class="fs-6 fw-bold">248</p>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-md-6">
-                            <div class="d-flex align-items-center flex-wrap justify-content-center">
-                              <div id="chartteam4"></div>
-                              <div class="chart-text text-center">
-                                <h6 class="fs-6 fw-bold">APPROVED</h6>
-                                <p class="fs-6 fw-bold">180</p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        
-                      </div>
-                   
-                       
-                    </div>  
-                   </div>
-                   <div class="col">
                     <div class="card card-dashboard mt-2">
                       <div class="card-header  p-3 mb-0">
                         <h6 class="fw-bold  mb-0">  
                           SUBCONTRACTOR FINANCIAL STATUS :
                         </h6>
                       </div>
-                      <div class="shadow card rounded-4 p-2">
-                        <div class="d-flex justify-content-between bg-label-warning p-3">
+                      <div class="shadow card rounded-4 p-0">
+                        <div class="d-flex justify-content-between bg-label-in p-2">
                           <h6 class="fw-bold opacity-100 fs-6 text-dark mb-0">TOTAL PURCHASE ORDERS ( P.Os. ) :
                           </h6>
                          
                         </div>
-                           <h5 class="px-3 pt-2 fs-4 text-poper">270,950,000,00</h5>
-                            <div class="d-flex align-items-center flex-wrap text-center justify-content-center">
+                           <h5 class="px-3 pt-2 fs-2 fw-bold text-poper">270,950,000,00</h5>
+                            <div class="d-flex align-items-center  text-center justify-content-center">
                            
                               <div class="chart-text text-center">
                                 <h6 class="fs-6 fw-bold">PURCHASE ORDERS / TOTAL PROJECT VALUE   =
@@ -1328,14 +1322,14 @@
 
                       </div>
                      
-                      <div class="shadow card rounded-4 p-2 mt-2">
-                        <div class="d-flex justify-content-between bg-label-warning p-3">
-                          <h6 class="fw-bold opacity-100 fs-6 text-dark mb-0 py-1">
+                      <div class="shadow card rounded-4  mt-2">
+                        <div class="d-flex justify-content-between bg-label-in p-2">
+                          <h6 class="fw-bold opacity-100 fs-6 text-dark mb-0 py-2">
                             TOTAL SUBCONTRACTORS CLAIM :
 
                            </h6>
                         </div>
-                          <div class="row p-2 pt-5">
+                          <div class="row p-2 pt-1">
                             <div class="col-md-6 p-2 border-end">
                               <div class="d-grid h-100" style="grid-template-rows: 1fr;">
                                 <h6 class="text-poper">  SUB. INVOICES:</h6>
@@ -1354,10 +1348,10 @@
                               
                             </div>
                           </div>
-                              <div class="chart-text pt-4">
+                              <div class="chart-text d-flex justify-content-between">
                                 <h6 class="fs-6 fw-bold">Total invoiced Value/Purchase Orders Value  =
                                 </h6>
-                                <h5 class="fs-4 fw-bold mb-0 text-center">19%</h5>
+                                <h5 class="fs-3 fw-bold mb-0 text-center">19%</h5>
                               </div>
                            
                     
@@ -1366,6 +1360,7 @@
                        
                     </div>
                    </div>
+
 
                 </div>
             </div>

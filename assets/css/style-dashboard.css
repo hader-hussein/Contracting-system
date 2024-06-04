@@ -107,3 +107,48 @@ font-weight: 500;
 .card-subtitle{
     font-size: 12px;
 }
+
+.table-one tr:nth-child(even)
+
+{background-color: #8faadc;
+color: #000;
+font-weight: bold;
+}
+.table-one tr:nth-child(odd){
+    background-color: #000;
+
+    color: #fff;
+}
+.bg-label-in{
+    background-color: #8faadc;   
+}
+.text-popere{
+    color: #7130a5;
+}
+#SvgjsText1016{
+font-weight: 600;
+font-size: 30px;
+color: brown;
+fill: #e76c88;
+}
+#SvgjsText1366{
+    font-weight: 600;
+    font-size: 25px;
+   
+}
+.table-left tr:nth-child(1){
+    background-color:#8faadc ;
+    color: #000;
+    font-weight: bold;
+    font-size: 20px;
+}
+.table-left tr:last-child{
+    background-color:#b6b6b6 ;
+    color: #000;
+    font-weight: bold;
+    font-size: 20px;
+}
+.text-b {
+    font-weight: 800;
+    color: #000;
+}

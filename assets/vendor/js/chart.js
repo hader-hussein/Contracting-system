@@ -461,7 +461,7 @@ chart.render();
 var options = {
   colors : ['#991CFB'],
   chart: {
-      height: 400,
+      height: 420,
  
       type: 'radialBar',
   
@@ -487,23 +487,57 @@ var options = {
 var chart = new ApexCharts(document.querySelector("#chart-chart"), options);
 
 chart.render();
-//////////////////
+//////////////////////////////////////////////////////
 var options = {
   colors : ['#6f309f'],
-  series: [50],
   chart: {
-      height: 180,
+    height:140,
+    width:100,
       type: 'radialBar',
+      offsetY: 0,
+	  toolbar: {
+		show: false
+	  }
   },
   plotOptions: {
     radialBar: {
+      size:50,
       hollow: {
-        size: '70%',
+        margin: 0,
+        size: '65%',
+        background: '#fff',
       }
     },
+		track: {
+		  background: '#F5F5FF',
+		  strokeWidth: '75%',
+		  margin: 0, // margin is in pixels
+		  
+		},
+    dataLabels: {
+		  showOn: 'always',
+		  name: {
+			offsetY: 0,
+			show: false,
+			color: '#003366',
+			fontSize: '20px'
+		  },
+      value: {
+        formatter: function(val) {
+          return parseInt(val);
+        },
+        color: '#003366',
+        fontSize: '80px',
+        show: true,
+        offsetY: 70,
+        }
+    }
   },
-  labels: ['SUBMITTED'],
- 
+	series: [75],
+	stroke: {
+	  lineCap: 'round'
+	},
+  labels: [''],
 }
 
 var chart = new ApexCharts(document.querySelector("#chart-sub"), options);
@@ -512,20 +546,54 @@ chart.render();
 //////////////////
 var options = {
   colors : ['#6f309f'],
-  series: [50],
   chart: {
-      height: 180,
+    height:140,
+    width:100,
       type: 'radialBar',
+      offsetY: 0,
+	  toolbar: {
+		show: false
+	  }
   },
   plotOptions: {
     radialBar: {
+      size:50,
       hollow: {
-        size: '70%',
+        margin: 0,
+        size: '65%',
+        background: '#fff',
       }
     },
+		track: {
+		  background: '#F5F5FF',
+		  strokeWidth: '75%',
+		  margin: 0, // margin is in pixels
+		  
+		},
+    dataLabels: {
+		  showOn: 'always',
+		  name: {
+			offsetY: 0,
+			show: false,
+			color: '#003366',
+			fontSize: '20px'
+		  },
+      value: {
+        formatter: function(val) {
+          return parseInt(val);
+        },
+        color: '#003366',
+        fontSize: '80px',
+        show: true,
+        offsetY: 10,
+        }
+    }
   },
-  labels: ['APPROVED'],
- 
+	series: [75],
+	stroke: {
+	  lineCap: 'round'
+	},
+  labels: [''],
 }
 
 var chart = new ApexCharts(document.querySelector("#chart-sub2"), options);
@@ -534,9 +602,10 @@ chart.render();
 /////////////////
 var options = {
   colors : ['#6f309f'],
-  series: [50],
+  series: [75],
   chart: {
-      height: 180,
+    height:140,
+    width:100,
       type: 'radialBar',
   },
   plotOptions: {
@@ -546,7 +615,7 @@ var options = {
       }
     },
   },
-  labels: ['SUBMITTED'],
+  labels: [''],
  
 }
 
@@ -556,9 +625,10 @@ chart.render();
 //////////////////
 var options = {
   colors : ['#6f309f'],
-  series: [50],
+  series: [75],
   chart: {
-      height: 180,
+    height:140,
+    width:100,
       type: 'radialBar',
   },
   plotOptions: {
@@ -568,7 +638,7 @@ var options = {
       }
     },
   },
-  labels: ['APPROVED'],
+  labels: [''],
  
 }
 
@@ -578,9 +648,10 @@ chart.render();
 /////////////////
 var options = {
   colors : ['#6f309f'],
-  series: [50],
+  series: [75],
   chart: {
-      height: 180,
+    height:140,
+    width:100,
       type: 'radialBar',
   },
   plotOptions: {
@@ -590,7 +661,7 @@ var options = {
       }
     },
   },
-  labels: ['SUBMITTED'],
+  labels: [''],
  
 }
 
@@ -600,9 +671,10 @@ chart.render();
 //////////////////
 var options = {
   colors : ['#6f309f'],
-  series: [50],
+  series: [75],
   chart: {
-      height: 180,
+    height:140,
+    width:100,
       type: 'radialBar',
   },
   plotOptions: {
@@ -612,7 +684,7 @@ var options = {
       }
     },
   },
-  labels: ['APPROVED'],
+  labels: [''],
  
 }
 
@@ -621,11 +693,11 @@ var chart = new ApexCharts(document.querySelector("#chart-sub6"), options);
 chart.render();
 //////////////////////----------------------------
 var options = {
-  colors : ['#e7ebeb','#fcbe00'],
-  series: [50,20],
+  colors : ['#c44cd1','#e7ebeb'],
+  series: [28.6, 100],
   chart: {
-  width: 150,
-  height: 180,
+  width: 110,
+  height: 110,
   type: 'pie',
   toolbar: {
     show: false
@@ -635,7 +707,7 @@ legend: {
   show:false,
   
 },
-labels: ['Total Unpaid'],
+labels: [],
 responsive: [{
   breakpoint: 200,
   options: {
@@ -643,7 +715,6 @@ responsive: [{
       width: 200
     },
     legend: {
-      position: 'bottom',
       show:false,
     },
     total: {
@@ -660,11 +731,11 @@ var chart = new ApexCharts(document.querySelector("#chartteam1"), options);
 chart.render();
 //////////////////////----------------------------
 var options = {
-  colors : ['#e7ebeb','#fcbe00'],
+  colors : ['#e7ebeb','#c44cd1'],
   series: [50,20],
   chart: {
-  width: 150,
-  height: 180,
+  width: 110,
+  height: 110,
   type: 'pie',
 },legend: {
   show:false,
@@ -689,11 +760,11 @@ var chart = new ApexCharts(document.querySelector("#chartteam2"), options);
 chart.render();
 //////////////////////----------------------------
 var options = {
-  colors : ['#e7ebeb','#fcbe00'],
+  colors : ['#e7ebeb','#c44cd1'],
   series: [50,20],
   chart: {
-  width: 150,
-  height: 180,
+  width: 110,
+  height: 110,
   type: 'pie',
   toolbar: {
     show: false
@@ -728,17 +799,17 @@ var chart = new ApexCharts(document.querySelector("#chartteam3"), options);
 chart.render();
 //////////////////////----------------------------
 var options = {
-  colors : ['#e7ebeb','#fcbe00'],
+  colors : ['#e7ebeb','#c44cd1'],
   series: [50,20],
   chart: {
-  width: 150,
-  height: 180,
+  width: 110,
+  height: 110,
   type: 'pie',
 },legend: {
   show:false,
   
 },
-labels: ['Total Unpaid',],
+labels: ['Total Unpaid','Total Paid'],
 responsive: [{
   breakpoint:200,
   options: {
@@ -748,7 +819,13 @@ responsive: [{
     legend: {
       position: 'bottom',
       show:false
+    },plotOptions: {
+    pie: {
+      dataLabels: {
+        minAngleToShowLabel: 0
+      }
     }
+  }
   }
 }]
 };
@@ -757,11 +834,11 @@ var chart = new ApexCharts(document.querySelector("#chartteam4"), options);
 chart.render();
 //////////////////////----------------------------
 var options = {
-  colors : ['#e7ebeb','#fcbe00'],
+  colors : ['#e7ebeb','#c44cd1'],
   series: [50,20],
   chart: {
-  width: 150,
-  height: 180,
+  width: 110,
+  height: 110,
   type: 'pie',
 },legend: {
   show:false,
@@ -2663,6 +2740,48 @@ if (typeof horizontalBarChartEd4 !== undefined && horizontalBarChartEd4 !== null
 const horizontalBarChart = new ApexCharts(horizontalBarChartEd4, horizontalBarChartConfigd4);
 horizontalBarChart.render();
 }
+
+
+
+var options = {
+  series: [0.876, 0.124],
+  chart: {
+    type: 'donut',
+  },
+  labels: ['Success', 'Failure'],
+  plotOptions: {
+    pie: {
+      donut: {
+        labels: {
+          show: true,
+          total: {
+            showAlways: true,
+            show: true,
+            label: 'Total',
+          },
+          value: {
+            show: true,
+          },
+        },
+      },
+    },
+  },
+  colors: ['#FF00FF', '#C0C0C0'],
+  responsive: [{
+    breakpoint: 480,
+    options: {
+      chart: {
+        width: 200,
+      },
+      legend: {
+        position: 'bottom',
+      },
+    },
+  }],
+};
+
+var chart = new ApexCharts(document.querySelector("#chart-9"), options);
+chart.render();
 })();
 
 
