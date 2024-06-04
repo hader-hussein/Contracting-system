@@ -896,10 +896,13 @@ chart.render();
       colors: config.colors.info,
       dataLabels: {
         enabled: true,
-
+        position: 'top', // display data labels above the chart
+        orientation: 'ertical', // جعل القيمة تظهر عمودياً
+        offsetX: 200, // ضبط المسافة بين القيمة والمخطط
               style: {
                 fontSize: '12px',
-                colors: ["#304758"]
+                colors: ["#000"],
+                
               }
       },
       series: [
@@ -979,7 +982,7 @@ chart.render();
        
               style: {
                 fontSize: '14px',
-                colors: ["#304758"]
+                colors: ["#fff"]
               }
       },
       series: [
@@ -1010,7 +1013,7 @@ chart.render();
         labels: {
           style: {
             colors: labelColor,
-            fontSize: '12px'
+            fontSize: '16px'
           }
         }
       }
