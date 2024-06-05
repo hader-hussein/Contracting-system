@@ -471,8 +471,14 @@ var options = {
       dataLabels: {
       hollow: {
         size: '60%',
+      },
+      value: {
+        show: true,
+        fontSize: '35px',
+        fontWeight: 'bold',
+        color: '#f676a1',
+        
       }
-      
     } 
     },
   },
@@ -490,119 +496,7 @@ chart.render();
 //////////////////////////////////////////////////////
 var options = {
   colors : ['#6f309f'],
-  chart: {
-    height:140,
-    width:100,
-      type: 'radialBar',
-      offsetY: 0,
-	  toolbar: {
-		show: false
-	  }
-  },
-  plotOptions: {
-    radialBar: {
-      size:50,
-      hollow: {
-        margin: 0,
-        size: '65%',
-        background: '#fff',
-      }
-    },
-		track: {
-		  background: '#F5F5FF',
-		  strokeWidth: '75%',
-		  margin: 0, // margin is in pixels
-		  
-		},
-    dataLabels: {
-		  showOn: 'always',
-		  name: {
-			offsetY: 0,
-			show: false,
-			color: '#003366',
-			fontSize: '20px'
-		  },
-      value: {
-        formatter: function(val) {
-          return parseInt(val);
-        },
-        color: '#003366',
-        fontSize: '80px',
-        show: true,
-        offsetY: 70,
-        }
-    }
-  },
-	series: [75],
-	stroke: {
-	  lineCap: 'round'
-	},
-  labels: [''],
-}
-
-var chart = new ApexCharts(document.querySelector("#chart-sub"), options);
-
-chart.render();
-//////////////////
-var options = {
-  colors : ['#6f309f'],
-  chart: {
-    height:140,
-    width:100,
-      type: 'radialBar',
-      offsetY: 0,
-	  toolbar: {
-		show: false
-	  }
-  },
-  plotOptions: {
-    radialBar: {
-      size:50,
-      hollow: {
-        margin: 0,
-        size: '65%',
-        background: '#fff',
-      }
-    },
-		track: {
-		  background: '#F5F5FF',
-		  strokeWidth: '75%',
-		  margin: 0, // margin is in pixels
-		  
-		},
-    dataLabels: {
-		  showOn: 'always',
-		  name: {
-			offsetY: 0,
-			show: false,
-			color: '#003366',
-			fontSize: '20px'
-		  },
-      value: {
-        formatter: function(val) {
-          return parseInt(val);
-        },
-        color: '#003366',
-        fontSize: '80px',
-        show: true,
-        offsetY: 10,
-        }
-    }
-  },
-	series: [75],
-	stroke: {
-	  lineCap: 'round'
-	},
-  labels: [''],
-}
-
-var chart = new ApexCharts(document.querySelector("#chart-sub2"), options);
-
-chart.render();
-/////////////////
-var options = {
-  colors : ['#6f309f'],
-  series: [75],
+  series: [87],
   chart: {
     height:140,
     width:100,
@@ -612,6 +506,101 @@ var options = {
     radialBar: {
       hollow: {
         size: '70%',
+      }, 
+      dataLabels: {
+        showOn: 'always',
+        name: {
+          show: false,
+        },
+        value: {
+          show: true,
+          fontSize: '22px',
+          fontWeight: 'bold',
+          color: '#000',
+          offsetY: 4, // Adjust this value to position the label vertically
+          formatter: function(val) {
+            return val.toFixed(1); // Return the value as a decimal number with 2 digits
+          }
+        }
+
+      }
+    },
+  },
+  labels: [''],
+ 
+}
+
+var chart = new ApexCharts(document.querySelector("#chart-sub"), options);
+
+chart.render();
+//////////////////
+var options = {
+  colors : ['#6f309f'],
+  series: [63],
+  chart: {
+    height:140,
+    width:100,
+      type: 'radialBar',
+  },
+  plotOptions: {
+    radialBar: {
+      hollow: {
+        size: '70%',
+      }, 
+      dataLabels: {
+        showOn: 'always',
+        name: {
+          show: false,
+        },
+        value: {
+          show: true,
+          fontSize: '22px',
+          fontWeight: 'bold',
+          color: '#000',
+          offsetY: 4, // Adjust this value to position the label vertically
+          formatter: function(val) {
+            return val.toFixed(1); // Return the value as a decimal number with 2 digits
+          }
+        }
+      }
+    },
+  },
+  labels: [''],
+ 
+}
+
+var chart = new ApexCharts(document.querySelector("#chart-sub2"), options);
+
+chart.render();
+/////////////////
+var options = {
+  colors : ['#6f309f'],
+  series: [87],
+  chart: {
+    height:140,
+    width:100,
+      type: 'radialBar',
+  },
+  plotOptions: {
+    radialBar: {
+      hollow: {
+        size: '70%',
+      }, 
+      dataLabels: {
+        showOn: 'always',
+        name: {
+          show: false,
+        },
+        value: {
+          show: true,
+          fontSize: '22px',
+          fontWeight: 'bold',
+          color: '#000',
+          offsetY: 4, // Adjust this value to position the label vertically
+          formatter: function(val) {
+            return val.toFixed(1); // Return the value as a decimal number with 2 digits
+          }
+        }
       }
     },
   },
@@ -625,7 +614,7 @@ chart.render();
 //////////////////
 var options = {
   colors : ['#6f309f'],
-  series: [75],
+  series: [63],
   chart: {
     height:140,
     width:100,
@@ -635,6 +624,22 @@ var options = {
     radialBar: {
       hollow: {
         size: '70%',
+      }, 
+      dataLabels: {
+        showOn: 'always',
+        name: {
+          show: false,
+        },
+        value: {
+          show: true,
+          fontSize: '22px',
+          fontWeight: 'bold',
+          color: '#000',
+          offsetY: 4, // Adjust this value to position the label vertically
+          formatter: function(val) {
+            return val.toFixed(1); // Return the value as a decimal number with 2 digits
+          }
+        }
       }
     },
   },
@@ -648,7 +653,7 @@ chart.render();
 /////////////////
 var options = {
   colors : ['#6f309f'],
-  series: [75],
+  series: [87],
   chart: {
     height:140,
     width:100,
@@ -658,6 +663,22 @@ var options = {
     radialBar: {
       hollow: {
         size: '70%',
+      }, 
+      dataLabels: {
+        showOn: 'always',
+        name: {
+          show: false,
+        },
+        value: {
+          show: true,
+          fontSize: '22px',
+          fontWeight: 'bold',
+          color: '#000',
+          offsetY: 4, // Adjust this value to position the label vertically
+          formatter: function(val) {
+            return val.toFixed(1); // Return the value as a decimal number with 2 digits
+          }
+        }
       }
     },
   },
@@ -671,7 +692,7 @@ chart.render();
 //////////////////
 var options = {
   colors : ['#6f309f'],
-  series: [75],
+  series: [63],
   chart: {
     height:140,
     width:100,
@@ -681,6 +702,22 @@ var options = {
     radialBar: {
       hollow: {
         size: '70%',
+      }, 
+      dataLabels: {
+        showOn: 'always',
+        name: {
+          show: false,
+        },
+        value: {
+          show: true,
+          fontSize: '22px',
+          fontWeight: 'bold',
+          color: '#000',
+          offsetY: 4, // Adjust this value to position the label vertically
+          formatter: function(val) {
+            return val.toFixed(1); // Return the value as a decimal number with 2 digits
+          }
+        }
       }
     },
   },
@@ -694,14 +731,32 @@ chart.render();
 //////////////////////----------------------------
 var options = {
   colors : ['#c44cd1','#e7ebeb'],
-  series: [28.6, 100],
+  series: [80, 100],
   chart: {
   width: 110,
   height: 110,
   type: 'pie',
-  toolbar: {
-    show: false
-  }
+ 
+},
+dataLabels: {
+ 
+  enabled: true,
+  
+  formatter: function (val, opts) {
+    if (opts.seriesIndex == 1) {
+      return '';
+    }
+    return val.toFixed(1) ;
+  },
+  style: {
+    fontSize: '18px',
+    fontFamily: 'Helvetica, Arial, sans-serif',
+    fontWeight: 'bold',
+    colors: ['#000'],
+
+  },
+  position: 'center', // position the label in the center of the pie chart
+
 },
 legend: {
   show:false,
@@ -737,6 +792,25 @@ var options = {
   width: 110,
   height: 110,
   type: 'pie',
+},dataLabels: {
+ 
+  enabled: true,
+  
+  formatter: function (val, opts) {
+    if (opts.seriesIndex == 1) {
+      return '';
+    }
+    return val.toFixed(1) ;
+  },
+  style: {
+    fontSize: '18px',
+    fontFamily: 'Helvetica, Arial, sans-serif',
+    fontWeight: 'bold',
+    colors: ['#000'],
+
+  },
+  position: 'center', // position the label in the center of the pie chart
+
 },legend: {
   show:false,
   
@@ -766,9 +840,26 @@ var options = {
   width: 110,
   height: 110,
   type: 'pie',
-  toolbar: {
-    show: false
-  }
+  
+},dataLabels: {
+ 
+  enabled: true,
+  
+  formatter: function (val, opts) {
+    if (opts.seriesIndex == 1) {
+      return '';
+    }
+    return val.toFixed(1) ;
+  },
+  style: {
+    fontSize: '18px',
+    fontFamily: 'Helvetica, Arial, sans-serif',
+    fontWeight: 'bold',
+    colors: ['#000'],
+
+  },
+  position: 'center', // position the label in the center of the pie chart
+
 },
 legend: {
   show:false,
@@ -805,6 +896,25 @@ var options = {
   width: 110,
   height: 110,
   type: 'pie',
+},dataLabels: {
+ 
+  enabled: true,
+  
+  formatter: function (val, opts) {
+    if (opts.seriesIndex == 1) {
+      return '';
+    }
+    return val.toFixed(1) ;
+  },
+  style: {
+    fontSize: '18px',
+    fontFamily: 'Helvetica, Arial, sans-serif',
+    fontWeight: 'bold',
+    colors: ['#000'],
+
+  },
+  position: 'center', // position the label in the center of the pie chart
+
 },legend: {
   show:false,
   
@@ -834,12 +944,31 @@ var chart = new ApexCharts(document.querySelector("#chartteam4"), options);
 chart.render();
 //////////////////////----------------------------
 var options = {
-  colors : ['#e7ebeb','#c44cd1'],
+  colors : ['#e7ebeb','#4CAF50'],
   series: [50,20],
   chart: {
   width: 110,
   height: 110,
   type: 'pie',
+},dataLabels: {
+ 
+  enabled: true,
+  
+  formatter: function (val, opts) {
+    if (opts.seriesIndex == 1) {
+      return '';
+    }
+    return val.toFixed(1) ;
+  },
+  style: {
+    fontSize: '18px',
+    fontFamily: 'Helvetica, Arial, sans-serif',
+    fontWeight: 'bold',
+    colors: ['#000'],
+
+  },
+  position: 'center', // position the label in the center of the pie chart
+
 },legend: {
   show:false,
   
@@ -979,11 +1108,22 @@ chart.render();
       colors: config.colors.info,
       dataLabels: {
         enabled: true,
-       
-              style: {
-                fontSize: '14px',
-                colors: ["#fff"]
-              }
+        formatter: function (val, opts) {
+          const seriesIndex = opts.seriesIndex;
+          const dataPointIndex = opts.dataPointIndex;
+          const w = opts.w;
+    
+          // Calculate the position based on the bar length
+          const barLength = w.globals.series[seriesIndex][dataPointIndex];
+          return `${val}`;
+        },
+        style: {
+          fontSize: '12px',
+          colors: ['#000']
+        },
+        offsetX: 30, // Adjust this value to position the labels outside the bars
+        textAnchor: 'start', // This aligns the text to the start of the label position
+        
       },
       series: [
         {
@@ -1007,13 +1147,11 @@ chart.render();
         }
       },
       yaxis: {
-        yaxisBorder: {
-          show: true
-        },
+       
         labels: {
           style: {
             colors: labelColor,
-            fontSize: '16px'
+            fontSize: '10px'
           }
         }
       }
@@ -1057,11 +1195,22 @@ chart.render();
       colors: config.colors.info,
       dataLabels: {
         enabled: true,
-       
-              style: {
-                fontSize: '14px',
-                colors: ["#fff"]
-              }
+        formatter: function (val, opts) {
+          const seriesIndex = opts.seriesIndex;
+          const dataPointIndex = opts.dataPointIndex;
+          const w = opts.w;
+    
+          // Calculate the position based on the bar length
+          const barLength = w.globals.series[seriesIndex][dataPointIndex];
+          return `${val}`;
+        },
+        style: {
+          fontSize: '12px',
+          colors: ['#0ff']
+        },
+        offsetX: 30, // Adjust this value to position the labels outside the bars
+        textAnchor: 'start', // This aligns the text to the start of the label position
+        
       },
       series: [
         {
@@ -1093,7 +1242,7 @@ chart.render();
         labels: {
           style: {
             colors: labelColor,
-            fontSize: '12px'
+            fontSize: '10px'
           }
         }
       }
