@@ -802,7 +802,7 @@ var options = {
         value: {
           show: true,
           fontSize: '22px',
-          fontWeight: 'bold',
+          fontWeight: 400,
           color: '#000',
           offsetY: 4, // Adjust this value to position the label vertically
           formatter: function(val) {
@@ -840,10 +840,10 @@ dataLabels: {
     return val.toFixed(1) ;
   },
   style: {
-    fontSize: '16px',
+    fontSize: '14px',
     fontFamily: 'Helvetica, Arial, sans-serif',
     colors: ['#000'],
-
+    fontWeight:'400',
   },
   position: 'center', // position the label in the center of the pie chart
 
@@ -893,9 +893,9 @@ var options = {
     return val.toFixed(1) ;
   },
   style: {
-    fontSize: '18px',
+    fontSize: '14px',
     fontFamily: 'Helvetica, Arial, sans-serif',
-   
+    fontWeight:'400',
     colors: ['#000'],
 
   },
@@ -938,7 +938,7 @@ var options = {
     fontSize: '16px',
     fontFamily: 'Helvetica, Arial, sans-serif',
     colors: ['#000'],
-
+    fontWeight:'400',
   },
   position: 'center', // position the label in the center of the pie chart
 
@@ -989,9 +989,9 @@ var options = {
     return val.toFixed(1) ;
   },
   style: {
-    fontSize: '17px',
+    fontSize: '14px',
     fontFamily: 'Helvetica, Arial, sans-serif',
- 
+    fontWeight:'400',
     colors: ['#000'],
 
   },
@@ -1043,11 +1043,10 @@ var options = {
     return val.toFixed(1) ;
   },
   style: {
-    fontSize: '18px',
+    fontSize: '14px',
     fontFamily: 'Helvetica, Arial, sans-serif',
-    fontWeight: 'bold',
     colors: ['#000'],
-
+    fontWeight:'400',
   },
   position: 'center', // position the label in the center of the pie chart
 
