@@ -317,7 +317,7 @@ var chart = new ApexCharts(document.querySelector("#chartfinancial-1"), options)
 chart.render();
 //////////////////////----------------------------
 var options = {
-  colors : ['#e7ebeb','#f5728e'],
+  colors : ['#f5728e','#e7ebeb'],
   series: [50,20],
   chart: {
   width: 150,
@@ -366,7 +366,7 @@ var chart = new ApexCharts(document.querySelector("#chart-team"), options);
 chart.render();
 /////////////////////
 var options = {
-  colors : ['#e7ebeb','#f5728e'],
+  colors : ['#f5728e','#e7ebeb'],
   series: [50,20],
   chart: {
   width: 150,
@@ -444,7 +444,7 @@ var chart = new ApexCharts(document.querySelector("#chartfinancial-o2"), options
 chart.render();
 //////////////////////----------------------------
 var options = {
-  colors : ['#e7ebeb','#fcbe00'],
+  colors : ['#fcbe00','#e7ebeb'],
   series: [50,20],
   chart: {
   width: 150,
@@ -502,7 +502,7 @@ var chart = new ApexCharts(document.querySelector("#chart-team-o"), options);
 chart.render();
 //////////////////////----------------------------
 var options = {
-  colors : ['#e7ebeb','#fcbe00'],
+  colors : ['#fcbe00','#e7ebeb'],
   series: [50,20],
   chart: {
   width: 150,
@@ -552,7 +552,7 @@ chart.render();
 var options = {
   colors : ['#991CFB'],
   chart: {
-      height: 420,
+      height: 405,
  
       type: 'radialBar',
   
@@ -840,9 +840,8 @@ dataLabels: {
     return val.toFixed(1) ;
   },
   style: {
-    fontSize: '18px',
+    fontSize: '16px',
     fontFamily: 'Helvetica, Arial, sans-serif',
-    fontWeight: 'bold',
     colors: ['#000'],
 
   },
@@ -877,8 +876,8 @@ var chart = new ApexCharts(document.querySelector("#chartteam1"), options);
 chart.render();
 //////////////////////----------------------------
 var options = {
-  colors : ['#e7ebeb','#c44cd1'],
-  series: [50,20],
+  colors : ['#c44cd1','#e7ebeb'],
+  series: [50,100],
   chart: {
   width: 110,
   height: 110,
@@ -896,7 +895,7 @@ var options = {
   style: {
     fontSize: '18px',
     fontFamily: 'Helvetica, Arial, sans-serif',
-    fontWeight: 'bold',
+   
     colors: ['#000'],
 
   },
@@ -906,26 +905,19 @@ var options = {
   show:false,
   
 },
-labels: ['Total Unpaid',],
-responsive: [{
-  breakpoint:200,
-  options: {
-    chart: {
-      width: 200
-    },
-    legend: {
-      position: 'bottom',
-      show:false
-    }
-  }
-}]
+total: {
+  show: false
+},
+sparkline: {
+  enabled: false
+}
 };
 
 var chart = new ApexCharts(document.querySelector("#chartteam2"), options);
 chart.render();
 //////////////////////----------------------------
 var options = {
-  colors : ['#e7ebeb','#c44cd1'],
+  colors : ['#c44cd1','#e7ebeb'],
   series: [50,20],
   chart: {
   width: 110,
@@ -943,9 +935,8 @@ var options = {
     return val.toFixed(1) ;
   },
   style: {
-    fontSize: '18px',
+    fontSize: '16px',
     fontFamily: 'Helvetica, Arial, sans-serif',
-    fontWeight: 'bold',
     colors: ['#000'],
 
   },
@@ -981,7 +972,7 @@ var chart = new ApexCharts(document.querySelector("#chartteam3"), options);
 chart.render();
 //////////////////////----------------------------
 var options = {
-  colors : ['#e7ebeb','#c44cd1'],
+  colors : ['#c44cd1','#e7ebeb'],
   series: [50,20],
   chart: {
   width: 110,
@@ -998,9 +989,9 @@ var options = {
     return val.toFixed(1) ;
   },
   style: {
-    fontSize: '18px',
+    fontSize: '17px',
     fontFamily: 'Helvetica, Arial, sans-serif',
-    fontWeight: 'bold',
+ 
     colors: ['#000'],
 
   },
@@ -1035,11 +1026,11 @@ var chart = new ApexCharts(document.querySelector("#chartteam4"), options);
 chart.render();
 //////////////////////----------------------------
 var options = {
-  colors : ['#e7ebeb','#4CAF50'],
+  colors : ['#4CAF50','#e7ebeb'],
   series: [50,20],
   chart: {
   width: 110,
-  height: 110,
+  height: 100,
   type: 'pie',
 },dataLabels: {
  
