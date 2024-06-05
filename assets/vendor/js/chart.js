@@ -324,7 +324,26 @@ var options = {
   height: 150,
   type: 'pie',
 },
+dataLabels: {
+ 
+  enabled: true,
+  
+  formatter: function (val, opts) {
+    if (opts.seriesIndex == 1) {
+      return '';
+    }
+    return val.toFixed(1) +'%';
+  },
+  style: {
+    fontSize: '18px',
+    fontFamily: 'Helvetica, Arial, sans-serif',
+    fontWeight: 'bold',
+    colors: ['#000'],
 
+  },
+  position: 'center', // position the label in the center of the pie chart
+
+},
 legend: {
   show:false,
   
@@ -353,6 +372,25 @@ var options = {
   width: 150,
   height: 150,
   type: 'pie',
+},dataLabels: {
+ 
+  enabled: true,
+  
+  formatter: function (val, opts) {
+    if (opts.seriesIndex == 1) {
+      return '';
+    }
+    return val.toFixed(1) +'%';
+  },
+  style: {
+    fontSize: '18px',
+    fontFamily: 'Helvetica, Arial, sans-serif',
+    fontWeight: 'bold',
+    colors: ['#000'],
+
+  },
+  position: 'center', // position the label in the center of the pie chart
+
 },
 legend: {
   show:false,
@@ -415,6 +453,25 @@ var options = {
   toolbar: {
     show: false
   }
+},dataLabels: {
+ 
+  enabled: true,
+  
+  formatter: function (val, opts) {
+    if (opts.seriesIndex == 1) {
+      return '';
+    }
+    return val.toFixed(1)+'%' ;
+  },
+  style: {
+    fontSize: '18px',
+    fontFamily: 'Helvetica, Arial, sans-serif',
+    fontWeight: 'bold',
+    colors: ['#000'],
+
+  },
+  position: 'center', // position the label in the center of the pie chart
+
 },
 legend: {
   show:false,
@@ -451,6 +508,25 @@ var options = {
   width: 150,
   height: 150,
   type: 'pie',
+},dataLabels: {
+ 
+  enabled: true,
+  
+  formatter: function (val, opts) {
+    if (opts.seriesIndex == 1) {
+      return '';
+    }
+    return val.toFixed(1)+'%' ;
+  },
+  style: {
+    fontSize: '18px',
+    fontFamily: 'Helvetica, Arial, sans-serif',
+    fontWeight: 'bold',
+    colors: ['#000'],
+
+  },
+  position: 'center', // position the label in the center of the pie chart
+
 },legend: {
   show:false,
   
