@@ -194,6 +194,21 @@
     chart: {
         height: 470,
         type: 'radialBar',
+    },  plotOptions: {
+      radialBar: {
+        dataLabels: {
+        hollow: {
+          size: '60%',
+        },
+        value: {
+          show: true,
+          fontSize: '35px',
+          fontWeight: 'bold',
+          color: '#f676a1',
+          
+        }
+      } 
+      },
     },
     series: [60],
     labels: ['ACTUALPROGRESS'],
@@ -1025,14 +1040,22 @@ chart.render();
       colors: config.colors.info,
       dataLabels: {
         enabled: true,
-        position: 'top', // display data labels above the chart
-        orientation: 'ertical', // جعل القيمة تظهر عمودياً
-        offsetX: 200, // ضبط المسافة بين القيمة والمخطط
-              style: {
-                fontSize: '12px',
-                colors: ["#000"],
-                
-              }
+        formatter: function (val, opts) {
+          const seriesIndex = opts.seriesIndex;
+          const dataPointIndex = opts.dataPointIndex;
+          const w = opts.w;
+    
+          // Calculate the position based on the bar length
+          const barLength = w.globals.series[seriesIndex][dataPointIndex];
+          return `${val}`;
+        },
+        style: {
+          fontSize: '12px',
+          colors: ['#000']
+        },
+        offsetX: 30, // Adjust this value to position the labels outside the bars
+        textAnchor: 'start', // This aligns the text to the start of the label position
+        
       },
       series: [
         {
@@ -1287,11 +1310,22 @@ chart.render();
       colors: config.colors.info,
       dataLabels: {
         enabled: true,
-       
-              style: {
-                fontSize: '14px',
-                colors: ["#fff"]
-              }
+        formatter: function (val, opts) {
+          const seriesIndex = opts.seriesIndex;
+          const dataPointIndex = opts.dataPointIndex;
+          const w = opts.w;
+    
+          // Calculate the position based on the bar length
+          const barLength = w.globals.series[seriesIndex][dataPointIndex];
+          return `${val}`;
+        },
+        style: {
+          fontSize: '12px',
+          colors: ['#000']
+        },
+        offsetX: 60, // Adjust this value to position the labels outside the bars
+        textAnchor: 'start', // This aligns the text to the start of the label position
+        
       },
       series: [
         {
@@ -1323,7 +1357,7 @@ chart.render();
         labels: {
           style: {
             colors: labelColor,
-            fontSize: '12px'
+            fontSize: '10px'
           }
         }
       }
@@ -1367,10 +1401,22 @@ chart.render();
       dataLabels: {
         enabled: true,
        
-              style: {
-                fontSize: '14px',
-                colors: ["#fff"]
-              }
+        formatter: function (val, opts) {
+          const seriesIndex = opts.seriesIndex;
+          const dataPointIndex = opts.dataPointIndex;
+          const w = opts.w;
+    
+          // Calculate the position based on the bar length
+          const barLength = w.globals.series[seriesIndex][dataPointIndex];
+          return `${val}`;
+        },
+        style: {
+          fontSize: '12px',
+          colors: ['#000']
+        },
+        offsetX: 30, // Adjust this value to position the labels outside the bars
+        textAnchor: 'start', // This aligns the text to the start of the label position
+        
       },
       series: [
         {
@@ -1400,7 +1446,7 @@ chart.render();
         labels: {
           style: {
             colors: labelColor,
-            fontSize: '12px'
+            fontSize: '10px'
           }
         }
       }
@@ -1443,11 +1489,22 @@ chart.render();
       colors: config.colors.info,
       dataLabels: {
         enabled: true,
-       
-              style: {
-                fontSize: '14px',
-                colors: ["#fff"]
-              }
+        formatter: function (val, opts) {
+          const seriesIndex = opts.seriesIndex;
+          const dataPointIndex = opts.dataPointIndex;
+          const w = opts.w;
+    
+          // Calculate the position based on the bar length
+          const barLength = w.globals.series[seriesIndex][dataPointIndex];
+          return `${val}`;
+        },
+        style: {
+          fontSize: '12px',
+          colors: ['#000']
+        },
+        offsetX: 30, // Adjust this value to position the labels outside the bars
+        textAnchor: 'start', // This aligns the text to the start of the label position
+        
       },
       series: [
         {
@@ -1523,10 +1580,22 @@ chart.render();
       dataLabels: {
         enabled: true,
        
-              style: {
-                fontSize: '14px',
-                colors: ["#fff"]
-              }
+        formatter: function (val, opts) {
+          const seriesIndex = opts.seriesIndex;
+          const dataPointIndex = opts.dataPointIndex;
+          const w = opts.w;
+    
+          // Calculate the position based on the bar length
+          const barLength = w.globals.series[seriesIndex][dataPointIndex];
+          return `${val}`;
+        },
+        style: {
+          fontSize: '12px',
+          colors: ['#0ff']
+        },
+        offsetX: 25, // Adjust this value to position the labels outside the bars
+        textAnchor: 'start', // This aligns the text to the start of the label position
+        
       },
       series: [
         {
@@ -1558,7 +1627,7 @@ chart.render();
         labels: {
           style: {
             colors: labelColor,
-            fontSize: '12px'
+            fontSize: '10px'
           }
         }
       }
@@ -1602,10 +1671,22 @@ chart.render();
       dataLabels: {
         enabled: true,
        
-              style: {
-                fontSize: '14px',
-                colors: ["#fff"]
-              }
+        formatter: function (val, opts) {
+          const seriesIndex = opts.seriesIndex;
+          const dataPointIndex = opts.dataPointIndex;
+          const w = opts.w;
+    
+          // Calculate the position based on the bar length
+          const barLength = w.globals.series[seriesIndex][dataPointIndex];
+          return `${val}`;
+        },
+        style: {
+          fontSize: '12px',
+          colors: ['#000']
+        },
+        offsetX: 30, // Adjust this value to position the labels outside the bars
+        textAnchor: 'start', // This aligns the text to the start of the label position
+        
       },
       series: [
         {
@@ -1681,10 +1762,22 @@ chart.render();
       dataLabels: {
         enabled: true,
        
-              style: {
-                fontSize: '14px',
-                colors: ["#000"]
-              }
+        formatter: function (val, opts) {
+          const seriesIndex = opts.seriesIndex;
+          const dataPointIndex = opts.dataPointIndex;
+          const w = opts.w;
+    
+          // Calculate the position based on the bar length
+          const barLength = w.globals.series[seriesIndex][dataPointIndex];
+          return `${val}`;
+        },
+        style: {
+          fontSize: '12px',
+          colors: ['#000']
+        },
+        offsetX: 30, // Adjust this value to position the labels outside the bars
+        textAnchor: 'start', // This aligns the text to the start of the label position
+        
       },
       series: [
         {
@@ -1759,11 +1852,22 @@ chart.render();
       colors: config.colors.info,
       dataLabels: {
         enabled: true,
-       
-              style: {
-                fontSize: '14px',
-                colors: ["#000"]
-              }
+        formatter: function (val, opts) {
+          const seriesIndex = opts.seriesIndex;
+          const dataPointIndex = opts.dataPointIndex;
+          const w = opts.w;
+    
+          // Calculate the position based on the bar length
+          const barLength = w.globals.series[seriesIndex][dataPointIndex];
+          return `${val}`;
+        },
+        style: {
+          fontSize: '12px',
+          colors: ['#000']
+        },
+        offsetX: 30, // Adjust this value to position the labels outside the bars
+        textAnchor: 'start', // This aligns the text to the start of the label position
+        
       },
       series: [
         {
@@ -1838,11 +1942,22 @@ chart.render();
      colors: config.colors.info,
      dataLabels: {
        enabled: true,
+       formatter: function (val, opts) {
+        const seriesIndex = opts.seriesIndex;
+        const dataPointIndex = opts.dataPointIndex;
+        const w = opts.w;
+  
+        // Calculate the position based on the bar length
+        const barLength = w.globals.series[seriesIndex][dataPointIndex];
+        return `${val}`;
+      },
+      style: {
+        fontSize: '12px',
+        colors: ['#000']
+      },
+      offsetX: 30, // Adjust this value to position the labels outside the bars
+      textAnchor: 'start', // This aligns the text to the start of the label position
       
-             style: {
-               fontSize: '14px',
-               colors: ["#000"]
-             }
      },
      series: [
        {
@@ -1918,10 +2033,22 @@ chart.render();
      dataLabels: {
        enabled: true,
       
-             style: {
-               fontSize: '14px',
-               colors: ["#000"]
-             }
+       formatter: function (val, opts) {
+        const seriesIndex = opts.seriesIndex;
+        const dataPointIndex = opts.dataPointIndex;
+        const w = opts.w;
+  
+        // Calculate the position based on the bar length
+        const barLength = w.globals.series[seriesIndex][dataPointIndex];
+        return `${val}`;
+      },
+      style: {
+        fontSize: '12px',
+        colors: ['#000']
+      },
+      offsetX: 30, // Adjust this value to position the labels outside the bars
+      textAnchor: 'start', // This aligns the text to the start of the label position
+      
      },
      series: [
        {
@@ -1996,11 +2123,22 @@ chart.render();
      colors: config.colors.info,
      dataLabels: {
        enabled: true,
+       formatter: function (val, opts) {
+        const seriesIndex = opts.seriesIndex;
+        const dataPointIndex = opts.dataPointIndex;
+        const w = opts.w;
+  
+        // Calculate the position based on the bar length
+        const barLength = w.globals.series[seriesIndex][dataPointIndex];
+        return `${val}`;
+      },
+      style: {
+        fontSize: '12px',
+        colors: ['#000']
+      },
+      offsetX: 30, // Adjust this value to position the labels outside the bars
+      textAnchor: 'start', // This aligns the text to the start of the label position
       
-             style: {
-               fontSize: '14px',
-               colors: ["#000"]
-             }
      },
      series: [
        {
@@ -2076,10 +2214,22 @@ chart.render();
    dataLabels: {
      enabled: true,
     
-           style: {
-             fontSize: '14px',
-             colors: ["#000"]
-           }
+     formatter: function (val, opts) {
+      const seriesIndex = opts.seriesIndex;
+      const dataPointIndex = opts.dataPointIndex;
+      const w = opts.w;
+
+      // Calculate the position based on the bar length
+      const barLength = w.globals.series[seriesIndex][dataPointIndex];
+      return `${val}`;
+    },
+    style: {
+      fontSize: '12px',
+      colors: ['#000']
+    },
+    offsetX: 30, // Adjust this value to position the labels outside the bars
+    textAnchor: 'start', // This aligns the text to the start of the label position
+    
    },
    series: [
      {
@@ -2154,11 +2304,22 @@ if (typeof horizontalBarChartEb2 !== undefined && horizontalBarChartEb2 !== null
    colors: config.colors.info,
    dataLabels: {
      enabled: true,
+     formatter: function (val, opts) {
+      const seriesIndex = opts.seriesIndex;
+      const dataPointIndex = opts.dataPointIndex;
+      const w = opts.w;
+
+      // Calculate the position based on the bar length
+      const barLength = w.globals.series[seriesIndex][dataPointIndex];
+      return `${val}`;
+    },
+    style: {
+      fontSize: '12px',
+      colors: ['#000']
+    },
+    offsetX: 30, // Adjust this value to position the labels outside the bars
+    textAnchor: 'start', // This aligns the text to the start of the label position
     
-           style: {
-             fontSize: '14px',
-             colors: ["#000"]
-           }
    },
    series: [
      {
@@ -2234,10 +2395,22 @@ if (typeof horizontalBarChartEb3 !== undefined && horizontalBarChartEb3 !== null
    dataLabels: {
      enabled: true,
     
-           style: {
-             fontSize: '14px',
-             colors: ["#000"]
-           }
+     formatter: function (val, opts) {
+      const seriesIndex = opts.seriesIndex;
+      const dataPointIndex = opts.dataPointIndex;
+      const w = opts.w;
+
+      // Calculate the position based on the bar length
+      const barLength = w.globals.series[seriesIndex][dataPointIndex];
+      return `${val}`;
+    },
+    style: {
+      fontSize: '12px',
+      colors: ['#000']
+    },
+    offsetX: 30, // Adjust this value to position the labels outside the bars
+    textAnchor: 'start', // This aligns the text to the start of the label position
+    
    },
    series: [
      {
@@ -2311,10 +2484,22 @@ horizontalBarChartConfigs1 = {
   dataLabels: {
     enabled: true,
    
-          style: {
-            fontSize: '14px',
-            colors: ["#000"]
-          }
+    formatter: function (val, opts) {
+      const seriesIndex = opts.seriesIndex;
+      const dataPointIndex = opts.dataPointIndex;
+      const w = opts.w;
+
+      // Calculate the position based on the bar length
+      const barLength = w.globals.series[seriesIndex][dataPointIndex];
+      return `${val}`;
+    },
+    style: {
+      fontSize: '12px',
+      colors: ['#000']
+    },
+    offsetX: 30, // Adjust this value to position the labels outside the bars
+    textAnchor: 'start', // This aligns the text to the start of the label position
+    
   },
   series: [
     {
@@ -2388,10 +2573,22 @@ horizontalBarChartConfigs2 = {
   dataLabels: {
     enabled: true,
    
-          style: {
-            fontSize: '14px',
-            colors: ["#000"]
-          }
+    formatter: function (val, opts) {
+      const seriesIndex = opts.seriesIndex;
+      const dataPointIndex = opts.dataPointIndex;
+      const w = opts.w;
+
+      // Calculate the position based on the bar length
+      const barLength = w.globals.series[seriesIndex][dataPointIndex];
+      return `${val}`;
+    },
+    style: {
+      fontSize: '12px',
+      colors: ['#000']
+    },
+    offsetX: 30, // Adjust this value to position the labels outside the bars
+    textAnchor: 'start', // This aligns the text to the start of the label position
+    
   },
   series: [
     {
@@ -2464,11 +2661,22 @@ horizontalBarChartConfigs3 = {
   colors: config.colors.info,
   dataLabels: {
     enabled: true,
-   
-          style: {
-            fontSize: '14px',
-            colors: ["#000"]
-          }
+    formatter: function (val, opts) {
+      const seriesIndex = opts.seriesIndex;
+      const dataPointIndex = opts.dataPointIndex;
+      const w = opts.w;
+
+      // Calculate the position based on the bar length
+      const barLength = w.globals.series[seriesIndex][dataPointIndex];
+      return `${val}`;
+    },
+    style: {
+      fontSize: '12px',
+      colors: ['#000']
+    },
+    offsetX: 30, // Adjust this value to position the labels outside the bars
+    textAnchor: 'start', // This aligns the text to the start of the label position
+    
   },
   series: [
     {
@@ -2542,10 +2750,22 @@ horizontalBarChartConfigs4 = {
   dataLabels: {
     enabled: true,
    
-          style: {
-            fontSize: '14px',
-            colors: ["#000"]
-          }
+    formatter: function (val, opts) {
+      const seriesIndex = opts.seriesIndex;
+      const dataPointIndex = opts.dataPointIndex;
+      const w = opts.w;
+
+      // Calculate the position based on the bar length
+      const barLength = w.globals.series[seriesIndex][dataPointIndex];
+      return `${val}`;
+    },
+    style: {
+      fontSize: '12px',
+      colors: ['#000']
+    },
+    offsetX: 30, // Adjust this value to position the labels outside the bars
+    textAnchor: 'start', // This aligns the text to the start of the label position
+    
   },
   series: [
     {
@@ -2618,11 +2838,22 @@ horizontalBarChartConfigd1 = {
   colors: config.colors.info,
   dataLabels: {
     enabled: true,
-   
-          style: {
-            fontSize: '14px',
-            colors: ["#000"]
-          }
+    formatter: function (val, opts) {
+      const seriesIndex = opts.seriesIndex;
+      const dataPointIndex = opts.dataPointIndex;
+      const w = opts.w;
+
+      // Calculate the position based on the bar length
+      const barLength = w.globals.series[seriesIndex][dataPointIndex];
+      return `${val}`;
+    },
+    style: {
+      fontSize: '12px',
+      colors: ['#000']
+    },
+    offsetX: 30, // Adjust this value to position the labels outside the bars
+    textAnchor: 'start', // This aligns the text to the start of the label position
+    
   },
   series: [
     {
@@ -2695,11 +2926,22 @@ horizontalBarChartConfigd2 = {
   colors: config.colors.info,
   dataLabels: {
     enabled: true,
-   
-          style: {
-            fontSize: '14px',
-            colors: ["#000"]
-          }
+    formatter: function (val, opts) {
+      const seriesIndex = opts.seriesIndex;
+      const dataPointIndex = opts.dataPointIndex;
+      const w = opts.w;
+
+      // Calculate the position based on the bar length
+      const barLength = w.globals.series[seriesIndex][dataPointIndex];
+      return `${val}`;
+    },
+    style: {
+      fontSize: '12px',
+      colors: ['#000']
+    },
+    offsetX: 30, // Adjust this value to position the labels outside the bars
+    textAnchor: 'start', // This aligns the text to the start of the label position
+    
   },
   series: [
     {
@@ -2772,11 +3014,22 @@ horizontalBarChartConfigd3 = {
   colors: config.colors.info,
   dataLabels: {
     enabled: true,
-   
-          style: {
-            fontSize: '14px',
-            colors: ["#000"]
-          }
+    formatter: function (val, opts) {
+      const seriesIndex = opts.seriesIndex;
+      const dataPointIndex = opts.dataPointIndex;
+      const w = opts.w;
+
+      // Calculate the position based on the bar length
+      const barLength = w.globals.series[seriesIndex][dataPointIndex];
+      return `${val}`;
+    },
+    style: {
+      fontSize: '12px',
+      colors: ['#000']
+    },
+    offsetX: 30, // Adjust this value to position the labels outside the bars
+    textAnchor: 'start', // This aligns the text to the start of the label position
+    
   },
   series: [
     {
@@ -2849,11 +3102,22 @@ horizontalBarChartConfigd4 = {
   colors: config.colors.info,
   dataLabels: {
     enabled: true,
-   
-          style: {
-            fontSize: '14px',
-            colors: ["#000"]
-          }
+    formatter: function (val, opts) {
+      const seriesIndex = opts.seriesIndex;
+      const dataPointIndex = opts.dataPointIndex;
+      const w = opts.w;
+
+      // Calculate the position based on the bar length
+      const barLength = w.globals.series[seriesIndex][dataPointIndex];
+      return `${val}`;
+    },
+    style: {
+      fontSize: '12px',
+      colors: ['#000']
+    },
+    offsetX: 30, // Adjust this value to position the labels outside the bars
+    textAnchor: 'start', // This aligns the text to the start of the label position
+    
   },
   series: [
     {

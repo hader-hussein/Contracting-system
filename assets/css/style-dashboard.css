@@ -87,7 +87,7 @@ margin: 4px;
 }
 .card-PROGRESS span,.text-poper{
 color: #991CFB;
-font-weight: 500;
+font-weight: 800;
 
 }
 
@@ -141,4 +141,7 @@ font-weight: bold;
 .text-b {
     font-weight: 800;
     color: #000;
+}
+.fs-r{
+    font-size: 11px !important;
 }
