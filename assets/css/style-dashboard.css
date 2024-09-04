@@ -1,3 +1,31 @@
+@font-face{
+    src:url(../avenir-font/AvenirLTStd-Black.otf);
+    font-family: 'avenir', sans-serif;
+    font-weight: 700;
+}
+@font-face{
+    src:url(../avenir-font/AvenirLTStd-Oblique.otf);
+    font-family: 'avenir', sans-serif;
+    
+    font-weight: 400;
+}
+@font-face{
+    src:url(../avenir-font/AvenirLTStd-MediumOblique.otf);
+    font-family: 'avenir', sans-serif;
+    
+    font-weight: 500;
+}
+@font-face{
+    src:url(../avenir-font/AvenirLTStd-Light.otf);
+    font-family: 'avenir', sans-serif;
+    
+    font-weight: 300;
+}
+@font-face{
+    src:url(../font/Cairo/static/Cairo-ExtraBold.ttf);
+    font-family: 'avenir', sans-serif;
+         font-weight: 800;
+}
 :root{
      --color-back:#141C4D;
      --color-back-secend:#87724B;
@@ -8,6 +36,8 @@
 }
 body{
     text-transform: uppercase !important;
+    font-family: 'Avenir', sans-serif !important;
+    text-transform: uppercase;
 }
 .app-brand-link img{
 width: 80%;

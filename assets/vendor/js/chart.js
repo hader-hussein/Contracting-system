@@ -822,58 +822,57 @@ chart.render();
 //////////////////////----------------------------
 var options = {
   colors : ['#c44cd1','#e7ebeb'],
-  series: [80, 100],
+  series: [200, 100],
   chart: {
-  width: 110,
-  height: 110,
-  type: 'pie',
- 
-},
-dataLabels: {
- 
-  enabled: true,
-  
-  formatter: function (val, opts) {
-    if (opts.seriesIndex == 1) {
-      return '';
-    }
-    return val.toFixed(1) ;
+    width: 110,
+    height: 110,
+    type: 'pie',
   },
-  style: {
-    fontSize: '14px',
-    fontFamily: 'Helvetica, Arial, sans-serif',
-    colors: ['#000'],
-    fontWeight:'400',
+  dataLabels: {
+    enabled: true,
+    position: 'center',
+    formatter: function (val, opts) {
+      if (opts.seriesIndex == 1) {
+        return '';
+      }
+      return val.toFixed(1);
+    },
+    style: {
+      fontSize: '12px',
+      fontFamily: 'Helvetica, Arial, sans-serif',
+      colors: ['#000'],
+      fontWeight: '400'
+    },
+    align: 'center', // Center align the data labels horizontally
+    textAnchor: 'middle',
+    distributed: false,
   },
-  position: 'center', // position the label in the center of the pie chart
-
-},
-legend: {
-  show:false,
-  
-},
-labels: [],
-responsive: [{
-  breakpoint: 200,
-  options: {
-    chart: {
-      width: 200
-    },
-    legend: {
-      show:false,
-    },
-    total: {
-      show: false
-    },
-    sparkline: {
-      enabled: false
+  legend: {
+    show: false,
+  },
+  labels: [],
+  responsive: [{
+    breakpoint: 200,
+    options: {
+      chart: {
+        width: 200
+      },
+      legend: {
+        show: false,
+      },
+      total: {
+        show: false
+      },
+      sparkline: {
+        enabled: false
+      }
     }
-  }
-}]
+  }]
 };
 
 var chart = new ApexCharts(document.querySelector("#chartteam1"), options);
 chart.render();
+
 //////////////////////----------------------------
 var options = {
   colors : ['#c44cd1','#e7ebeb'],
@@ -893,12 +892,13 @@ var options = {
     return val.toFixed(1) ;
   },
   style: {
-    fontSize: '14px',
+    fontSize: '12px',
     fontFamily: 'Helvetica, Arial, sans-serif',
     fontWeight:'400',
     colors: ['#000'],
 
   },
+  offset: 0,
   position: 'center', // position the label in the center of the pie chart
 
 },legend: {
@@ -935,7 +935,7 @@ var options = {
     return val.toFixed(1) ;
   },
   style: {
-    fontSize: '16px',
+    fontSize: '12px',
     fontFamily: 'Helvetica, Arial, sans-serif',
     colors: ['#000'],
     fontWeight:'400',

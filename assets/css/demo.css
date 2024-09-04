@@ -18,8 +18,8 @@
   justify-content: center;
   display: -ms-flexbox;
   display: flex;
-  width: 34px;
-  height: 24px;
+  /* width: 34px;
+  height: 24px; */
 }
 
 .app-brand-logo.demo svg {
@@ -126,4 +126,13 @@
 .layout-demo-info {
   text-align: center;
   margin-top: 1rem;
+}
+.btn-btn-d:hover,.btn-btn-d:focus{
+  color: #fff !important;
+
+}
+.nav-user .menu-toggle::after {
+
+  transform: translateY(-50%) rotate(132deg);
+  right: 0px;
 }

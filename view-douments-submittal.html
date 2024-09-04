@@ -59,7 +59,15 @@
     <script src="./assets/vendor/js/template-customizer.js"></script>
     <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
     <script src="./assets/js/config.js"></script>
-
+<style>
+  .row-rmove{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    list-style: none;
+    grid-gap: 16px;
+    padding-inline-start: 0px;
+  }
+</style>
   </head>
 
   <body>
@@ -952,11 +960,111 @@
                           
                           </td>
                         </tr>
-                        
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>22003454</td>
+                          <td>DCRJ-RIY-SUR-00-230727 </td>
+                          <td>DC MOBILY- RIYADH</td>
+                          <td>ELE</td>
+                          <td>LOW CURRENT</td>
+                          <td>PQA</td>
+                          <td>PQA CRAH UNIT </td>
+                          <td>yes</td>
+                          <td>Awaiting EQUIPMENT SELECTION</td>
+                          <td>MMR</td>
+                          <td>VERTIV </td>
+                          <td>ITALY</td>
+                          <td>RUMAIH CO. </td>
+                          <td>16-9-2023</td>
+                          <td>APPROVED </td>
+                          <td>b </td>
+                          <td class="">
+                            <div class="d-flex">
+                              <button class="bg-primary  btn text-bg-primary p-1 d-flex align-items-center justify-content-center  rounded " title="  تعديل" data-bs-target="#editModal" data-bs-toggle="modal"><i class="ti ti-pencil  fs-4"></i></button>
+                              <div class="dropdown">
+                                <button type="button" class="btn  p-1 dropdown-toggle hide-arrow bg-body-tertiary shadow" data-bs-toggle="dropdown" aria-expanded="false" titl="اضافه مستندات جديدة">
+                                  <i class="ti ti-dots-vertical"></i>
+                                </button>
+                                <div class="dropdown-menu">
+                                  <a class="dropdown-item" href="javascript:void(0);" data-bs-target="#newModal" data-bs-toggle="modal"><i class="ti ti-file  me-1"></i> new douments</a>
+                                  <a class="dropdown-item" href="javascript:void(0);" data-bs-target="#veiwModal" data-bs-toggle="modal"><i class="ti-xs me-1 ti ti-eye-check me-1"></i> View-new doument</a>
+                                  <a class="dropdown-item" href="javascript:void(0);" data-bs-target="#edit-new-Modal" data-bs-toggle="modal"><i class="ti ti-pencil me-1"></i> update douments</a>
+                                </div>
+                              </div>
+                              <a class="bg-success text-white p-1 d-flex align-items-center justify-content-center me-3 rounded" href="view-all-douments-submittal.html" title="مشاهدة المشروع "><i class="ti-xs ti ti-eye-check "></i></a>
+
+                              <a class="bg-danger text-bg-danger p-1 d-flex align-items-center justify-content-center me-3 rounded" href="javascript:void(0);" title="حذف  " data-bs-target="#closeRoleModal" data-bs-toggle="modal"><i class="ti ti-trash  fs-4"></i> </a>
+                            
+                            </div>
+                          
+                          </td>
+                        </tr>
                         
                       </tbody>
                     </table>
                    </div>
+
+                   <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                     Add Remove Column
+                    </button>
+
+                    
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">  Add Remove Column</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <form>
+                              <ul class="row-rmove">
+                                <li>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                      Default checkbox
+                                    </label>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                      Checked checkbox
+                                    </label>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault1">
+                                    <label class="form-check-label" for="flexCheckDefault1">
+                                      Default checkbox
+                                    </label>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked1" checked>
+                                    <label class="form-check-label" for="flexCheckChecked1">
+                                      Checked checkbox
+                                    </label>
+                                  </div>
+                                </li>
+                              </ul>
+                              <div class="modal-footer px-0 pb-0">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="submit" class="btn btn-primary">Save changes</button>
+                              </div>
+                            </form>
+                            
+                          </div>
+                          
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Modal -->
                 </div>
                </div>
             </div>

@@ -18247,7 +18247,7 @@ html:not(.layout-menu-fixed) .menu-inner-shadow {
   font-weight: 500;
 }
 .menu-horizontal .menu-item .menu-link {
-  padding: 0.5rem 0.875rem;
+  padding: 0.5rem 0.175rem;
 }
 .menu-horizontal .menu-item .menu-toggle {
   padding-right: calc(0.875rem + 1.26em);
@@ -24090,4 +24090,13 @@ a.bg-vimeo:hover, a.bg-vimeo:focus {
 }
 .apexcharts-legend-text{
   color: #fff !important;
+}
+.dx-datagrid-borders>.dx-datagrid-rowsview, .dx-datagrid-borders>.dx-datagrid-total-footer {
+  border-bottom: 1px solid #515159;
+}
+.dx-datagrid>.dx-datagrid-headers, .dx-datagrid>.dx-datagrid-rowsview, .dx-datagrid>.dx-datagrid-total-footer {
+  background-color: #363640 !important;
+}
+.dx-datagrid-borders>.dx-datagrid-filter-panel, .dx-datagrid-borders>.dx-datagrid-headers {
+  border-top: 1px solid #515159;
 }
