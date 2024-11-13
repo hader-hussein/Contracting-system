@@ -307,10 +307,13 @@
         // columns according to JSON
         { data: '' },
         { data: 'id' },
-        { data: 'course name' },
+        { data: 'final status' },
+        { data: 'Action code' },
         { data: 'time' },
         { data: 'progress' },
-        { data: 'status' }
+        { data: 'no' },
+        { data: 'discipline' },
+        { data: 'status' },
       ],
       columnDefs: [
         {
@@ -498,7 +501,7 @@
         }
       }
     });
-    $('div.head-label').html('<h5 class="card-title mb-0 text-nowrap">Course you are taking</h5>');
+    // $('div.head-label').html('<h5 class="card-title mb-0 text-nowrap">Design Drawing Report</h5>');
   }
 
   // Delete Record

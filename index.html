@@ -63,6 +63,64 @@
         color: #fff;
       }
     </style>
+    <!--11-9-2024-->
+    <style>
+     
+     .logo {
+            display: flex;
+            align-items: end;
+            font-size: 35px;
+            font-weight: bold;
+            background-color: #fff;
+            padding:  10px 0px 10px 43px;
+        }
+
+        /* تصميم حروف MAC */
+        .logo .mac {
+            color: navy; /* لون الحروف */
+            font-family: 'Arial', sans-serif;
+            letter-spacing: -5px; /* التحكم في المسافات بين الحروف */
+            font-weight: 300;
+        }
+
+        /* خصائص كل حرف */
+        .logo .mac .m {
+            display: inline-block;
+            transform: scaleX(2.5) scaleY(1.5);
+            letter-spacing: 19px;        }
+
+        .logo .mac .a {
+            display: inline-block;
+            transform:  scaleX(3.50) scaleY(1.5); /* ميلان الحرف A وتمطيطه أفقيًا */
+        }
+
+        .logo .mac .c {
+            display: inline-block;
+            /* transform: skewX(-15deg) scaleX(1.5);  */
+            transform: rotate(90deg) scaleX(2) scaleY(1.55);
+            margin-left:37px;
+          
+        }
+
+        /* تصميم كلمة Business */
+        .logo .business {
+            color: #CD7F32; /* اللون البرونزي لكلمة Business */
+            font-size: 22px; /* حجم أصغر لكلمة Business */
+            margin-left: 15px; /* مسافة بين كلمة MAC وBusiness */
+        }
+        @media (max-width:1000px) {
+          .logo{
+            font-size: 25px;
+          }
+          .logo .mac .m {
+    
+    letter-spacing: 13px;
+}
+.logo .business {
+    font-size: 10px;   
+        }
+      }
+    </style>
   </head>
 
   <body>
@@ -75,10 +133,18 @@
           <div class="container-xxl">
             <div class="navbar-brand app-brand demo d-none d-xl-flex  py-0 me-4">
               <a href="index.html" class="app-brand-link gap-2">
-                <span class="app-brand-logo demo">
+                <!-- <span class="app-brand-logo demo">
                   <img src="./assets/img/img-dashboards/logo.jpg"width="250" height="50"  alt="logo-brand">
             
-                </span>
+                </span> -->
+                <div class="logo">
+                  <span class="mac">
+                      <span class="m">M</span>
+                      <span class="a">A</span>
+                      <span class="c">U</span>
+                  </span>
+                  <span class="business">Business</span>
+              </div>
               </a>
 
               <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-xl-none">
@@ -594,6 +660,13 @@
                     <i class="menu-icon tf-icons ti ti-home"></i>
                     
                     <div data-i18n="Dashboards">Dashboards</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="index-reports.html" class="menu-link">
+                    <i class="menu-icon tf-icons ti ti-home"></i>
+                    
+                    <div data-i18n="reports">index-reports</div>
                   </a>
                 </li>
                 <!-- REPORTS -->

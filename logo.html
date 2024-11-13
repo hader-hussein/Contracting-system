@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAC Business Logo</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .logo {
+            display: flex;
+            align-items: end;
+            font-size: 48px;
+            font-weight: bold;
+            background-color: #fff;
+
+        }
+
+        /* تصميم حروف MAC */
+        .logo .mac {
+            color: navy; /* لون الحروف */
+            font-family: 'Arial', sans-serif;
+            letter-spacing: -5px; /* التحكم في المسافات بين الحروف */
+            font-weight: 300;
+        }
+
+        /* خصائص كل حرف */
+        .logo .mac .m {
+            display: inline-block;
+            transform: scaleX(2.5) scaleY(1.5);
+            letter-spacing: 22px;        }
+
+        .logo .mac .a {
+            display: inline-block;
+            transform:  scaleX(3.1) scaleY(1.5); /* ميلان الحرف A وتمطيطه أفقيًا */
+        }
+
+        .logo .mac .c {
+            display: inline-block;
+            /* transform: skewX(-15deg) scaleX(1.5);  */
+            transform: rotate(90deg) scaleX(2) scaleY(1.55);
+            margin-left:44px;
+          
+        }
+
+        /* تصميم كلمة Business */
+        .logo .business {
+            color: #CD7F32; /* اللون البرونزي لكلمة Business */
+            font-size: 22px; /* حجم أصغر لكلمة Business */
+            margin-left: 15px; /* مسافة بين كلمة MAC وBusiness */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="logo">
+        <span class="mac">
+            <span class="m">M</span>
+            <span class="a">A</span>
+            <span class="c">U</span>
+        </span>
+        <span class="business">Business</span>
+    </div>
+
+</body>
+</html>
+
