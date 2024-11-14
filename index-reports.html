@@ -59,6 +59,23 @@
       font-size: 12px;
       text-transform: capitalize !important;
     }
+    @media (min-width:1200px) {
+      div.dataTables_wrapper {
+    position: unset;
+}
+    div.dataTables_wrapper div.dataTables_filter {
+    text-align: right;
+    position: absolute;
+    right: -22px;
+    z-index: 10000;
+    top: 40px;
+}
+div.dataTables_wrapper div.dataTables_filter input {
+   
+    width: 80%;
+}
+    }
+   
   </style>
 </head>
 
@@ -997,9 +1014,9 @@
                           <th></th>
                           <th>final status</th>
                           <th>Action code</th>
-                          <th>Progress</th>
-                          <th>time</th>
-                          <th>progress</th>
+                        
+                          <th class="w-25">time</th>
+                          <th class="w-25">progress</th>
                           <th>no</th>
                           <th>discipline</th>
                           <th>status</th>

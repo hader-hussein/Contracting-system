@@ -449,6 +449,32 @@
               '</div>'
             );
           }
+        },
+        {
+          // status
+          targets: 5,
+          render: function (data, type, full, meta) {
+            var $user_number = full['user_number'];
+            var $note = full['note'];
+            var $view = full['view'];
+
+            return (
+              '<div class="d-flex align-items-center justify-content-between">' +
+              '<div class="w-px-50 d-flex align-items-center">' +
+              '<i class="ti ti-users ti-sm me-2 text-primary"></i>' +
+              $user_number +
+              '</div>' +
+              '<div class="w-px-50 d-flex align-items-center">' +
+              '<i class="ti ti-book ti-sm me-2 text-info"></i>' +
+              $note +
+              '</div>' +
+              '<div class="w-px-50 d-flex align-items-center">' +
+              '<i class="ti ti-video ti-sm me-2 text-danger" ></i>' +
+              $view +
+              '</div>' +
+              '</div>'
+            );
+          }
         }
       ],
       order: [[2, 'desc']],
