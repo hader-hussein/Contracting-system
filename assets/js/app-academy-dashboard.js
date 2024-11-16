@@ -528,12 +528,19 @@
       }
     });
      // التعامل مع الضغط على التبويبات
-   $('.widget-nav-tabs .nav-link').on('click', function () {
-    const tab = $(this).data('tab'); // الحصول على قيمة التبويب
-    const ajaxUrl = `your-data-url-${tab}`; // تغيير الرابط بناءً على التبويب
-    const newUrl = `data-url-${tab}.json`; // تكوين رابط جديد بناءً على التبويب
+  // التعامل مع النقر على التبويبات
+  $('.widget-nav-tabs .nav-link').on('click', function (e) {
+    e.preventDefault(); // منع الإجراء الافتراضي للرابط
+    const tab = $(this).data('tab'); // الحصول على قيمة data-tab
+    const newUrl = `data-url-${tab}.json`; // تحديد الرابط الجديد بناءً على التبويب
 
-    // تحديث رابط بيانات الـ DataTable
+    // إزالة الـ active من التبويبات الأخرى
+    $('.widget-nav-tabs .nav-link').removeClass('active');
+
+    // إضافة الـ active إلى التبويب الحالي
+    $(this).addClass('active');
+
+    // تحديث الرابط وإعادة تحميل البيانات
     dt_course.ajax.url(newUrl).load();
   });
     // $('div.head-label').html('<h5 class="card-title mb-0 text-nowrap">Design Drawing Report</h5>');
